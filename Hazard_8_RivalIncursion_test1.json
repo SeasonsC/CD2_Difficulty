@@ -216,7 +216,7 @@
         "ED_Spider_Tank_Boss_facility",
         "ED_Spider_Boss_TwinA_Facility",
         "ED_Spider_Boss_TwinB_facility",
-        "ED_Spider_ShooterQueen",
+        "ED_Spider_ShooterQueen_facility",
         "ED_Woodlouse_Facility",
         "ED_Facilitymatrix"
       ],
@@ -385,7 +385,7 @@
             },
             "<":1,
             "Then":9,
-            "Else":1 
+            "Else":0.333
         }
         ]
       },
@@ -408,7 +408,7 @@
         "FireDamageMultiplier":1.5,
         "ElectricDamageMultiplier":1.2,
         "CorrosiveDamageMultiplier":1.3,
-        "DamageMultiplier":0.8
+        "DamageMultiplier":1.5
       },
       "Temperature":{
         "FreezeTemperature":-100,
@@ -417,7 +417,7 @@
     },
     "ED_Spider_Lobber":{
       "Base":"ED_Spider_Lobber",
-      "DifficultyRating":35,
+      "DifficultyRating":55,
       "IdealSpawnSize":2,
       "MaxSpawnCount": 3,
       "MinSpawnCount": 0,
@@ -438,7 +438,7 @@
             },
             "<":1,
             "Then":9,
-            "Else":1 
+            "Else":0.333
         }
         ]
       }
@@ -459,7 +459,7 @@
         "FireDamageMultiplier":1.5,
         "ElectricDamageMultiplier":1.2,
         "CorrosiveDamageMultiplier":1.3,
-        "DamageMultiplier":0.2
+        "DamageMultiplier":0.4
       },
       "Temperature":{
         "FreezeTemperature":-100,
@@ -948,9 +948,9 @@
               "Mutate":"EnemyCount",
               "ED":"ED_PatrolBot"
             },
-            "<":3,
+            "<":5,
             "Then":9,
-            "Else":1.5
+            "Else":0.166
         }
         ]
     }
@@ -966,14 +966,6 @@
         "M_Crystal_BlueGlow",
         "M_Facility_Metal01"
       ],
-      "Spawner":{
-        "ED":"ED_Shredder",
-        "IntervalSpawnCount":1,
-        "Interval":0.5,
-        "OnDeathCount":0,
-        "MaxSpawns":2,
-        "OnDeathKillSpawns":true
-      },
       "Temperature":{
         "BurnTemperature":100,
         "DieIfBurning":true
@@ -1278,19 +1270,6 @@
         "FireDamageMultiplier": 6,
         "ColdDamageMultiplier":6,
         "PhysicalDamageMultiplier":10
-      }
-    },
-    "ED_Spider_spawn":{
-        "CustomVeterans":{
-        "Mutate":"RandomChoice",
-        "Choices":[
-          "ED_Spider_Spitter_facility",
-          "ED_PatrolBot"
-        ],
-        "weights":[
-          1,
-          1
-        ]
       }
     },
     "ED_PumpkinLootBug_facility": {
