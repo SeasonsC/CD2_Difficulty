@@ -1,0 +1,1043 @@
+{
+  "Name": "Hazard ? D",
+  "Description": "",
+  "MaxActiveCritters": 50,
+  "MaxActiveSwarmers": [
+    150,
+    180,
+    200,
+    220
+  ],
+  "MaxActiveEnemies": [
+    150,
+    180,
+    200,
+    220
+  ],
+  "ResupplyCost": 60,
+  "StartingNitra": 40,
+  "ExtraLargeEnemyDamageResistance": [
+    1.1,
+    1.1,
+    1.2,
+    1.3
+  ],
+  "ExtraLargeEnemyDamageResistanceB": [
+    0.01,
+    0.01,
+    0.01,
+    0.01
+  ],
+  "ExtraLargeEnemyDamageResistanceC": [
+    1,
+    1.2,
+    1.4,
+    1.6
+  ],
+  "ExtraLargeEnemyDamageResistanceD": [
+    1.3,
+    1.4,
+    1.6,
+    1.8
+  ],
+  "EnemyDamageResistance": [
+    1.3,
+    1.4,
+    1.5,
+    1.6
+  ],
+  "SmallEnemyDamageResistance": [
+    1.1,
+    1.1,
+    1.1,
+    1.1
+  ],
+  "EnemyDamageModifier": [
+    3.8,
+    4,
+    4.2,
+    4.4
+  ],
+  "EnemyCountModifier": [
+    3.2,
+    3.4,
+    3.6,
+    3.8
+  ],
+  "EncounterDifficulty": [
+    {
+      "weight": 1,
+      "range": {
+        "min": 1500,
+        "max": 1800
+      }
+    },
+    {
+      "weight": 6,
+      "range": {
+        "min": 1800,
+        "max": 2100
+      }
+    },
+    {
+      "weight": 1,
+      "range": {
+        "min": 2100,
+        "max": 2400
+      }
+    }
+  ],
+  "StationaryDifficulty": [
+    {
+      "weight": 1,
+      "range": {
+        "min": 300,
+        "max": 500
+      }
+    },
+    {
+      "weight": 1,
+      "range": {
+        "min": 600,
+        "max": 800
+      }
+    },
+    {
+      "weight": 1,
+      "range": {
+        "min": 800,
+        "max": 1000
+      }
+    }
+  ],
+  "EnemyWaveInterval": [
+    {
+      "weight": 2,
+      "range": {
+        "min": 150,
+        "max": 180
+      }
+    },
+    {
+      "weight": 7.5,
+      "range": {
+        "min": 180,
+        "max": 210
+      }
+    },
+    {
+      "weight": 0.5,
+      "range": {
+        "min": 210,
+        "max": 240
+      }
+    }
+  ],
+  "EnemyNormalWaveInterval": [
+    {
+      "weight": 4,
+      "range": {
+        "min": 150,
+        "max": 180
+      }
+    },
+    {
+      "weight": 2,
+      "range": {
+        "min": 180,
+        "max": 240
+      }
+    }
+  ],
+  "EnemyNormalWaveDifficulty": [
+    {
+      "weight": 3,
+      "range": {
+        "min": 1500,
+        "max": 1800
+      }
+    },
+    {
+      "weight": 4,
+      "range": {
+        "min": 1800,
+        "max": 2100
+      }
+    },
+    {
+      "weight": 3,
+      "range": {
+        "min": 2100,
+        "max": 2400
+      }
+    }
+  ],
+  "EnemyDiversity": [
+    {
+      "weight": 1,
+      "range": {
+        "min": 12,
+        "max": 14
+      }
+    },
+    {
+      "weight": 6,
+      "range": {
+        "min": 14,
+        "max": 16
+      }
+    },
+    {
+      "weight": 1,
+      "range": {
+        "min": 16,
+        "max": 18
+      }
+    }
+  ],
+  "StationaryEnemyDiversity": [
+    {
+      "weight": 1,
+      "range": {
+        "min": 6,
+        "max": 8
+      }
+    }
+  ],
+  "VeteranNormal": [
+    {
+      "weight": 1,
+      "range": {
+        "min": 0.2,
+        "max": 0.3
+      }
+    },
+    {
+      "weight": 6,
+      "range": {
+        "min": 0.4,
+        "max": 0.6
+      }
+    },
+    {
+      "weight": 2,
+      "range": {
+        "min": 0.6,
+        "max": 0.8
+      }
+    },
+    {
+      "weight": 0.5,
+      "range": {
+        "min": 0.8,
+        "max": 1
+      }
+    }
+  ],
+  "VeteranLarge": [
+    {
+      "weight": 1,
+      "range": {
+        "min": 0.15,
+        "max": 0.2
+      }
+    }
+  ],
+  "DisruptiveEnemyPoolCount": {
+    "min": 6,
+    "max": 8
+  },
+  "MinPoolSize": 18,
+  "MaxActiveElites": 2,
+  "EnvironmentalDamageModifier": 1.4,
+  "PointExtractionScalar": 1.4,
+  "HazardBonus": 1.33,
+  "FriendlyFireModifier": 0.75,
+  "WaveStartDelayScale": 0,
+  "SpeedModifier": 1.3,
+  "AttackCooldownModifier": 1.9,
+  "ProjectileSpeedModifier": 1.9,
+  "HealthRegenerationMax": 0.12,
+  "ReviveHealthRatio": 0.12,
+  "EliteCooldown": 0.1,
+  "EnemyDescriptors": {
+    "冰霜战士": {
+      "Base": "ED_Spider_Grunt_Ice",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 12,
+      "IdealSpawnSize": 6,
+      "MinSpawnCount": 4,
+      "MaxSpawnCount": 10,
+      "Rarity": 8,
+      "PawnStats": {
+        "PST_RadiationResistance": -2,
+        "PST_MovementSpeed": 1.4,
+        "PST_ColdResistance": 1.5,
+        "PST_DamageResistance": 0.8
+      }
+    },
+    "辐射战士": {
+      "Base": "ED_Spider_Grunt_Mutated",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 15,
+      "IdealSpawnSize": 5,
+      "MinSpawnCount": 3,
+      "MaxSpawnCount": 8,
+      "Rarity": 8,
+      "PawnStats": {
+        "PST_DamageResistance": 1.1,
+        "PST_RadiationResistance": 1.2
+      }
+    },
+    "岩痘战士": {
+      "Base": "ED_Spider_Grunt_RockpoxPlague",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 15,
+      "IdealSpawnSize": 5,
+      "MaxSpawnCount": 8,
+      "MinSpawnCount": 3,
+      "Rarity": 10,
+      "PawnStats": {
+        "PST_PoisonResistance": 1,
+        "PST_MovementSpeed": 0.9,
+        "PST_DamageResistance": 0.9
+      }
+    },
+    "精英刀锋异虫": {
+      "Base": "ED_Spider_Grunt_Attacker",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 25,
+      "IdealSpawnSize": 2,
+      "MaxSpawnCount": 3,
+      "MinSpawnCount": 1,
+      "Rarity": 40,
+      "Elite": true,
+      "PawnStats": {
+        "PST_MovementSpeed": 1.3,
+        "PST_DamageResistance": 0.8
+      }
+    },
+    "精英护卫异虫": {
+      "Base": "ED_Spider_Grunt_Guard",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 25,
+      "IdealSpawnSize": 2,
+      "MaxSpawnCount": 3,
+      "MinSpawnCount": 1,
+      "Rarity": 20,
+      "Elite": true,
+      "PawnStats": {
+        "PST_DamageResistance": 1.8,
+        "PST_MovementSpeed": 0.7
+      }
+    },
+    "辐射禁卫异虫": {
+      "Base": "ED_Spider_Tank_Mutated",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 150,
+      "IdealSpawnSize": 1,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 2,
+      "Rarity": 20,
+      "PawnStats": {
+        "PST_DamageResistance": 1.3,
+        "PST_RadiationResistance": 1.5
+      }
+    },
+    "冰霜禁卫异虫": {
+      "Base": "ED_Spider_Tank_Ice",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 150,
+      "IdealSpawnSize": 1,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 2,
+      "Rarity": 18,
+      "PawnStats": {
+        "PST_DamageResistance": 1.5,
+        "PST_ColdResistance": 1.8
+      }
+    },
+    "岩痘禁卫": {
+      "Base": "ED_Spider_tank_RockpoxPlague",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 150,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 2,
+      "MinSpawnCount": 1,
+      "Rarity": 22,
+      "PawnStats": {
+        "PST_PoisonResistance": 1.3,
+        "PST_DamageResistance": 1.2
+      }
+    },
+    "暴君异虫": {
+      "Base": "ED_Spider_ShieldTank",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 300,
+      "IdealSpawnSize": 1,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 1,
+      "Rarity": 25,
+      "PawnStats": {
+        "PST_DamageResistance": 1
+      }
+    },
+    "哨卫异虫": {
+      "Base": "ED_Spider_Tank_HeavySpawn",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 60,
+      "IdealSpawnSize": 1,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 2,
+      "Rarity": 20,
+      "PawnStats": {
+        "PST_MovementSpeed": 1.1,
+        "PST_DamageResistance": 1.1
+      }
+    },
+    "吐酸异虫": {
+      "Base": "ED_Spider_Shooter",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 40,
+      "IdealSpawnSize": 2,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 3,
+      "Rarity": 12,
+      "PawnStats": {
+        "PST_DamageResistance": 0.8
+      }
+    },
+    "岩痘吐酸": {
+      "Base": "ED_Spider_Shooter_Rockpox_Plague",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 45,
+      "IdealSpawnSize": 2,
+      "MaxSpawnCount": 3,
+      "MinSpawnCount": 1,
+      "Rarity": 15,
+      "PawnStats": {
+        "PST_PoisonResistance": 1.2,
+        "PST_DamageResistance": 0.9
+      }
+    },
+    "脓毒异虫": {
+      "Base": "ED_Spider_Lobber",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 35,
+      "IdealSpawnSize": 2,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 3,
+      "Rarity": 14,
+      "PawnStats": {
+        "PST_DamageResistance": 0.9
+      }
+    },
+    "速射酸虫": {
+      "Base": "ED_Spider_RapidShooter",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 200,
+      "IdealSpawnSize": 1,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 2,
+      "Rarity": 60,
+      "PawnStats": {
+        "PST_DamageResistance": 0.7
+      }
+    },
+    "自爆异虫": {
+      "Base": "ED_Spider_Exploder",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 20,
+      "IdealSpawnSize": 4,
+      "MaxSpawnCount": 6,
+      "MinSpawnCount": 2,
+      "Rarity": 10,
+      "PawnStats": {
+        "PST_DamageResistance": 0.6,
+        "PST_MovementSpeed": 1.2
+      }
+    },
+    "岩痘自爆": {
+      "Base": "ED_Spider_Exploder_Rockpox_Plague",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 25,
+      "IdealSpawnSize": 3,
+      "MaxSpawnCount": 5,
+      "MinSpawnCount": 2,
+      "Rarity": 12,
+      "PawnStats": {
+        "PST_MovementSpeed": 1.3,
+        "PST_PoisonResistance": 1,
+        "PST_DamageResistance": 0.7
+      }
+    },
+    "潜行异虫": {
+      "Base": "ED_Spider_Stalker",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 200,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Rarity": 75,
+      "PawnStats": {
+        "PST_DamageResistance": 0.8,
+        "PST_MovementSpeed": 1.4
+      }
+    },
+    "蛭尾异虫": {
+      "Base": "ED_Spider_Stinger",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 100,
+      "IdealSpawnSize": 1,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 2,
+      "Rarity": 35,
+      "PawnStats": {
+        "PST_DamageResistance": 0.8
+      }
+    },
+    "吐刺异虫蝇": {
+      "Base": "ED_Mactera_Shooter_Normal",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 30,
+      "IdealSpawnSize": 4,
+      "MinSpawnCount": 2,
+      "MaxSpawnCount": 6,
+      "Rarity": 12,
+      "PawnStats": {
+        "PST_DamageResistance": 0.7
+      }
+    },
+    "氪石型异虫蝇": {
+      "Base": "ED_Mactera_Shooter_Amber",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 50,
+      "IdealSpawnSize": 2,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 3,
+      "Rarity": 15,
+      "PawnStats": {
+        "PST_DamageResistance": 1,
+        "PST_ExplosionResistance": -1
+      }
+    },
+    "三颚异虫蝇": {
+      "Base": "ED_Mactera_TripleShooter",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 55,
+      "IdealSpawnSize": 1,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 2,
+      "Rarity": 20,
+      "PawnStats": {
+        "PST_DamageResistance": 0.9
+      }
+    },
+    "粘液轰炸蝇": {
+      "Base": "ED_Bomber",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 40,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 2,
+      "MinSpawnCount": 1,
+      "Rarity": 16,
+      "PawnStats": {
+        "PST_DamageResistance": 0.8
+      }
+    },
+    "岩痘轰炸蝇": {
+      "Base": "ED_Bomber_Rockpox_Plague",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 45,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 2,
+      "MinSpawnCount": 1,
+      "Rarity": 18,
+      "PawnStats": {
+        "PST_DamageResistance": 0.9
+      }
+    },
+    "冰霜轰炸蝇": {
+      "Base": "ED_Bomber_Ice",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 42,
+      "IdealSpawnSize": 1,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 2,
+      "Rarity": 18,
+      "PawnStats": {
+        "PST_DamageResistance": 1.2,
+        "PST_ColdResistance": 1.5
+      }
+    },
+    "捕手异虫蝇": {
+      "Base": "ED_Grabber",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 52,
+      "IdealSpawnSize": 1,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 2,
+      "Rarity": 22,
+      "PawnStats": {
+        "PST_DamageResistance": 0.7,
+        "PST_MovementSpeed": 1
+      }
+    },
+    "粉碎者": {
+      "Base": "ED_Shredder",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 10,
+      "IdealSpawnSize": 15,
+      "MaxSpawnCount": 25,
+      "MinSpawnCount": 10,
+      "Rarity": 10,
+      "PawnStats": {
+        "PST_DamageResistance": 0.8,
+        "PST_MovementSpeed": 1.1
+      }
+    },
+    "电型水母": {
+      "Base": "ED_Jelly_Swarmer",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 8,
+      "IdealSpawnSize": 20,
+      "MaxSpawnCount": 30,
+      "MinSpawnCount": 12,
+      "Rarity": 8,
+      "PawnStats": {
+        "PST_DamageResistance": 0.6
+      }
+    },
+    "红色蜂拥异虫": {
+      "Base": "ED_Spider_Swarmer_Pheromone_NOFX",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 6,
+      "IdealSpawnSize": 15,
+      "MinSpawnCount": 10,
+      "MaxSpawnCount": 25,
+      "Rarity": 6,
+      "PawnStats": {
+        "PST_DamageResistance": 0.5
+      }
+    },
+    "辐射蜂拥异虫": {
+      "Base": "ED_Spider_Swarmer_Mutated",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 7,
+      "IdealSpawnSize": 12,
+      "MinSpawnCount": 8,
+      "MaxSpawnCount": 20,
+      "Rarity": 6,
+      "PawnStats": {
+        "PST_DamageResistance": 0.6
+      }
+    },
+    "丘罗那地虱": {
+      "Base": "ED_Woodlouse",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 70,
+      "IdealSpawnSize": 1,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 2,
+      "Rarity": 25,
+      "PawnStats": {
+        "PST_DamageResistance": 1.4
+      }
+    },
+    "无畏异虫": {
+      "Base": "ED_Spider_Tank_Boss",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 300,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Rarity": 40,
+      "PawnStats": {
+        "PST_DamageResistance": 50,
+        "PST_ExplosionResistance": -5,
+        "PST_RadiationResistance": -6,
+        "PST_FireResistance": -5,
+        "PST_ColdResistance": -5,
+        "PST_ElectricResistance": -4,
+        "PST_KineticResistance": -3,
+        "PST_PiercingResistance": -3
+      }
+    },
+    "强弩无畏": {
+      "Base": "ED_Spider_Boss_TwinA",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 350,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Rarity": 35,
+      "PawnStats": {
+        "PST_DamageResistance": 50,
+        "PST_ExplosionResistance": -6,
+        "PST_RadiationResistance": -7,
+        "PST_FireResistance": -6,
+        "PST_ColdResistance": -6,
+        "PST_ElectricResistance": -5,
+        "PST_KineticResistance": -4,
+        "PST_PiercingResistance": -4
+      }
+    },
+    "重斧无畏": {
+      "Base": "ED_Spider_Boss_TwinB",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 350,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Rarity": 35,
+      "PawnStats": {
+        "PST_DamageResistance": 50,
+        "PST_ExplosionResistance": -5,
+        "PST_RadiationResistance": -7,
+        "PST_FireResistance": -5,
+        "PST_ColdResistance": -5,
+        "PST_ElectricResistance": -4,
+        "PST_KineticResistance": -3,
+        "PST_PiercingResistance": -3
+      }
+    },
+    "巢主无畏": {
+      "Base": "ED_Spider_Boss_Heavy",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 400,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Rarity": 45,
+      "PawnStats": {
+        "PST_DamageResistance": 50,
+        "PST_ExplosionResistance": -5,
+        "PST_RadiationResistance": -6,
+        "PST_FireResistance": -5,
+        "PST_ColdResistance": -5,
+        "PST_ElectricResistance": -4,
+        "PST_KineticResistance": -3,
+        "PST_PiercingResistance": -3
+      }
+    },
+    "大自爆虫": {
+      "Base": "ED_Spider_ExploderTank",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 150,
+      "MinSpawnCount": 0,
+      "MaxSpawnCount": 1,
+      "Rarity": 30,
+      "SpawnAmountModifier": 1,
+      "PawnStats": {
+        "PST_DamageResistance": 50,
+        "PST_MovementSpeed": 0.8,
+        "PST_ColdResistance": -5,
+        "PST_CorrosiveResistance": -5,
+        "PST_ElectricResistance": -5,
+        "PST_ExplosionResistance": -6,
+        "PST_FireResistance": -5,
+        "PST_InternalDamageResistance": -5,
+        "PST_KineticResistance": -5,
+        "PST_PhysicalResistance": -5,
+        "PST_PoisonResistance": -5,
+        "PST_RadiationResistance": -8
+      }
+    },
+    "自爆王虫": {
+      "Base": "ED_Spider_ExploderTank_King",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 200,
+      "MinSpawnCount": 0,
+      "MaxSpawnCount": 1,
+      "Rarity": 35,
+      "SpawnAmountModifier": 1,
+      "PawnStats": {
+        "PST_DamageResistance": 50,
+        "PST_MovementSpeed": 0.7,
+        "PST_ColdResistance": -5,
+        "PST_CorrosiveResistance": -5,
+        "PST_ElectricResistance": -5,
+        "PST_ExplosionResistance": -6,
+        "PST_FireResistance": -5,
+        "PST_InternalDamageResistance": -5,
+        "PST_KineticResistance": -5,
+        "PST_PhysicalResistance": -5,
+        "PST_PoisonResistance": -5,
+        "PST_RadiationResistance": -8
+      }
+    },
+    "勘探无人机": {
+      "Base": "ED_Prospector",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 5,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Rarity": 25,
+      "PawnStats": {
+        "PST_DamageResistance": 10,
+        "PST_ExplosionResistance": -10,
+        "PST_FireResistance": -8,
+        "PST_ElectricResistance": -9,
+        "PST_MovementSpeed": 1.5
+      }
+    },
+    "深渊复仇者": {
+      "Base": "ED_Terminator",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 80,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Rarity": 30,
+      "PawnStats": {
+        "PST_DamageResistance": 10,
+        "PST_ExplosionResistance": -8,
+        "PST_FireResistance": -7,
+        "PST_ElectricResistance": -6,
+        "PST_MovementSpeed": 1.2
+      }
+    },
+    "岩痘腐化者": {
+      "Base": "ED_WalkingPlagueheart",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 60,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Rarity": 28,
+      "PawnStats": {
+        "PST_DamageResistance": 10,
+        "PST_ExplosionResistance": -7,
+        "PST_FireResistance": -6,
+        "PST_PoisonResistance": 2,
+        "PST_MovementSpeed": 0.6
+      }
+    },
+    "洛克王草": {
+      "Base": "ED_HydraWeed",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 40,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Rarity": 20,
+      "PawnStats": {
+        "PST_DamageResistance": 10,
+        "PST_ExplosionResistance": -9,
+        "PST_FireResistance": -8,
+        "PST_ElectricResistance": -7
+      }
+    },
+    "战斗矿骡BET-C": {
+      "Base": "ED_InfectedMule",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 100,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Rarity": 99,
+      "PawnStats": {
+        "PST_DamageResistance": 10,
+        "PST_ExplosionResistance": -6,
+        "PST_FireResistance": -5,
+        "PST_ElectricResistance": -5,
+        "PST_MovementSpeed": 0.9
+      }
+    },
+    "飞石": {
+      "Base": "ED_FlyingSmartRock",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": false,
+      "DifficultyRating": 10,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Rarity": 99,
+      "PawnStats": {
+        "PST_DamageResistance": 10,
+        "PST_ExplosionResistance": -10,
+        "PST_FireResistance": -9,
+        "PST_ElectricResistance": -8,
+        "PST_MovementSpeed": 1.8
+      }
+    }
+  },
+  "EnemyPool": {
+    "clear": false,
+    "add": [],
+    "remove": []
+  },
+  "CommonEnemies": {
+    "clear": false,
+    "add": [
+      "冰霜战士",
+      "辐射战士",
+      "岩痘战士",
+      "辐射禁卫异虫",
+      "冰霜禁卫异虫",
+      "岩痘禁卫",
+      "哨卫异虫",
+      "吐酸异虫",
+      "岩痘吐酸",
+      "脓毒异虫",
+      "速射酸虫",
+      "自爆异虫",
+      "岩痘自爆",
+      "蛭尾异虫",
+      "吐刺异虫蝇",
+      "氪石型异虫蝇",
+      "三颚异虫蝇",
+      "粘液轰炸蝇",
+      "岩痘轰炸蝇",
+      "冰霜轰炸蝇",
+      "捕手异虫蝇",
+      "粉碎者",
+      "电型水母",
+      "红色蜂拥异虫",
+      "辐射蜂拥异虫",
+      "丘罗那地虱",
+      "无畏异虫",
+      "强弩无畏",
+      "重斧无畏",
+      "巢主无畏",
+      "大自爆虫",
+      "自爆王虫",
+      "勘探无人机",
+      "深渊复仇者",
+      "岩痘腐化者",
+      "洛克王草",
+      "战斗矿骡BET-C",
+      "飞石"
+    ],
+    "remove": []
+  },
+  "SpecialEnemies": {
+    "clear": false,
+    "add": [
+      "冰霜战士",
+      "辐射战士",
+      "岩痘战士",
+      "辐射禁卫异虫",
+      "冰霜禁卫异虫",
+      "岩痘禁卫",
+      "暴君异虫",
+      "吐酸异虫",
+      "岩痘吐酸",
+      "脓毒异虫",
+      "速射酸虫",
+      "自爆异虫",
+      "岩痘自爆",
+      "潜行异虫",
+      "蛭尾异虫",
+      "吐刺异虫蝇",
+      "氪石型异虫蝇",
+      "三颚异虫蝇",
+      "粘液轰炸蝇",
+      "岩痘轰炸蝇",
+      "冰霜轰炸蝇",
+      "捕手异虫蝇",
+      "粉碎者",
+      "电型水母",
+      "红色蜂拥异虫",
+      "辐射蜂拥异虫",
+      "丘罗那地虱"
+    ],
+    "remove": []
+  },
+  "DisruptiveEnemies": {
+    "clear": false,
+    "add": [
+      "岩痘禁卫",
+      "暴君异虫",
+      "哨卫异虫",
+      "吐酸异虫",
+      "岩痘吐酸",
+      "脓毒异虫",
+      "速射酸虫",
+      "自爆异虫",
+      "岩痘自爆",
+      "潜行异虫",
+      "蛭尾异虫",
+      "吐刺异虫蝇",
+      "氪石型异虫蝇",
+      "三颚异虫蝇",
+      "粘液轰炸蝇",
+      "岩痘轰炸蝇",
+      "冰霜轰炸蝇",
+      "捕手异虫蝇",
+      "粉碎者",
+      "丘罗那地虱",
+      "无畏异虫",
+      "强弩无畏",
+      "重斧无畏",
+      "巢主无畏",
+      "大自爆虫",
+      "自爆王虫",
+      "勘探无人机",
+      "深渊复仇者",
+      "岩痘腐化者",
+      "洛克王草",
+      "战斗矿骡BET-C",
+      "飞石"
+    ],
+    "remove": []
+  },
+  "StationaryEnemies": {
+    "clear": false,
+    "add": [],
+    "remove": []
+  },
+  "SeasonalEvents": [
+    "SE_ProspectorDrone",
+    "SE_ProspectorDataDeposit",
+    "SE_RivalBomb"
+  ],
+  "EscortMule": {
+    "FriendlyFireModifier": 0.1,
+    "BigHitDamageModifier": 0.75,
+    "BigHitDamageReductionThreshold": 3,
+    "NeutralDamageModifier": 0.1
+  }
+}

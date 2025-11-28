@@ -1,0 +1,346 @@
+{
+  "Name": "5+++",
+  "Description": "炸队友100个875饼干，给侦察打100个绿色照明弹，屯100个盾，过冷100个队友可以开启的难度",
+  "MaxActiveCritters": 72,
+  "MaxActiveSwarmers": [
+    82,
+    91,
+    99,
+    108
+  ],
+  "MaxActiveEnemies": [
+    82,
+    91,
+    99,
+    108
+  ],
+  "ResupplyCost": 60,
+  "StartingNitra": 0,
+  "ExtraLargeEnemyDamageResistance": [
+    1.5,
+    1.6,
+    2.4,
+    3.4
+  ],
+  "ExtraLargeEnemyDamageResistanceB": [
+    1.4,
+    1.4,
+    2,
+    2.6
+  ],
+  "ExtraLargeEnemyDamageResistanceC": [
+    1.4,
+    1.6,
+    2.2,
+    3.4
+  ],
+  "ExtraLargeEnemyDamageResistanceD": [
+    1.5,
+    1.6,
+    2,
+    2.6
+  ],
+  "EnemyDamageResistance": [
+    2.4,
+    2.4,
+    2.8,
+    3
+  ],
+  "SmallEnemyDamageResistance": [
+    1.8,
+    1.8,
+    1.8,
+    1.8
+  ],
+  "EnemyDamageModifier": [
+    7.9,
+    8.1,
+    8.3,
+    8.5
+  ],
+  "EnemyCountModifier": [
+    1.53,
+    1.53,
+    2.25,
+    2.7
+  ],
+  "EncounterDifficulty": [
+    {
+      "weight": 1,
+      "range": {
+        "min": 200,
+        "max": 300
+      }
+    },
+    {
+      "weight": 6,
+      "range": {
+        "min": 400,
+        "max": 500
+      }
+    },
+    {
+      "weight": 1,
+      "range": {
+        "min": 500,
+        "max": 600
+      }
+    }
+  ],
+  "StationaryDifficulty": [
+    {
+      "weight": 1,
+      "range": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    {
+      "weight": 1,
+      "range": {
+        "min": 450,
+        "max": 550
+      }
+    },
+    {
+      "weight": 1,
+      "range": {
+        "min": 550,
+        "max": 750
+      }
+    }
+  ],
+  "EnemyWaveInterval": [
+    {
+      "weight": 2,
+      "range": {
+        "min": 160,
+        "max": 180
+      }
+    },
+    {
+      "weight": 7.5,
+      "range": {
+        "min": 230,
+        "max": 280
+      }
+    },
+    {
+      "weight": 0.5,
+      "range": {
+        "min": 299,
+        "max": 299
+      }
+    }
+  ],
+  "EnemyNormalWaveInterval": [
+    {
+      "weight": 4,
+      "range": {
+        "min": 120,
+        "max": 150
+      }
+    },
+    {
+      "weight": 2,
+      "range": {
+        "min": 180,
+        "max": 250
+      }
+    }
+  ],
+  "EnemyNormalWaveDifficulty": [
+    {
+      "weight": 1,
+      "range": {
+        "min": 950,
+        "max": 1050
+      }
+    }
+  ],
+  "EnemyDiversity": [
+    {
+      "weight": 2,
+      "range": {
+        "min": 5,
+        "max": 7
+      }
+    },
+    {
+      "weight": 8,
+      "range": {
+        "min": 7,
+        "max": 9
+      }
+    },
+    {
+      "weight": 1,
+      "range": {
+        "min": 9,
+        "max": 11
+      }
+    }
+  ],
+  "StationaryEnemyDiversity": [
+    {
+      "weight": 1,
+      "range": {
+        "min": 6,
+        "max": 10
+      }
+    }
+  ],
+  "VeteranNormal": [
+    {
+      "weight": 3,
+      "range": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    {
+      "weight": 9,
+      "range": {
+        "min": 0.15,
+        "max": 0.3
+      }
+    },
+    {
+      "weight": 2,
+      "range": {
+        "min": 0.4,
+        "max": 0.6
+      }
+    },
+    {
+      "weight": 0.5,
+      "range": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "VeteranLarge": [
+    {
+      "weight": 1,
+      "range": {
+        "min": 0.228,
+        "max": 0.228
+      }
+    }
+  ],
+  "DisruptiveEnemyPoolCount": {
+    "min": 5,
+    "max": 6
+  },
+  "MinPoolSize": 10,
+  "MaxActiveElites": 0,
+  "EnvironmentalDamageModifier": 3.5,
+  "PointExtractionScalar": 1.1,
+  "HazardBonus": 1.33,
+  "FriendlyFireModifier": 2,
+  "WaveStartDelayScale": 0,
+  "SpeedModifier": 1.62,
+  "AttackCooldownModifier": 4,
+  "ProjectileSpeedModifier": 2.21,
+  "HealthRegenerationMax": 0.1,
+  "ReviveHealthRatio": 0.1,
+  "EliteCooldown": 0,
+  "EnemyDescriptors": {
+    "54号猫猫虫": {
+      "Base": "ED_PumpkinLootBug",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true,
+      "DifficultyRating": 1,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 0,
+      "Rarity": 1,
+      "Elite": false,
+      "PawnStats": {
+        "PST_ColdResistance": -0.3,
+        "PST_FireResistance": -0.3,
+        "PST_MovementSpeed": 1,
+        "PST_DamageResistance": 1.5
+      }
+    },
+    "ED_Spider_ExploderTank": {
+      "Base": "ED_Spider_ExploderTank",
+      "DifficultyRating": 500,
+      "IdealSpawnSize": 0,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 0,
+      "Rarity": 50,
+      "PawnStats": {
+        "PST_DamageResistance": 2.5
+      }
+    },
+    "ED_Spider_ExploderTank_King": {
+      "Base": "ED_Spider_ExploderTank_King",
+      "PawnStats": {
+        "PST_DamageResistance": 3.5
+      }
+    },
+    "ED_HydraWeed": {
+      "Base": "ED_Spider_Drone"
+    },
+    "ED_Spider_RapidShooter":{
+      "Base":"ED_Spider_RapidShooter",
+      "PawnStats": {
+        "PST_DamageResistance": 1.4
+      }
+    },
+    "ED_Grabber":{
+      "Base":"ED_Grabber",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 0,
+      "PawnStats": {
+        "PST_ColdResistance": -0.3,
+        "PST_FireResistance": -0.3,
+        "PST_MovementSpeed": 1,
+        "PST_DamageResistance": 1.2
+      }
+    }
+  },
+  "EnemyPool": {
+    "clear": false,
+    "add": [],
+    "remove": []
+  },
+  "CommonEnemies": {
+    "clear": false,
+    "add": [
+      "54号猫猫虫"
+    ],
+    "remove": []
+  },
+  "SpecialEnemies": {
+    "clear": false,
+    "add": [],
+    "remove": []
+  },
+  "DisruptiveEnemies": {
+    "clear": false,
+    "add": [],
+    "remove": []
+  },
+  "StationaryEnemies": {
+    "clear": false,
+    "add": [],
+    "remove": []
+  },
+  "SeasonalEvents": [
+    "SE_ProspectorDrone",
+    "SE_ProspectorDataDeposit",
+    "SE_RivalBomb"
+  ],
+  "EscortMule": {
+    "FriendlyFireModifier": 0.1,
+    "BigHitDamageModifier": 0.5,
+    "BigHitDamageReductionThreshold": 6,
+    "NeutralDamageModifier": 0.1
+  }
+}
