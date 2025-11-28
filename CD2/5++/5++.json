@@ -1,0 +1,303 @@
+{
+  "Name": "5++",
+  "Description": "2级虫量2级脆弱2级健壮2级激进",
+  "Caps":{
+    "MaxActiveCritters": [30,
+    40,
+    50,
+    60
+    ],
+    "MaxActiveSwarmers": [60,
+    70,
+    80,
+    90
+    ],
+    "MaxActiveEnemies": [60,
+    70,
+    80,
+    90
+    ]
+  },
+  "Resupply":{
+    "Cost":80
+  },
+  "DifficultySetting":{
+  "ExtraLargeEnemyDamageResistance": [
+    1.313,
+    1.4,
+    2.1,
+    2.975
+  ],
+  "ExtraLargeEnemyDamageResistanceB": [
+    1.225,
+    1.225,
+    1.75,
+    2.27
+  ],
+  "ExtraLargeEnemyDamageResistanceC": [
+    1.225,
+    1.4,
+    1.925,
+    2.975
+  ],
+  "ExtraLargeEnemyDamageResistanceD": [
+    1.312,
+    1.4,
+    1.92,
+    2.275
+  ],
+  "EnemyDamageResistance": [
+    2.1,
+    2.1,
+    2.45,
+    2.62
+  ],
+  "SmallEnemyDamageResistance": [
+    1.56,
+    1.56,
+    1.56,
+    1.56
+  ],
+  "EnemyDamageModifier": [
+    5.6,
+    6,
+    6.4,
+    6.8
+  ],
+  "EnemyCountModifier": [
+    1.28,
+    1.28,
+    1.88,
+    2.25
+  ],
+  "EncounterDifficulty": [
+    {
+      "weight": 1,
+      "range": {
+        "min": 100,
+        "max": 200
+      }
+    },
+    {
+      "weight": 6,
+      "range": {
+        "min": 300,
+        "max": 400
+      }
+    },
+    {
+      "weight": 1,
+      "range": {
+        "min": 400,
+        "max": 500
+      }
+    }
+  ],
+  "StationaryDifficulty": [
+    {
+      "weight": 1,
+      "range": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    {
+      "weight": 1,
+      "range": {
+        "min": 150,
+        "max": 200
+      }
+    },
+    {
+      "weight": 1,
+      "range": {
+        "min": 250,
+        "max": 350
+      }
+    }
+  ],
+  "EnemyWaveInterval": [
+    {
+      "weight": 2,
+      "range": {
+        "min": 160,
+        "max": 180
+      }
+    },
+    {
+      "weight": 7.5,
+      "range": {
+        "min": 230,
+        "max": 280
+      }
+    },
+    {
+      "weight": 0.5,
+      "range": {
+        "min": 299,
+        "max": 299
+      }
+    }
+  ],
+  "EnemyNormalWaveInterval": [
+    {
+      "weight": 4,
+      "range": {
+        "min": 120,
+        "max": 150
+      }
+    },
+    {
+      "weight": 2,
+      "range": {
+        "min": 180,
+        "max": 250
+      }
+    }
+  ],
+  "EnemyNormalWaveDifficulty": [
+    {
+      "weight": 1,
+      "range": {
+        "min": 550,
+        "max": 650
+      }
+    }
+  ],
+  "EnemyDiversity": [
+    {
+      "weight": 2,
+      "range": {
+        "min": 2,
+        "max": 3
+      }
+    },
+    {
+      "weight": 8,
+      "range": {
+        "min": 4,
+        "max": 5
+      }
+    },
+    {
+      "weight": 1,
+      "range": {
+        "min": 6,
+        "max": 7
+      }
+    }
+  ],
+  "StationaryEnemyDiversity": [
+    {
+      "weight": 1,
+      "range": {
+        "min": 3,
+        "max": 5
+      }
+    }
+  ],
+  "VeteranNormal": [
+    {
+      "weight": 3,
+      "range": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    {
+      "weight": 9,
+      "range": {
+        "min": 0.15,
+        "max": 0.3
+      }
+    },
+    {
+      "weight": 2,
+      "range": {
+        "min": 0.4,
+        "max": 0.6
+      }
+    },
+    {
+      "weight": 0.5,
+      "range": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "VeteranLarge": [
+    {
+      "weight": 1,
+      "range": {
+        "min": 0.175,
+        "max": 0.175
+      }
+    }
+  ],
+  "EnvironmentalDamageModifier": 3,
+  "PointExtractionScalar": 1.3,
+  "FriendlyFireModifier": 1.4,
+  "WaveStartDelayScale": 0,
+  "SpeedModifier": 1.5,
+  "AttackCooldownModifier": 3,
+  "ProjectileSpeedModifier": 2,
+  "HealthRegenerationMax": 0.1,
+  "ReviveHealthRatio": 0.1
+  },
+  "EnemyDescriptors": {},
+  "EnemyPool": {
+    "clear": false,
+    "add": [],
+    "remove": []
+  },
+   "Pools": {
+    "MinPoolSize": 8,
+    "DisruptiveEnemyPoolCount": {
+      "min": 5,
+      "max": 5
+    },
+    "StationaryEnemyCount": {
+        "min": "",
+        "max": ""
+    },
+    "EnemyPool": {
+      "clear": false,
+      "Add": [],
+      "Remove": []
+    },
+      "CommonEnemies": {
+      "clear": false,
+      "add": [ 
+      ],
+      "remove": [
+      ]
+    },
+    "SpecialEnemies": {
+      "clear": false,
+      "add": [
+      ],
+      "remove": [
+      ]
+    },
+    "DisruptiveEnemies": {
+      "clear": false,
+      "add": [],
+      "remove": []
+    },
+    "StationaryPool": {
+      "clear": false,
+      "Add": [
+      ],
+      "Remove": [
+      ]
+    }
+  },
+    "SpecialEncounters": [],
+    "EscortMule": {
+    "FriendlyFireModifier": 0.1,
+    "BigHitDamageModifier": 0.59,
+    "BigHitDamageReductionThreshold": 6,
+    "NeutralDamageModifier": 0.1
+  }
+}
