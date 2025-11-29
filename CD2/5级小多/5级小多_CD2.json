@@ -1,9 +1,14 @@
 {
-  "Name": "5+小多",
+  "Name": "5级小多",
   "Description": "需要MEV、DEA模组,怪物新增精英三兄弟、三鄂、禁卫、暴君、速射、番茄、典狱长、钩子、猫猫虫,无畏系列固定增多;部分怪抗性削弱;自然潮180~210s。==================================================================================================================添加“机械吐酸”，当勘探者被攻击时生成，该单位会生成粉碎者，点燃即死；添加机械大水母，加入固定池，会生成粉碎者",
   "Caps": {
     "MaxActiveCritters": 40,
-    "MaxActiveSwarmers": 90,
+    "MaxActiveSwarmers": [
+    60,
+    60,
+    90,
+    90
+  ],
     "MaxActiveEnemies": 999
   },
 "Resupply": {
@@ -70,23 +75,23 @@
 },
   "DifficultySetting": {
     "ExtraLargeEnemyDamageResistance": [
-    1.13,
+    0.75,
+    0.8,
     1.2,
-    1.8,
-    2.55
+    1.7
   ],
     "ExtraLargeEnemyDamageResistanceB": 0.01,
     "ExtraLargeEnemyDamageResistanceC": [
-    1.05,
-    1.2,
-    1.65,
-    2.55
+    0.7,
+    0.8,
+    1.1,
+    1.7
   ],
     "ExtraLargeEnemyDamageResistanceD": [
-    1.13,
-    1.2,
-    1.5,
-    1.5
+    0.75,
+    0.8,
+    1,
+    1
   ],
     "EnemyDamageResistance": [
     1.2,
@@ -101,10 +106,10 @@
     1.2
   ],
     "EnemyDamageModifier": [
-    4.2,
-    4.5,
-    4.8,
-    5.1
+    2.8,
+    3,
+    3.2,
+    3.4
   ],
     "EnemyCountModifier": [
     1.7,
@@ -190,22 +195,22 @@
         "max": 0.175
     }
   ],
-    "EnvironmentalDamageModifier": 1.5,
+    "EnvironmentalDamageModifier": 1.1,
     "PointExtractionScalar": 1.8,
     "FriendlyFireModifier": 1.0,
     "WaveStartDelayScale": 0,
-    "SpeedModifier": 1.41,
-    "AttackCooldownModifier": 1.995,
-    "ProjectileSpeedModifier": 1.87,
-    "HealthRegenerationMax": 0.2,
-    "ReviveHealthRatio": 0.2
+    "SpeedModifier": 1.15,
+    "AttackCooldownModifier": 1.5,
+    "ProjectileSpeedModifier": 1.7,
+    "HealthRegenerationMax": 0.15,
+    "ReviveHealthRatio": 0.15
   },
-  "Warnings": {
+   "Warnings": {
         "Banned": [
             "MMUT_ExplosiveEnemies",
             "WRN_NoOxygen"
         ]
-  },
+   },
   "WaveSpawners":[
     {
       "Enabled":{
@@ -219,7 +224,7 @@
         "ED_Spider_Exploder x Swarmer"
       ],
       "Interval": 0,
-      "Difficulty": 200,
+      "Difficulty": 150,
       "Distance": 3000,
       "Locations": 1
     }
@@ -251,8 +256,7 @@
         "ED_Spider_Boss_TwinA_D",
         "ED_Spider_Boss_TwinB_D",
         "ED_Spider_ShooterQueen",
-        "Ed_Spider_Lobber_Nuke",
-        "ED_Monitor_Explode"
+        "Ed_Spider_Lobber_Nuke"
       ],
       "Remove": []
     },
@@ -377,7 +381,7 @@
         "ElectricDamageMultiplier": 1.8,
         "ExplosionDamageMultiplier": 4,
         "FireDamageMultiplier": 3.75,
-        "KineticDamageMultiplier": 3,
+        "KineticDamageMultiplier": 2.5,
         "PhysicalDamageMultiplier": 3,
         "PoisonDamageMultiplier": 3,
         "RadiationDamageMultiplier": 3
@@ -600,7 +604,6 @@
         "ExplosionDamageMultiplier": 1.15,
         "FireDamageMultiplier": 1.75,
         "PhysicalDamageMultiplier": 3.25,
-        "KineticDamageMultiplier": 3,
         "PoisonDamageMultiplier": 1.5,
         "RadiationDamageMultiplier": 3,
         "DamageMultiplier": 1.5
@@ -644,7 +647,6 @@
         "ElectricDamageMultiplier": 1.8,
         "ExplosionDamageMultiplier": 3,
         "FireDamageMultiplier": 1.25,
-        "KineticDamageMultiplier": 3,
         "PhysicalDamageMultiplier": 2.5,
         "PoisonDamageMultiplier": 3,
         "RadiationDamageMultiplier": 3,
@@ -744,7 +746,6 @@
       "Scale":2,
       "Courage":1.5,
       "Rarity": 50,
-      "Healthraw":500,
       "Projectile": "PRJ_Nukebomber_Shot",
       "Materials": [
         "M_SpaceRig_MetalRed01_WS",
@@ -753,7 +754,8 @@
         "M_Biome_RadioactiveZone_UraniumUnlit_Particles"
       ],
        "Resistances": {
-        "RadiationDamageMultiplier": -10
+        "RadiationDamageMultiplier": -10,
+        "DamageMultiplier":0.5
       }
     },
     "ED_Spider_Lobber_Elite": {
@@ -775,8 +777,6 @@
         "ElectricDamageMultiplier": 2.3,
         "ExplosionDamageMultiplier": 2.5,
         "FireDamageMultiplier": 2.5,
-        "KineticDamageMultiplier": 3,
-        
         "PhysicalDamageMultiplier": 3.25,
         "PoisonDamageMultiplier": 3.5,
         "RadiationDamageMultiplier": 3.5,

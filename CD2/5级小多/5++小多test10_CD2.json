@@ -1,9 +1,14 @@
 {
-  "Name": "5+小多",
-  "Description": "需要MEV、DEA模组,怪物新增精英三兄弟、三鄂、禁卫、暴君、速射、番茄、典狱长、钩子、猫猫虫,无畏系列固定增多;部分怪抗性削弱;自然潮180~210s。==================================================================================================================添加“机械吐酸”，当勘探者被攻击时生成，该单位会生成粉碎者，点燃即死；添加机械大水母，加入固定池，会生成粉碎者",
+  "Name": "5++小多test10",
+  "Description": "需要MEV、DEA模组,怪物新增精英三兄弟、三鄂、禁卫、暴君、速射、番茄、典狱长、钩子、猫猫虫,无畏系列固定增多;部分怪抗性削弱;自然潮180~210s。==================================================================================================================“豆沙包”发射番茄投射物;核弹番茄，发射核弹；超级水蛭，索敌距离增加；",
   "Caps": {
     "MaxActiveCritters": 40,
-    "MaxActiveSwarmers": 90,
+    "MaxActiveSwarmers": [
+    90,
+    90,
+    120,
+    120
+  ],
     "MaxActiveEnemies": 999
   },
 "Resupply": {
@@ -13,10 +18,10 @@
       0,
       {
         "Mutate": "ByMissionType",
-        "Default": 60,
+        "Default": 45,
         "Salvage": {
           "Mutate": "Add",
-          "A": 0,
+          "A": 5,
           "B": {
             "Mutate": "Multiply",
             "A": {
@@ -25,7 +30,7 @@
               "Min": 0,
               "Max": 2
             },
-            "B": 30
+            "B": 20
           }
         },
         "DeepScan": {
@@ -39,30 +44,30 @@
               "Min": 0,
               "Max": 3
             },
-            "B": 20
+            "B": 15
           }
         },
         "Refinery": {
           "Mutate": "Add",
-          "A": 0,
+          "A": 5,
           "B": {
             "Mutate": "Multiply",
             "A": {
               "Mutate": "Clamp",
               "Value": { "Mutate": "ResuppliesCalled" },
               "Min": 0,
-              "Max": 3
+              "Max": 4
             },
-            "B": 20
+            "B": 10
           }
         },
         "Escort": {
           "Mutate": "ByEscortPhase",
-          "Default": 60,
-          "FinalEventA": 55,
-          "FinalEventB": 50,
-          "FinalEventC": 45,
-          "FinalEventD": 40
+          "Default": 45,
+          "FinalEventA": 40,
+          "FinalEventB": 35,
+          "FinalEventC": 30,
+          "FinalEventD": 30
         }
       }
     ]
@@ -70,17 +75,17 @@
 },
   "DifficultySetting": {
     "ExtraLargeEnemyDamageResistance": [
-    1.13,
-    1.2,
-    1.8,
-    2.55
+    1.3125,
+    1.4,
+    2.1,
+    2.975
   ],
     "ExtraLargeEnemyDamageResistanceB": 0.01,
     "ExtraLargeEnemyDamageResistanceC": [
-    1.05,
-    1.2,
-    1.65,
-    2.55
+    1.225,
+    1.4,
+    1.925,
+    2.975
   ],
     "ExtraLargeEnemyDamageResistanceD": [
     1.13,
@@ -89,22 +94,22 @@
     1.5
   ],
     "EnemyDamageResistance": [
-    1.2,
-    1.2,
-    1.4,
-    1.5
+    2.1,
+    2.1,
+    2.45,
+    2.62
   ],
     "SmallEnemyDamageResistance": [
-    1.2,
-    1.2,
-    1.2,
-    1.2
+    1.56,
+    1.56,
+    1.56,
+    1.56
   ],
     "EnemyDamageModifier": [
-    4.2,
-    4.5,
-    4.8,
-    5.1
+    5.6,
+    6,
+    6.4,
+    6.8
   ],
     "EnemyCountModifier": [
     1.7,
@@ -143,8 +148,8 @@
     "EnemyNormalWaveDifficulty": [
       {
         "weight": 1,
-        "min": 1200,
-        "max": 1600
+        "min": 1400,
+        "max": 1800
       }
     ],
     "EnemyDiversity": [
@@ -190,22 +195,22 @@
         "max": 0.175
     }
   ],
-    "EnvironmentalDamageModifier": 1.5,
+    "EnvironmentalDamageModifier": 1.8,
     "PointExtractionScalar": 1.8,
     "FriendlyFireModifier": 1.0,
     "WaveStartDelayScale": 0,
-    "SpeedModifier": 1.41,
-    "AttackCooldownModifier": 1.995,
-    "ProjectileSpeedModifier": 1.87,
-    "HealthRegenerationMax": 0.2,
-    "ReviveHealthRatio": 0.2
+    "SpeedModifier": 1.52,
+    "AttackCooldownModifier": 3,
+    "ProjectileSpeedModifier": 2.04,
+    "HealthRegenerationMax": 0.25,
+    "ReviveHealthRatio": 0.25
   },
-  "Warnings": {
+    "Warnings": {
         "Banned": [
             "MMUT_ExplosiveEnemies",
             "WRN_NoOxygen"
         ]
-  },
+    },
   "WaveSpawners":[
     {
       "Enabled":{
@@ -377,7 +382,7 @@
         "ElectricDamageMultiplier": 1.8,
         "ExplosionDamageMultiplier": 4,
         "FireDamageMultiplier": 3.75,
-        "KineticDamageMultiplier": 3,
+        "KineticDamageMultiplier": 2.5,
         "PhysicalDamageMultiplier": 3,
         "PoisonDamageMultiplier": 3,
         "RadiationDamageMultiplier": 3
@@ -600,7 +605,6 @@
         "ExplosionDamageMultiplier": 1.15,
         "FireDamageMultiplier": 1.75,
         "PhysicalDamageMultiplier": 3.25,
-        "KineticDamageMultiplier": 3,
         "PoisonDamageMultiplier": 1.5,
         "RadiationDamageMultiplier": 3,
         "DamageMultiplier": 1.5
@@ -644,7 +648,6 @@
         "ElectricDamageMultiplier": 1.8,
         "ExplosionDamageMultiplier": 3,
         "FireDamageMultiplier": 1.25,
-        "KineticDamageMultiplier": 3,
         "PhysicalDamageMultiplier": 2.5,
         "PoisonDamageMultiplier": 3,
         "RadiationDamageMultiplier": 3,
@@ -744,7 +747,6 @@
       "Scale":2,
       "Courage":1.5,
       "Rarity": 50,
-      "Healthraw":500,
       "Projectile": "PRJ_Nukebomber_Shot",
       "Materials": [
         "M_SpaceRig_MetalRed01_WS",
@@ -753,7 +755,8 @@
         "M_Biome_RadioactiveZone_UraniumUnlit_Particles"
       ],
        "Resistances": {
-        "RadiationDamageMultiplier": -10
+        "RadiationDamageMultiplier": -10,
+        "DamageMultiplier":0.5
       }
     },
     "ED_Spider_Lobber_Elite": {
@@ -775,8 +778,6 @@
         "ElectricDamageMultiplier": 2.3,
         "ExplosionDamageMultiplier": 2.5,
         "FireDamageMultiplier": 2.5,
-        "KineticDamageMultiplier": 3,
-        
         "PhysicalDamageMultiplier": 3.25,
         "PoisonDamageMultiplier": 3.5,
         "RadiationDamageMultiplier": 3.5,
@@ -1151,7 +1152,7 @@
       "IdealSpawnSize":0,
       "MaxSpawnCount":1,
       "MinSpawnCount":0,
-      "Rarity":50
+      "Rarity":80
     },
     "ED_Spider_Exploder x Swarmer":{
       "Base":"ED_Spider_Exploder",
@@ -1385,7 +1386,7 @@
   "SpecialEncounters": [],
   "EscortMule": {
     "FriendlyFireModifier": 0.01,
-    "BigHitDamageModifier": 0.87,
+    "BigHitDamageModifier": 0.93,
     "BigHitDamageReductionThreshold": 0,
     "NeutralDamageModifier": 0.1
   },
@@ -1398,10 +1399,12 @@
           "Mutate": "DepositedResource",
           "Resource": "Nitra"
         },
-        ">=": 60,
+        ">=": 45,
         "Then": true,
         "Else": false
          }
     }
     ]
 }
+  
+
