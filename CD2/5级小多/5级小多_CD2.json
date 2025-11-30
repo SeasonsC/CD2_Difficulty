@@ -1,6 +1,6 @@
 {
   "Name": "5级小多",
-  "Description": "需要MEV、DEA模组,怪物新增精英三兄弟、三鄂、禁卫、暴君、速射、番茄、典狱长、钩子、猫猫虫,无畏系列固定增多;部分怪抗性削弱;自然潮180~210s。==================================================================================================================添加“机械吐酸”，当勘探者被攻击时生成，该单位会生成粉碎者，点燃即死；添加机械大水母，加入固定池，会生成粉碎者",
+  "Description": "需要MEV、DEA模组,怪物新增精英三兄弟、三鄂、禁卫、暴君、速射、番茄、典狱长、钩子、猫猫虫,无畏系列固定增多;部分怪抗性削弱;自然潮180~210s。==================================================================================================================“豆沙包”发射番茄投射物;核弹番茄，发射核弹；超级水蛭，索敌距离增加；",
   "Caps": {
     "MaxActiveCritters": 40,
     "MaxActiveSwarmers": [
@@ -120,15 +120,35 @@
     "EncounterDifficulty": [
       {
         "weight": 1,
-        "min": 300,
-        "max": 400
+        "min":{
+          "Mutate":"ByMissionType",
+          "Default":300,
+          "Elimination":0,
+          "DeepScan":100
+        },
+        "max": {
+          "Mutate":"ByMissionType",
+          "Default":400,
+          "Elimination":0,
+          "DeepScan":200
+        }
       }
     ],
     "StationaryDifficulty": [
       {
         "weight": 1,
-        "min": 1000,
-        "max": 1100
+        "min":{
+          "Mutate":"ByMissionType",
+          "Default":1000,
+          "Elimination":0,
+          "DeepScan":500
+        },
+        "max": {
+          "Mutate":"ByMissionType",
+          "Default":1100,
+          "Elimination":0,
+          "DeepScan":550
+        }
       }
     ],
     "EnemyWaveInterval": [
@@ -1027,6 +1047,7 @@
       "CanBeUsedForConstantPressure": false,
       "CanBeUsedInEncounters": false,
       "DifficultyRating": 500,
+      "HealthRaw":500,
       "IdealSpawnSize": 0,
       "MaxSpawnCount": 1,
       "MinSpawnCount": 0,
@@ -1105,6 +1126,7 @@
       "CanBeUsedInEncounters": false,
       "DifficultyRating": 500,
       "IdealSpawnSize": 0,
+      "HealthRaw":500,
       "MaxSpawnCount": 1,
       "MinSpawnCount": 0,
       "Rarity": 50,
