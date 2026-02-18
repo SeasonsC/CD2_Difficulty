@@ -1,0 +1,75 @@
+{
+    "Name":"",
+    "Description":"",
+    "Caps":{
+        "MaxActiveCritters": 40,
+        "MaxActiveSwarmers":{
+
+        },
+        "MaxActiveEnemies":{
+
+        },
+    },
+    "Darkness":{
+
+    },
+    "DifficultySetting":{
+
+    },
+    "Dwarves":{
+
+    },
+    "Resupply":{
+        "Cost":{
+
+        }
+    },
+    "AttackCooldownModifier": ,
+    "ProjectileSpeedModifier": ,
+    "HealthRegenerationMax": {},
+    "ReviveHealthRatio": {}, 
+    "EscortMule":{
+
+    },
+    "Salvage":{
+
+    },
+    "Warnings":{
+
+    },
+    "Pools":{
+        "MinPoolSize": ,
+        "DisruptiveEnemyPoolCount":{
+            "Min": ,
+            "Max": ,
+        },
+        "StationaryEnemyCount":{
+            "Min": ,
+            "Max": ,           
+        },
+        "EnemyPool":{
+            "Clear": ,
+            "Add":[],
+            "Remove":[]
+        },
+        "CommonEnemies":{
+            "Clear": ,
+            "Add":[],
+            "Remove":[],
+        },
+        "StationaryPool":{
+            "Clear": ,
+            "Add":[],
+            "Remove":[]
+        },
+    },
+    "Enemies":{
+
+    },
+    "WaveSpawners":{
+
+    },
+    "Messages":{
+
+    }
+}
