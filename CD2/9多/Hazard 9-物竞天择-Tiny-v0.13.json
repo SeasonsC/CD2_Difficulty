@@ -1,0 +1,5367 @@
+{
+  "Name": "Hazard 9-物竞天择-Tiny-v0.13",
+  "Description": 
+"【前置】房主需要CD2版本:v18,客机不需要 | 修改日期:2026/5/9 | 作者:SeasonsC
+
+【简介】
+物竞天择 · Tiny版
+剥离 70% 复杂机制,只留动态难度核心:虫群每3~5分钟随你的表现切换特性;
+以及评估玩家表现给予奖励机制
+
+【阶段速查】
+杀得慢 → 被追杀 | 拖得久 → 怪发育 | 杀得快 → 上重甲 | 全能→全特性融合
+
+【特色单位】: 
+精选自主版:回血速射、硝石自爆王虫、无畏胚体。
+
+自然潮刷新: 2分40秒 ~ 3分
+
+------------------------------------------------------------------------------------------------------------
+
+一、核心机制
+
+※【自然选择机制】※ 
+
+每3~5分钟根据玩家表现动态切换阶段,系统将从以下五个阶段中自动选择。
+开局从阶段1~4中随机选取,不会连续触发同类型阶段(最后通牒除外)。
+播报:聊天框 + Boss血条
+
+阶段速查表:
+• [乘胜追击]  → 敌人周期性冲刺(2秒冲/2秒停)；玩家死亡触发族群狂暴
+• [养虎为患]  → 敌人随时间成长(体型/伤害↑),完全成长后部分单位进化
+• [鱼龙混杂]  → 敌人组合高度多样化
+• [以战养战]  → 战况越激烈虫群能力越强(移速、攻速、虫量、抗性)
+• [最后通牒]  → 融合上述全部特性
+
+▲ 注意:初始阶段可能与首周期重复,此后不再重复。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+※【阶段表现评估】※ [测试中]
+
+根据本阶段玩家表现,分级给予以下奖励:
+
+• [昏迷黑啤]| 评价: ?! 强强 ?!
+  · 危机庇护: 有次数且团队状态低于45%,触发20s无敌时间,并清除场上现存所有不会锁血的单位
+  · 免费补给 * 1
+
+• [红岩爆破手] | 评价: 
+  · 补给振幅: 呼叫补给进行充能，每 15 秒 获得 1 次；团队状态低于 75% 时，吃补给触发 
+             团队回血 + 敌人伤害降低 30% (持续 20 秒)，冷却 30 秒[限 4 次]
+  · 半价补给 * 1
+
+• [杀手黑啤] | 评价: 
+  · 连杀回血: 得到奖励后充能，每 5 秒 累积 1 次（上限 3 次）；团队状态低于 75% 时，每击杀 50 敌人单位
+            回血 5 秒，冷却 15 秒
+
+• [油头精酿]: 无
+
+• [黑锁啤酒] | 评价: 
+  · 怪池特色小幅度加强
+      乘胜追击:连杀强度+ 3%;
+      养虎为患:发育时间- 20s;
+      以战养战:Boss单位抗性+ 5%,小单位+ 5%
+  · 补给涨价 10n
+
+• [亚肯黑啤] | 评价:
+  · 怪池特色中幅度加强
+      乘胜追击:连杀强度+ 5%;
+      养虎为患:发育时间- 30s;
+      以战养战:Boss单位抗性+ 10%,小单位+ 10%
+  · 补给涨价 15n
+
+• [叶子情人特调] | 评价: ?! 猪猪 ?!
+  · 怪池特色大幅度加强: 
+      乘胜追击:连杀强度+ 10%;
+      养虎为患:发育时间-40s;
+      以战养战:Boss单位抗性+15%,小单位+15%
+  · 补给涨价 20n
+
+------------------------------------------------------------------------------------------------------------
+
+二、敌人调整
+
+【Boss单位】
+• 老无畏:[1]开壳后可c死
+• 酸液皇后:改为荧光材质,显著提高可见度
+• 巢主无畏:[1]哨位一段时间后自动死亡 [2]强制锁血触发比例调整为1,理论上可以直接击杀,但战斗时间过长仍会触发锁血。
+▲ 注意:推车任务中,车快停或心石快换阶段时,不要冰冻未召唤哨位的巢主,可能导致无敌Bug
+• 精英大自爆:[1]削弱死亡爆炸伤害和踩地爆炸伤害  [2]增加死亡时产生的爆弹数量。
+
+【额外常驻固定单位】
+• 流心豆沙包:发射脓毒异虫子弹,造成直接伤害 
+• 连射炮台:血量较低。
+• 勘探者:无敌时间削弱,召唤的无人机发射追踪火箭概率降低,默认无法骇入(除设施破坏任务)。 
+• 王草:打开后不在关闭,击杀掉落一定量硝石 
+
+【特殊单位】 
+• 鲨鱼水母: 可生成鲨鱼单位 
+• 隐刀水母:可生成隐刀单位 
+• 典狱长水母:可生成典狱长单位 
+• 油战士:击杀掉油
+
+------------------------------------------------------------------------------------------------------------
+
+三、辅助系统
+
+【状态辅助】
+• [治愈核心] 合成:王草+核心 | 效果:回血+75%, 延迟-90%, 持续45s
+• [满血复活] 获得:每 600击杀/ 存入一个王草碎片 | 上限3次 | 效果:倒地矮人救起来后满血
+• [友伤减免] 获得:存入数据核心 | 效果:减少10%友伤系数,上限50% 
+
+【资源增益】:
+• 黄金兑换补给: 存入120黄金获得 一份免费补给
+• 虫蛋任务定期补给: 根据任务长度,每210s/180s/170s提供一份免费补给 【待削弱】
+
+【任务完成奖励】:
+• 完成次要目标: 免费补给 
+
+------------------------------------------------------------------------------------------------------------
+
+四、任务机制调整
+
+【执勤护送】(已实装)
+1. 阶段倍率调整:移动高压、维修窗口的节奏
+2. 车辆抗性:移动时高抗性,加油时低抗性；心石第二、四阶段抗性提高
+3. 新增敌人:油战士(加油环节生成,击杀爆大量油)
+4. 最终阶段前添加难度选择机制
+
+【虫蛋收集】(待重做)
+• 自然潮难度恢复速度随收集虫蛋数动态调整:4蛋(6分钟)/6蛋(8分钟)/8蛋(10分钟)
+• 添加免费补给生成机制加速进度[暂时删除]
+
+------------------------------------------------------------------------------------------------------------
+
+五、精选特殊单位[3/46 · 6.5%]
+
+• [馈血速射]:击杀后为全队回血
+• [硝石自爆王虫]: 击杀后掉落硝石
+• [无畏胚体]: 随时间成长为 无畏单位(脆、弱击晕/恐惧)
+
+▲ 注意:本难度不包含完整版的 怪池衍化系统,仅保留上述精选单位。
+
+
+=== 致谢 ===
+
+感谢一直参与测试的朋友:Duckbubi、苦瓜、齐天大圣、江阴、Agmocatim、北宅、无奈、五条悟、阿策omo、干了这碗屎、梓柒、小
+药丸、泥棒猫;
+感谢曾与自己讨论过难度思路的:苦瓜、能工智人、理塘丁真、阿策omo、立志成为gal高手、泥棒猫、小药丸;
+感谢来我房间赤石的路人,",
+  "Caps": {
+    "MaxActiveCritters": 40,
+    "MaxActiveSwarmers": {"Var":"最多活动小单位"},
+    "MaxActiveEnemies": {"Var":"最多活动大单位"}
+  },
+  "Resupply": {
+    "Cost": {
+      "Mutate": "Multiply",
+      "A": {
+        "Mutate":"Add",
+        "A": {
+          "Mutate":"BymissionType",
+          "Default": 60,
+          "Escort":{
+            "Mutate":"ByEscortPhase",
+            "Default": 60,
+            "FinalEventA": 50,
+            "FinalEventB": 40,
+            "FinalEventC": 35,
+            "FinalEventD": 30,
+            "Finished": 30
+          }
+        },
+        "B":{
+          "Mutate":"SelectFromArray",
+          "Select":{"Var":"玩家阶段表现锁定"},
+          "Array":[20,15,10,0]
+        }
+      },
+      "B":{
+        "Mutate":"Iffloat",
+        "Value":{"Var":"免费补给次数"},
+        ">": 0,
+        "Then": 0,
+        "Else": 1
+      },
+      "C":{
+        "Mutate":"Iffloat",
+        "Value":{"Var":"半价补给次数"},
+        "==": 1,
+        "Then": 0.5,
+        "Else": 1
+      }
+    }
+  },
+  "Darkness": {
+    "FlashlightStrength": 1.25,
+    "FlareMax": 6,
+    "FlareStrength": 1.5,
+    "FlareDuration": 50,
+    "FlareProductionTime": 6,
+    "EnvironmentalLight": 1.25,
+    "FlareGunStrength": 1.25
+  },
+  "DifficultySetting": {
+    "ExtraLargeEnemyDamageResistance": {"Var":"Boss单位抗性"},
+    "ExtraLargeEnemyDamageResistanceB": 0.8,
+    "ExtraLargeEnemyDamageResistanceC": 0.1,
+    "ExtraLargeEnemyDamageResistanceD": {"Var":"精英敌人抗性"},
+    "EnemyDamageResistance":{"Var":"普通敌人抗性"},
+    "SmallEnemyDamageResistance": 1.2,
+    "EnemyDamageModifier": {"Var":"敌人伤害"},
+    "EnemyCountModifier": {"Var": "敌人倍数"},
+    "EncounterDifficulty": [
+      {
+        "weight": 1,
+        "Min": {
+          "Mutate": "ByMissionType",
+          "Default": 500,
+          "EliMination": 0,
+          "Salvage": 1000
+        },
+        "Max": {
+          "Mutate": "ByMissionType",
+          "Default": 600,
+          "EliMination": 0,
+          "Salvage": 1200
+        }
+      }
+    ],
+    "StationaryDifficulty": [
+      {
+        "weight": 1,
+        "Min": {
+          "Mutate": "ByMissionType",
+          "Default": 500,
+          "EliMination": 0,
+          "Salvage": 1000
+        },
+        "Max": {
+          "Mutate": "ByMissionType",
+          "Default": 600,
+          "EliMination": 0,
+          "Salvage": 1200
+        }
+      }
+    ],
+    "EnemyWaveinterval": [
+      {
+        "weight": 1,
+        "Min": {"Var": "播报潮Min"},
+        "Max": {"Var": "播报潮Max"}
+      }
+    ],
+    "EnemyNormalWaveinterval": [
+      {
+        "weight": 1,
+        "Min": {"Var": "自然潮Min"},
+        "Max": {"Var": "自然潮Max"}
+      }
+    ],
+    "EnemyNormalWaveDifficulty": [
+      {
+        "weight": 1,
+        "Min": {"Var": "自然潮点数Min"},
+        "Max": {"Var": "自然潮点数Max"}
+      }
+    ],
+    "EnemyDiversity": [
+      {
+        "weight": 1,
+        "Min": 114,
+        "Max": 514
+      }
+    ],
+    "StationaryEnemyDiversity": [
+      {
+        "weight": 1,
+        "Min": 15,
+        "Max": 20
+      }
+    ],
+    "VeteranNormal": [
+      {
+        "weight": 6,
+        "Min": 0.5,
+        "Max": 0.7
+      },
+      {
+        "weight": 4,
+        "Min": 0.7,
+        "Max": 1
+      }
+    ],
+    "VeteranLarge": [
+      {
+        "weight": 1,
+        "Min": 0.275,
+        "Max": 0.275
+      }
+    ],
+    "EnvironmentalDamageModifier": {"Var":"环境伤害"},
+    "PointExtractionScalar": 1.8,
+    "FriendlyFireModifier": {"Var":"友军伤害"},
+    "WaveStartDelayScale": 0,
+    "SpeedModifier": {"Var":"敌人移速"},
+    "AttackCooldownModifier": {"Var":"敌人攻速"},
+    "ProjectileSpeedModifier": 2.6,
+    "HealthRegenerationMax": {"Var":"残血后最大回血比例"},
+    "ReviveHealthRatio": {"Var":"复活后回血比例"}
+  },
+  "Dwarves": {
+    "RegenHealthPerSecond": {"Var":"每秒恢复生命值"},
+    "RegenDelayAfterDamage": {"Var":"受伤恢复延迟"},
+    "FallDamageModifier":{"Var":"摔落伤害"}
+  },
+  "EscortMule": {
+    "FriendlyFireModifier": 0.01,
+    "BigHitDamageModifier": {"Var":"大运车抗"},
+    "BigHitDamageReductionThreshold": 0,
+    "NeutralDamageModifier": 0.1
+  },
+  "Salvage": {
+    "Minimules": {
+      "NitraToGive": {
+        "Mutate": "Add",
+        "A": {
+          "Mutate": "Random",
+          "Min": 45,
+          "Max": 50
+        },
+        "B": {
+          "Mutate": "IfFloat",
+          "Value": {
+            "Mutate": "EnemiesRecentlySpawned",
+            "Seconds": 540,
+            "EDs": [
+              "ED_ShootingPlant",
+              "ED_Barrageinfector",
+              "ED_Barrageinfector_lobber",
+              "ED_CaveLeech",
+              "ED_SpiderSpawner",
+              "ED_HydraWeed",
+              "ED_JellyBreeder",
+              "ED_JellyBreeder_RockpoxPlague",
+              "ED_FacilityTurret_Burst_SN",
+              "ED_Prospector"
+            ]
+          },
+          ">=": 25,
+          "Then": {
+            "Mutate": "Random",
+            "Min": 10,
+            "Max": 15
+          },
+          "Else": 0
+        }
+      }
+    },
+    "Uplink": {
+      "Scale": {
+        "Mutate": "Multiply",
+        "A": 1,
+        "B": {
+          "Mutate": "IfFloat",
+          "Value": {"Var": "团队状态评估"},
+          "<=": 0.6,
+          "Then": 1.25,
+          "Else": 1
+        }
+      },
+      "LeavePenaltyMultiplier": {
+        "Mutate": "Subtract",
+        "A": 1,
+        "B": {
+          "Mutate": "IfFloat",
+          "Value": {"Var": "团队状态评估"},
+          "<=": 0.6,
+          "Then": 0.25,
+          "Else": 0
+        }
+      }
+    },
+    "Refuel": {
+      "Scale": {
+        "Mutate": "Multiply",
+        "A": 1,
+        "B": {
+          "Mutate": "IfFloat",
+          "Value": {"Var": "团队状态评估"},
+          "<=": 0.6,
+          "Then": 1.25,
+          "Else": 1
+        }
+      },
+      "LeavePenaltyMultiplier": {
+        "Mutate": "Subtract",
+        "A": 1,
+        "B": {
+          "Mutate": "IfFloat",
+          "Value": {"Var": "团队状态评估"},
+          "<=": 0.6,
+          "Then": 0.25,
+          "Else": 0
+        }
+      }
+    }
+  },
+  "Warnings": {
+    "Banned": [
+      "MMUT_ExplosiveEnemies",
+      "WRN_Rockinfestation"
+    ]
+  },
+  "Pools": {
+    "MinPoolSize": 919,
+    "DisruptiveEnemyPoolCount": {
+      "Min": 160,
+      "Max": 177
+    },
+    "StationaryEnemyCount": {
+      "Min": {
+        "Mutate": "ByMissionType",
+        "Default": 6,
+        "Salvage": 7,
+        "Egg":{
+          "Mutate":"ByDNA",
+          "Default": 8,
+          "Egg,3,x": 4
+        }
+      },
+      "Max": {
+        "Mutate": "ByMissionType",
+        "Default": 8,
+        "Salvage": 10,
+        "Egg":{
+          "Mutate":"ByDNA",
+          "Default": 8,
+          "Egg,3,x": 6
+        }
+      }
+    },
+    "EnemyPool": {
+      "Clear": true,
+      "Add": {"Var": "怪池选择"},
+      "Remove": []
+    },
+    "CommonEnemies": {
+      "Clear": false,
+      "Add": [],
+      "Remove": []
+    },
+    "StationaryPool": {
+      "Clear": true,
+      "Add": {"Var": "固定怪池"},
+      "Remove": []
+    }
+  },
+  "EnemiesNoSync": {
+    "ED_Spider_Swarmer":{
+      "CustomVeterans":{
+        "ED_Spider_Swarmer": 0.5,
+        "ED_EggSpider": 0.1,
+        "ED_Spider_Swarmer_Pheromone_NOFX": 0.1,
+        "ED_Spider_Spawn": 0.1,
+        "ED_Spider_Swarmer_Ice": 0.1,
+        "ED_Spider_Swarmer_Mutated": 0.1,
+        "ED_TunnelSwarmer": 0.1,
+        "ED_Jelly_Spawn": 0.5,
+        "ED_Shredder": 0.5
+      },
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true,
+      "Rarity": {
+        "Mutate":"EnemyCooldown",
+        "ED":"ED_Spider_Swarmer",
+        "CooldownTime": 25,
+        "DefaultValue": 8,
+        "ValueDuringCooldown": 999
+      },
+      "DifficultyRating": 5,
+      "MaxSpawnCount": 100,
+      "MinSpawnCount": 60,
+      "Resistances":{
+        "DamageMultiplier":1.5
+      }
+    },
+    "ED_Shredder": {
+      "Scale": 2,
+      "IdealSpawnSize": 8,
+      "MaxSpawnCount": 10,
+      "MinSpawnCount": 5,
+      "Temperature": {
+        "BurnTemperature": 50,
+        "FreezeTemperature": -75,
+        "DieIfFrozen": true
+      },
+      "Resistances":{
+        "DamageMultiplier": 3
+      }
+    },
+    "ED_Spider_Grunt":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "MaxSpawnCount": 100,
+      "MinSpawnCount": 60,
+      "CustomVeterans":{
+        "ED_Spider_Grunt": 0.5,
+        "ED_Spider_Grunt_RockpoxPlague": 0.2,
+        "ED_Spider_Grunt_Attacker":0.15,
+        "ED_Spider_Grunt_Guard": 0.15
+      },
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true,
+      "Rarity": {
+        "Mutate":"EnemyCooldown",
+        "ED":"ED_Spider_Grunt",
+        "CooldownTime": 25,
+        "DefaultValue": 8,
+        "ValueDuringCooldown": 999
+      }
+    },
+    "ED_Spider_Grunt_RockpoxPlague":{
+      "Resistances":{
+        "DamageMultiplier": 1.1
+      }
+    },
+    "ED_Spider_Grunt_Attacker_Elite":{
+      "Base":"ED_Spider_Grunt_Attacker",
+      "CustomVeterans":{
+        "ED_Spider_Grunt_Attacker_Elite": 0.75,
+        "ED_Spider_Grunt_Guard_Elite":{
+          "Mutate":"IfFloat",
+          "Value":{"Var":"小体系虫子进化"},
+          "==": 1,
+          "Then": 0.5,
+          "Else": 0
+        }
+      },
+      "Elite": true,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true,
+      "DifficultyRating": 15,
+      "MaxSpawnCount": 8,
+      "MinSpawnCount": 5,
+      "Scale": {
+        "Mutate":"Multiply",
+        "A": 0.85,
+        "B":{"Var":"小体系虫子体型"}
+      },
+      "Rarity": 12,
+      "Resistances":{
+        "ColdDamageMultiplier": 3,
+        "CorrosiveDamageMultiplier": 3.5,
+        "FireDamageMultiplier": 4,
+        "ElectricDamageMultiplier": 3,
+        "ExplosionDamageMultiplier": 1.1,
+        "KineticDamageMultiplier": 1.1,
+        "PhysicalDamageMultiplier": 3,
+        "PoisonDamageMultiplier": 5,
+        "RadiationDamageMultiplier": 5,
+        "PiercingDamageMultiplier": 2,
+        "DamageMultiplier": 0.6
+      },
+      "Temperature": {
+        "BurnTemperature": 15,
+        "DouseFireTemperature": 10,
+        "FreezeTemperature": -8,
+        "UnfreezeTemperature": -7,
+        "FozenDamageBonusScale": 1.25,
+        "WarmingRate": 2
+      }
+    },
+    "ED_Spider_Grunt_Guard":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "CustomVeterans":{
+        "ED_Spider_Grunt_Guard": 0.75,
+        "ED_Spider_Grunt_Guard_Elite":{
+          "Mutate":"IfFloat",
+          "Value":{"Var":"小体系虫子进化"},
+          "==": 1,
+          "Then": 0.5,
+          "Else": 0
+        }
+      },
+      "Resistances":{
+        "DamageMultiplier":1.2
+      }
+    },
+    "ED_Spider_Grunt_Guard_Elite":{
+      "Base":"ED_Spider_Grunt_Guard",
+      "CustomVeterans":{
+        "ED_Spider_Grunt_Guard_Elite": 0.6,
+        "ED_Spider_Tank_Elite":{
+          "Mutate":"IfFloat",
+          "Value":{"Var":"小体系虫子进化"},
+          "==": 1,
+          "Then": 0.3,
+          "Else": 0
+        }
+      },
+      "Elite": true,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true,
+      "DifficultyRating": 20,
+      "Rarity": 14,
+      "MaxSpawnCount": 6,
+      "MinSpawnCount": 4,
+      "Scale": {
+        "Mutate":"Multiply",
+        "A": 0.85,
+        "B":{"Var":"小体系虫子体型"}
+      },
+      "Resistances":{
+        "ColdDamageMultiplier": 3,
+        "CorrosiveDamageMultiplier": 3.5,
+        "FireDamageMultiplier": 4,
+        "ElectricDamageMultiplier": 3,
+        "ExplosionDamageMultiplier": 1.3,
+        "KineticDamageMultiplier": 1.5,
+        "PhysicalDamageMultiplier": 5,
+        "PoisonDamageMultiplier": 5,
+        "RadiationDamageMultiplier": 5,
+        "PiercingDamageMultiplier": 3,
+        "DamageMultiplier": 0.68181
+      },
+      "Temperature": {
+        "BurnTemperature": 30,
+        "DouseFireTemperature": 20,
+        "FreezeTemperature": -20,
+        "UnfreezeTemperature": -16,
+        "FozenDamageBonusScale": 1.15,
+        "WarmingRate": 4
+      }
+    },
+    "ED_Spider_Tank":{
+      "CustomVeterans":{
+        "ED_Spider_Tank": 0.3,
+        "ED_Spider_Tank_Amber": 0.2,
+        "ED_Spider_Tank_RockpoxPlague": 0.1,
+        "ED_Spider_Tank_Ice": 0.2,
+        "ED_Spider_Tank_Mutated": 0.2,
+        "ED_Spider_ShieldTank": 0.05
+      },
+      "Scale":{"Var":"小体系虫子体型"},
+      "Rarity": 18,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true,
+      "IdealSpawnSize": 4,
+      "MaxSpawnCount": 4,
+      "MinSpawnCount": 2,
+      "Resistances":{
+        "DamageMultiplier":2,
+        "ExplosionDamageMultiplier": 1.125,
+        "RadiationDamageMultiplier": 2.25
+      },
+      "Temperature":{
+        "FreezeTemperature": -100,
+        "UnfreezeTemperature": -66.6
+      }
+    },
+    "ED_Spider_Tank_Elite":{
+      "Base":"ED_SPider_Tank",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true,
+      "Elite": true,
+      "MaxSpawnCount": 2,
+      "MinSpawnCount": 1,
+      "Rarity": 22,
+      "DifficultyRating": 40,
+      "Scale": 0.85,
+      "Resistances":{
+        "ColdDamageMultiplier": 3,
+        "CorrosiveDamageMultiplier": 3.5,
+        "FireDamageMultiplier": 4,
+        "ElectricDamageMultiplier": 3,
+        "ExplosionDamageMultiplier": 1.5,
+        "KineticDamageMultiplier": 1.5,
+        "PhysicalDamageMultiplier": 8,
+        "PoisonDamageMultiplier": 5,
+        "RadiationDamageMultiplier": 5,
+        "PiercingDamageMultiplier": 3,
+        "DamageMultiplier": 0.85
+      },
+      "Temperature":{
+        "BurnTemperature":24, 
+        "DouseFireTemperature": 12,
+        "FreezeTemperature":-45,
+        "UnfreezeTemperature":-30,
+        "FozenDamageBonusScale": 1.1,
+        "WarmingRate": 16.6
+      }
+    },
+    "ED_Spider_Tank_Amber":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "CustomVeterans":{
+        "ED_Spider_Tank_Amber": 0.5,
+        "ED_Spider_Tank_ELite":{
+          "Mutate":"IfFloat",
+          "Value":{"Var":"小体系虫子进化"},
+          "==": 1,
+          "Then": 0.25,
+          "Else": 0
+        }
+      },
+      "Resistances":{
+        "DamageMultiplier":2,
+        "ExplosionDamageMultiplier": 1.125,
+        "RadiationDamageMultiplier": 2.25
+      },
+      "Temperature":{
+        "FreezeTemperature": -100,
+        "UnfreezeTemperature": -66.6
+      }
+    },
+    "ED_Spider_Tank_RockpoxPlague":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "Resistances":{
+        "DamageMultiplier":2,
+        "ExplosionDamageMultiplier": 1.125,
+        "RadiationDamageMultiplier": 2.25
+      },
+      "Temperature":{
+        "FreezeTemperature": -100,
+        "UnfreezeTemperature": -66.6
+      }
+    },
+    "ED_Spider_Tank_Ice":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "Resistances":{
+        "DamageMultiplier":2,
+        "ExplosionDamageMultiplier": 1.125,
+        "RadiationDamageMultiplier": 2.25
+      },
+      "Temperature":{
+        "FreezeTemperature": -100,
+        "UnfreezeTemperature": -66.6
+      }
+    },
+    "ED_Spider_Tank_Mutated":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "Resistances":{
+        "DamageMultiplier":2,
+        "ExplosionDamageMultiplier": 1.125,
+        "RadiationDamageMultiplier": 2.25
+      },
+      "Temperature":{
+        "FreezeTemperature": -100,
+        "UnfreezeTemperature": -66.6
+      }
+    },
+    "ED_Spider_ShieldTank":{
+      "Scale":{"Var":"Boss单位体型"},
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true,
+      "Rarity": 22,
+      "DifficultyRating": 50,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Resistances": {
+        "ColdDamageMultiplier": 1.1,
+        "FireDamageMultiplier": 1.3,
+        "CorrosiveDamageMultiplier": 1.2,
+        "ElectricDamageMultiplier": 4,
+        "ExplosionDamageMultiplier": 1.3,
+        "KineticDamageMultiplier": 1.1,
+        "PhysicalDamageMultiplier": 2,
+        "PoisonDamageMultiplier": 6,
+        "RadiationDamageMultiplier": 6,
+        "DamageMultiplier":1.5
+      },
+      "Temperature": {
+        "FreezeTemperature": -300,
+        "UnfreezeTemperature": -200,
+        "WarmingRate": 50,
+        "FozenDamageBonusScale": 2
+      }
+    },
+    "ED_Spider_Buffer":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true,
+      "DifficultyRating": 40,
+      "Rarity": 22,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 0,
+      "Resistances": {
+        "DamageMultiplier": 1.5
+      }
+    },
+    "ED_Grabber":{
+      "Displayname": "捕手异虫蝇",
+      "Scale":{"Var":"小体系虫子体型"},
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedinEncounters": true,
+      "DifficultyRating": 40,
+      "IdealSpawnSize": 2,
+      "MaxSpawnCount": 2,
+      "MinSpawnCount": 1,
+      "Rarity": {
+        "Mutate": "EnemyCooldown",
+        "ED":"ED_Grabber",
+        "CooldownTime": 600,
+        "ValueDuringCooldown": 999,
+        "DefaultValue": 15
+      },
+      "Grabber": {
+        "WanderingSpeed": 250,
+        "WanderingAcceleration": 1250,
+        "ChaseSpeed": 800,
+        "ChaseAcceleration": 3500,
+        "CarrySpeed": 600,
+        "CarryAcceleration": 3000,
+        "FleeSpeed": 900,
+        "FleeAcceleration": 1000,
+        "PreventGrabAfterSpawn": 10,
+        "GrabTime": 7.5,
+        "DamageThreshold": 20
+      },
+      "Resistances":{
+        "DamageMultiplier":1.5
+      }
+    },
+    "ED_Woodlouse":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 0,
+      "Resistances": {
+        "DamageMultiplier":1.5
+      },
+      "Direct": {
+        "Float:MaxBumpPower": 750,
+        "Float:BumpRange": 225
+      }
+    },
+    "ED_Spider_Lobber":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "DifficultyRating": 30,
+      "Rarity": 16,
+      "MaxSpawnCount": 4,
+      "MinSpawnCount": 2,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true
+    },
+    "ED_Spider_Shooter_Elite":{
+      "Base":"ED_Spider_Shooter",
+      "Elite": true,
+      "Scale":{"Var":"小体系虫子体型"},
+      "CustomVeterans": {
+        "Mutate": "RandomChoice",
+        "Choices": [
+          "ED_Spider_Shooter_Elite",
+          "ED_Spider_Amber_Shooter",
+          "ED_Spider_Shooter_Rockpox_Plague"
+        ],
+        "Weights": [4,2.5,2.5]
+      },
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true,
+      "DifficultyRating": 25,
+      "MaxSpawnCount": 10,
+      "MinSpawnCount": 5,
+      "Rarity": 18,
+      "Resistances":{
+        "DamageMultiplier":1.2
+      },
+      "Temperature":{
+        "BurnTemperature": 5.5,
+        "DouseFireTemperature": 3.5,
+        "FreezeTemperature": -5,
+        "UnfreezeTemperature": -2.5
+      }
+    },
+    "ED_Spider_Spitter":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "CustomVeterans":{
+        "ED_Spider_Spitter": 0.5,
+        "ED_Spider_Shooter_elite":{
+          "Mutate":"IfFloat",
+          "Value":{"Var":"小体系虫子进化"},
+          "==": 1,
+          "Then": 0.25,
+          "Else": 0
+        }
+      },
+      "MaxSpawnCount": 8,
+      "MinSpawnCount": 4,
+      "Rarity":12,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true
+    },
+    "ED_Spider_RapidShooter_Elite":{
+      "Base": "ED_Spider_RapidShooter",
+      "Displayname": "速射",
+      "Scale":{"Var":"小体系虫子体型"},
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": false,
+      "DifficultyRating": 40,
+      "MaxSpawnCount": 2,
+      "MinSpawnCount": 1,
+      "Rarity": 15,
+      "Elite": true,
+      "Resistances":{
+        "DamageMultiplier": 2
+      },
+      "Temperature": {
+        "BurnTemperature": 12,
+        "DouseFireTemperature": 6,
+        "FreezeTemperature": -10,
+        "UnfreezeTemperature": -5
+      },
+      "CustomVeterans":{
+        "ED_Spider_RapidShooter_Elite": 8,
+        "ED_Medic_RapidShooter":{
+          "Mutate":"IfFloat",
+          "Value":{"Var":"小体系虫子进化"},
+          "==": 1,
+          "Then": 1,
+          "Else": 0
+        }
+      }
+    },
+    "ED_Bomber_Explosive":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "CustomVeterans":{
+        "ED_Bomber": 0.3,
+        "ED_Bomber_Rockpox_Plague": 0.2,
+        "ED_Bomber_Ice": 0.1,
+        "ED_Bomber_Explosive": 0.25
+      },
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true,
+      "MaxSpawnCount": 3,
+      "MinSpawnCount": 1,
+      "DifficultyRating": 30,
+      "Rarity": 24,
+      "Temperature": {
+        "FreezeTemperature": -170
+      },
+      "Resistances": {
+        "DamageMultiplier": 3.5
+      },
+      "Direct": {
+        "Float:AttackModeRotationSpeed": 4.5,
+        "Float:DashPoints.DashSpeed": 800
+      }
+    },
+    "ED_Bomber":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "Resistances": {
+        "DamageMultiplier": 3
+      }
+    },
+    "ED_Bomber_Rockpox_Plague":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "Resistances": {
+        "DamageMultiplier": 3
+      }
+    },
+    "ED_Bomber_Ice":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "Resistances": {
+        "DamageMultiplier": 3
+      }
+    },
+    "ED_Spider_Exploder":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "CustomVeterans":{
+        "ED_Spider_Exploder": 0.8,
+        "ED_Spider_Exploder_Rockpox_Plague": 0.2,
+        "ED_Spider_ExploderTank_Elite":{
+          "Mutate":"IfFloat",
+          "Value":{"Var":"小体系虫子进化"},
+          "==": 1,
+          "Then": 0.05,
+          "Else": 0
+         } 
+      },
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true,
+      "MaxSpawnCount": 18,
+      "MinSpawnCount": 5,
+      "Rarity": 12
+    },
+    "ED_Spider_Stalker":{
+      "Displayname": "隐刀",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": false,
+      "DifficultyRating": 40,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Rarity": 25,
+      "Resistances": {
+        "DamageMultiplier": 1.5
+      }
+    },
+    "ED_Spider_Stinger":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": false,
+      "DifficultyRating": 40,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Rarity": 20,
+      "Direct": {
+        "Float:SplineHookAttack.AttackDuration": 0.75,
+        "Float:SplineHookAttack.AquireLocationTime": 1.2,
+        "Float:SplineHookAttack.OnSuccessCooldown": 18,
+        "Float:SplineHookAttack.MaxAngledForce": 2000
+      }
+    },
+    "ED_Mactera_Shooter_Normal":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "CustomVeterans": {
+        "Mutate": "RandomChoice",
+        "Choices": [
+          "ED_Mactera_Shooter_Normal",
+          "ED_Mactera_Shooter_Amber",
+          "ED_Mactera_TripleShooter",
+          "ED_Mactera_Shooter_HeavyVeteran"
+        ],
+        "Weights": [
+          0.35,
+          0.35,
+          0.2,
+          0.1
+        ]
+      },
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true,
+      "Rarity": 16,
+      "MaxSpawnCount": 15,
+      "MinSpawnCount": 8
+    },
+    "ED_Mactera_TripleShooter_Elite":{
+      "Base":"ED_Mactera_TripleShooter",
+      "Elite": true,
+      "Scale":{"Var":"小体系虫子体型"},
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true,
+      "DifficultyRating": 30,
+      "MaxSpawnCount": 8,
+      "MinSpawnCount": 4,
+      "Rarity": 18,
+      "Resistances":{
+        "ColdDamageMultiplier": 3.5,
+        "CorrosiveDamageMultiplier": 4.5,
+        "FireDamageMultiplier": 5.5,
+        "ElectricDamageMultiplier": 4,
+        "ExplosionDamageMultiplier": 1.3,
+        "KineticDamageMultiplier": 1.1,
+        "PhysicalDamageMultiplier": 3,
+        "PoisonDamageMultiplier": 5,
+        "RadiationDamageMultiplier": 5,
+        "DamageMultiplier": 1.5
+      },
+      "Temperature": {
+        "BurnTemperature": 15,
+        "DouseFireTemperature": 7,
+        "FreezeTemperature": -24
+      }
+    },
+    "ED_Crawler":{
+      "Scale":{"Var":"小体系虫子体型"},
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": true,
+      "DifficultyRating": 40,
+      "MaxSpawnCount": 3,
+      "MinSpawnCount": 1,
+      "Rarity": 15,
+      "Resistances":{
+        "DamageMultiplier":1.5
+      }
+    },
+    "ED_Spider_Tank_Boss_WeaK":{
+      "Base":"ED_Spider_Tank_Boss",
+      "Scale":{"Var":"Boss单位体型"},
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": false,
+      "DifficultyRating":360,
+      "MaxSpawnCount": {         
+        "Mutate":"SelectFromArray",
+        "Select":{"Var":"最终生效怪池"},
+        "Array":[1,1,2,2,2]
+      },
+      "MinSpawnCount": 1,
+      "Rarity": 30,
+      "Resistances": {
+        "ColdDamageMultiplier": 3.5,
+        "CorrosiveDamageMultiplier": 4.5,
+        "FireDamageMultiplier": 5.5,
+        "ElectricDamageMultiplier": 6,
+        "ExplosionDamageMultiplier": 11,
+        "KineticDamageMultiplier": 3.5,
+        "PhysicalDamageMultiplier": 6,
+        "PoisonDamageMultiplier": 6,
+        "RadiationDamageMultiplier": 6,
+        "DamageMultiplier":2
+      },
+      "Temperature": {
+        "BurnTemperature": 100,
+        "DouseFireTemperature": 50,
+        "FreezeTemperature": -200,
+        "UnfreezeTemperature":-160,
+        "WarmingRate": 20,
+        "FozenDamageBonusScale": 1.2
+      },
+      "Direct": {
+        "Float:HealthDamageTracker.TiggerOnPercentage": 0.4
+      }
+    },
+    "ED_Spider_Boss_Heavy_Weak":{
+      "Base":"ED_Spider_Boss_Heavy",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": false,
+      "Scale":{"Var":"Boss单位体型"},
+      "DifficultyRating": 200,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Rarity":{         
+        "Mutate":"SelectFromArray",
+        "Select":{"Var":"最终生效怪池"},
+        "Array":[35,0,40,40,40]
+      },
+      "Resistances": {
+        "ColdDamageMultiplier": 3.5,
+        "CorrosiveDamageMultiplier": 4.5,
+        "FireDamageMultiplier": 5.5,
+        "ElectricDamageMultiplier": 6,
+        "ExplosionDamageMultiplier": 7,
+        "KineticDamageMultiplier": 3.5,
+        "PhysicalDamageMultiplier": 6,
+        "PoisonDamageMultiplier": 6,
+        "RadiationDamageMultiplier": 6,
+        "DamageMultiplier":2
+      },
+      "Temperature": {
+        "FreezeTemperature": -200,
+        "UnfreezeTemperature":-160,
+        "WarmingRate": 10,
+        "FozenDamageBonusScale": 1.2
+      },
+      "Direct": {"Float:HealthDamageTracker.TiggerOnPercentage": 1}
+    },
+    "ED_Spider_Tank_HeavySpawn": {
+      "Heal":{
+        "initialRate": 0,
+        "SwitchAfter": 15,
+        "FinalRate": -100
+      },
+      "Resistances": {
+        "DamageMultiplier": 1.5
+      }
+    },
+    "ED_Spider_Boss_TwinA_Weak":{
+      "Base": "ED_Spider_Boss_TwinA",
+      "Displayname": "强弩无畏",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": false,
+      "Scale":{"Var":"Boss单位体型"},
+      "DifficultyRating": 150,
+      "MaxSpawnCount": {         
+        "Mutate":"SelectFromArray",
+        "Select":{"Var":"最终生效怪池"},
+        "Array":[0,2,1,0,1]
+      },
+      "MinSpawnCount": 1,
+      "Rarity": {         
+        "Mutate":"SelectFromArray",
+        "Select":{"Var":"最终生效怪池"},
+        "Array":[0,35,30,0,30]
+      },
+      "Resistances": {
+        "ColdDamageMultiplier": 3.5,
+        "CorrosiveDamageMultiplier": 4.5,
+        "FireDamageMultiplier": 5.5,
+        "ElectricDamageMultiplier": 6,
+        "ExplosionDamageMultiplier": 6,
+        "KineticDamageMultiplier": 3.5,
+        "PhysicalDamageMultiplier": 6,
+        "PoisonDamageMultiplier": 6,
+        "RadiationDamageMultiplier": 6,
+        "DamageMultiplier":2
+      },
+      "Temperature": {
+        "BurnTemperature": 100,
+        "DouseFireTemperature": 50,
+        "FreezeTemperature": -150,
+        "UnfreezeTemperature": -100,
+        "WarmingRate": 12.5,
+        "FozenDamageBonusScale": 1.2
+      }
+    },
+    "ED_Seasonal_Boss_TwinB_Weak":{
+      "Base":"ED_Spider_Boss_TwinB",
+      "DisplayName":"重斧无畏",
+      "Scale":{"Var":"Boss单位体型"},
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": false,
+      "DifficultyRating": 120,
+      "MaxSpawnCount": {         
+        "Mutate":"SelectFromArray",
+        "Select":{"Var":"最终生效怪池"},
+        "Array":[1,2,2,2,1]
+      },
+      "MinSpawnCount": 1,
+      "Rarity":30,
+      "Resistances": {
+        "ColdDamageMultiplier": 3.5,
+        "CorrosiveDamageMultiplier": 4.5,
+        "FireDamageMultiplier": 5.5,
+        "ElectricDamageMultiplier": 6,
+        "ExplosionDamageMultiplier": 6,
+        "KineticDamageMultiplier": 4,
+        "PhysicalDamageMultiplier": 6,
+        "PoisonDamageMultiplier": 6,
+        "RadiationDamageMultiplier": 6,
+        "DamageMultiplier":2
+      },
+      "Temperature": {
+        "FreezeTemperature": -200,
+        "UnfreezeTemperature": -150,
+        "WarmingRate": 12.5,
+        "FozenDamageBonusScale": 1.2
+      }
+    },
+    "ED_Spider_ShooterQueen":{
+      "Scale":{"Var":"Boss单位体型"},
+      "Displayname": "吐酸皇后",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": false,
+      "DifficultyRating": 150,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Rarity": 40,
+      "Courage": 1,
+      "Materials": [
+        "M_PromotionKey_Glow",
+        "M_Spider_Shooter_Queen_Armor"
+      ],
+      "Resistances": {
+        "ColdDamageMultiplier": 3.5,
+        "CorrosiveDamageMultiplier": 4.5,
+        "FireDamageMultiplier": 5.5,
+        "ElectricDamageMultiplier": 6,
+        "ExplosionDamageMultiplier": 6,
+        "KineticDamageMultiplier": 2.5,
+        "PhysicalDamageMultiplier": 6,
+        "PoisonDamageMultiplier": 6,
+        "RadiationDamageMultiplier": 6,
+        "DamageMultiplier":2
+      },
+      "Temperature": {
+        "BurnTemperature": 100,
+        "DouseFireTemperature": 50,
+        "FreezeTemperature": -150,
+        "UnfreezeTemperature": -100
+      }
+    },
+    "ED_Spider_ExploderTank_Elite": {
+      "Base": "ED_Spider_ExploderTank",
+      "Elite": true,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": false,
+      "DifficultyRating": 120,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 0,
+      "Rarity": 35,
+      "WeakpointHP": 9999,
+      "Courage": 0.9,
+      "Resistances":{
+        "DamageMultiplier": 7
+      },
+      "Direct": {
+        "int:NumClusterBombs": 12,
+        "Float:WeakspotDamageMult": 10,
+        "Float:CarveDiameter": 2000,
+        "Float:Damage.RadialDamage": 60,
+        "Float:Damage.DamageRadius": 700,
+        "Float:Damage.MaxDamageRadius": 150,
+        "Float:DamageDeathExplosion.RadialDamage": 2000,
+        "Float:DamageDeathExplosion.MinDamagePct": 0.5,
+        "Float:DamageDeathExplosion.DamageRadius": 800,
+        "Float:DamageDeathExplosion.MaxDamageRadius": 200
+      },
+      "Temperature":{
+        "FreezeTemperature": -30,
+        "UnfreezeTemperature": -20,
+        "WarmingRate": 20
+      }
+    },
+    "ED_Shark": {
+      "Base": "ED_Shark",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedinEncounters": true,
+      "DifficultyRating": 40,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 0,
+      "Rarity": 12,
+      "Heal":{
+        "initialRate": 0,
+        "FinalRate": -500,
+        "SwitchAfter": 30
+      },
+      "Resistances":{
+        "DamageMultiplier": 3.5
+      },
+      "Movement": {
+        "MaxPawnSpeed": 0.7
+      },
+      "Direct": {
+        "Float:LaunchPower": 1200,
+        "Float:UpsideDownTime": 6,
+        "Float:JumpForce": 1800,
+        "Float:MinCirclingTime": 2,
+        "Float:MaxCirclingTime": 4,
+        "Float:MaxinGroundTime": 4,
+        "Float:MininGroundTime": 3,
+        "Float:ChanceForJump": 0.8
+      }
+    },
+    "ED_Spring_HydraWeed": {
+      "Base": "ED_HydraWeed",
+      "Displayname": "王草",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": false,
+      "DifficultyRating": 150,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 0,
+      "Rarity": 40,
+      "Resistances":{
+        "DamageMultiplier":{
+          "Mutate":"Add",
+          "A": 7.5,
+          "B":2
+        }
+      },
+      "Direct": {
+        "int:NumShootersKilledToOpen": 2,
+        "Float:StayOpenWhenBellowThisHealthPercentage": 1,
+        "Float:SpawnRadius": 600,
+        "Float:ShooterActiveRange": 1500,
+        "Float:ShooterDormantRange": 500,
+        "Float:StopFightingDistance": 2000,
+        "Float:ResumeFightingDistance": 500
+      }
+    },
+    "ED_Summer_TerMinator": {
+      "Base": "ED_TerMinator",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": false,
+      "DifficultyRating": 100,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 0,
+      "IdealSpawnSize": 1,
+      "Rarity": 40,
+      "Resistances": {
+        "DamageMultiplier": 7
+      },
+      "Direct": {
+        "int:NumPhaseBombs": 20,
+        "Float:ShieldBarrierCooldown": 10,
+        "Float:ShieldBarrierSpawnDelay": 3
+      }
+    },
+    "ED_ShootingPlant": {
+      "Base": "ED_ShootingPlant",
+      "CanBeUsedinEncounters": false,
+      "Resistances": {
+        "KineticDamageMultiplier": 1.3,
+        "FireDamageMultiplier": 3,
+        "PiercingDamageMultiplier": 2,
+        "ExplosionDamageMultiplier":{
+          "Mutate":"Iffloat",
+          "Value":{
+            "Mutate":"EnemiesRecentlySpawned",
+            "Seconds": 10,
+            "ED":"ED_Destroyer"
+          },
+          ">": 0,
+          "Then": 0,
+          "Else": 1
+        }
+      },
+      "Temperature":{
+        "FreezeTemperature": -30,
+        "UnfreezeTemperature": 0,
+        "WarMingRate": 2
+      }
+    },
+    "ED_BarrageInfector": {
+      "CanBeUsedinEncounters": false,
+      "Resistances": {
+        "KineticDamageMultiplier": 2,
+        "ExplosionDamageMultiplier":{
+          "Mutate":"Iffloat",
+          "Value":{
+            "Mutate":"EnemiesRecentlySpawned",
+            "Seconds": 10,
+            "ED":"ED_Destroyer"
+          },
+          ">": 0,
+          "Then": 0,
+          "Else": 3
+        },
+        "FireDamageMultiplier": 3,
+        "DamageMultiplier": 1.5,
+        "PiercingDamageMultiplier": 2
+      },
+      "Temperature": {
+        "FreezeTemperature": -40,
+        "UnfreezeTemperature": 0,
+        "WarMingRate": 2
+      }
+    },
+    "ED_Barrageinfector_lobber": {
+      "Base": "ED_Barrageinfector",
+      "DisplayName": "流心豆沙包",
+      "CanBeUsedinEncounters": false,
+      "MaxSpawnCount": 5,
+      "MinSpawnCount": 0,
+      "Rarity": 20,
+      "Projectile": "PRJ_Spider_Lobber_Projectile_C",
+      "Materials": [
+        "M_Spider_Lobber_Body",
+        "M_Spider_Lobber_Projectile_Wobble",
+        "M_Spider_Lobber_GlowBubbles",
+        "M_Spider_Lobber_GlowBubbles"
+      ],
+      "Resistances": {
+        "KineticDamageMultiplier": 2,
+        "ExplosionDamageMultiplier":{
+          "Mutate":"Iffloat",
+          "Value":{
+            "Mutate":"EnemiesRecentlySpawned",
+            "Seconds": 10,
+            "ED":"ED_Destroyer"
+          },
+          ">": 0,
+          "Then": 0,
+          "Else": 3
+        },
+        "FireDamageMultiplier": 3,
+        "DamageMultiplier": 1.75,
+        "PiercingDamageMultiplier": 2
+      },
+      "Temperature": {
+        "FreezeTemperature": -40,
+        "UnfreezeTemperature": 0,
+        "WarMingRate": 2
+      }
+    },
+    "ED_CaveLeech": {
+      "Base": "ED_CaveLeech",
+      "CanBeUsedinEncounters": false,
+      "CaveLeech": {
+        "BiteDamage": 5,
+        "BitesPersecond": 2,
+        "MaxDropPlayerDuration": 3
+      }
+    },
+    "ED_TentaclePlant": {
+      "Base": "ED_TentaclePlant",
+      "CanBeUsedinEncounters": false,
+      "Direct": {
+        "Float:MinDistanceBetweenNodes": 400,
+        "Float:PawnSensing.SightRadius": 4500
+      }
+    },
+    "ED_SpiderSpawner": {
+      "Base": "ED_SpiderSpawner",
+      "CanBeUsedinEncounters": false,
+      "WeakpointHP": 9999,
+      "Resistances": {
+        "KineticDamageMultiplier": 1.5,
+        "FireDamageMultiplier": 2,
+        "DamageMultiplier": 4
+      }
+    },
+    "ED_JellyBreeder": {
+      "Base": "ED_JellyBreeder",
+      "CanBeUsedinEncounters": false,
+      "Resistances": {
+        "DamageMultiplier": 4
+      }
+    },
+    "ED_JellyBreeder_RockpoxPlague": {
+      "Base": "ED_JellyBreeder_RockpoxPlague",
+      "CanBeUsedinEncounters": false,
+      "Resistances": {
+        "DamageMultiplier": 5
+      }
+    },
+    "ED_Spring_JellyBreeder": {
+      "Base": "ED_JellyBreeder",
+      "Displayname": "鲨鱼饲育水母",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": false,
+      "DifficultyRating": 50,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 0,
+      "Rarity": 30,
+      "Scale": 1,
+      "AttackDamageMultiplier": 0.7,
+      "Resistances": {
+        "DamageMultiplier": 4
+      },
+      "Temperature": {
+        "FreezeTemperature": -190
+      },
+      "JellyBreeder": {
+        "EnemyToSpawn": "ED_Shark",
+        "SpawnAmount": 1,
+        "TimeBetweenBursts": {
+          "Mutate": "IfFloat",
+          "Value": {
+            "Mutate": "EnemyCount",
+            "ED": "ED_Shark"
+          },
+          ">=": 2,
+          "Then": 60,
+          "Else": 180
+        },
+        "CloseToSpawnEggTime": {
+          "Mutate": "IfFloat",
+          "Value": {
+            "Mutate": "EnemyCount",
+            "ED": "ED_Shark"
+          },
+          ">=": 2,
+          "Then": 60,
+          "Else": 180
+        },
+        "EggBurstSize": 1,
+        "MaxJellies": 5,
+        "EggName": "鲨鱼蛋",
+        "EggMaterial": "M_Shark_Body",
+        "EggHealth": 60,
+        "EggTime": 10
+      },
+      "Materials": [
+        "M_Shark_Teeth",
+        "M_Shark_Body",
+        "M_Shark_Teeth",
+        "M_Shark_Teeth",
+        "M_Shark_Teeth",
+        "M_Shark_Body",
+        "Shark_DustTrail"
+      ]
+    },
+    "ED_Summer_JellyBreeder": {
+      "Base": "ED_JellyBreeder",
+      "Displayname": "隐刀饲育水母",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": false,
+      "DifficultyRating": 40,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 0,
+      "Rarity": 20,
+      "Resistances": {
+        "DamageMultiplier": {
+          "Mutate":"Add",
+          "A": 2.5,
+          "B":1.5
+        }
+      },
+      "Temperature": {
+        "FreezeTemperature": -250
+      },
+      "JellyBreeder": {
+        "EnemyToSpawn": "ED_Spider_Stalker",
+        "SpawnAmount": 1,
+        "TimeBetweenBursts": {
+          "Mutate": "IfFloat",
+          "Value": {
+            "Mutate": "EnemyCount",
+            "ED": "ED_Spider_Stalker"
+          },
+          ">=": 1,
+          "Then": 60,
+          "Else": 180
+        },
+        "CloseToSpawnEggTime": {
+          "Mutate": "IfFloat",
+          "Value": {
+            "Mutate": "EnemyCount",
+            "ED": "ED_Spider_Stalker"
+          },
+          ">=": 1,
+          "Then": 60,
+          "Else": 180
+        },
+        "EggBurstSize": 1,
+        "MaxJellies": 3,
+        "EggName": "隐刀蛋",
+        "EggMaterial": [
+          "M_Spider_Camouflage_Stalker",
+          "M_Egg_Blue"
+        ],
+        "EggHealth": 60,
+        "EggTime": 5
+      },
+      "Materials": [
+        "M_Stalker_Tank_Body",
+        "M_Spider_Tank_Armor",
+        "M_Crystal_BlueGlow02",
+        "M_Spider_Stalker_Camouflage",
+        "M_Greybox_Light_GreenX20",
+        "M_Stalker_Tank_Armor",
+        "M_Spider_Stalker_Armor_StalkerClaws"
+      ]
+    },
+    "ED_Winter_JellyBreeder": {
+      "Base": "ED_JellyBreeder",
+      "Displayname": "典狱长饲育水母",
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedinEncounters": false,
+      "DifficultyRating": 40,
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 0,
+      "Rarity": 25,
+      "Resistances": {
+        "DamageMultiplier": 4.5
+      },
+      "Temperature": {
+        "FreezeTemperature": -250
+      },
+      "Movement": {
+        "MaxPawnSpeed": 1,
+        "StrafeSpeed": 1
+      },
+      "JellyBreeder": {
+        "EnemyToSpawn": "ED_Spider_Buffer",
+        "SpawnAmount": 1,
+        "TimeBetweenBursts": 60,
+        "CloseToSpawnEggTime": 60,
+        "EggBurstSize": 1,
+        "MaxJellies": 5,
+        "EggName": "典狱长蛋",
+        "EggMaterial": "M_Shark_Body",
+        "EggHealth": 60,
+        "EggTime": 5
+      },
+      "Materials": [
+        "M_Spider_Grunt_Warden_ArmorBack",
+        "M_Spider_Grunt_Warden_ArmorBack",
+        "M_Spider_Grunt_Warden_WeakPoint",
+        "M_Spider_Grunt_Warden_WeakPoint",
+        "M_Spider_Grunt_Warden_ArmorBack",
+        "M_Spider_Grunt_Warden_WeakPoint",
+        "M_Spider_Grunt_Warden_ArmorBack"
+      ]
+    },
+    "ED_Seasonal_PumpkinLootBug": {
+      "Base": "ED_PumpkinLootBug",
+      "DifficultyRating": 1,
+      "IdealSpawnSize": 2,
+      "MaxSpawnCount": 3,
+      "MinSpawnCount": 1
+    },
+    "ED_Prospector": {
+      "CanBeUsedinEncounters": false,
+      "DifficultyRating": 200,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "IdealSpawnSize": 1,
+      "Rarity": {
+        "Mutate": "EnemyCooldown",
+        "ED":"ED_Prospector",
+        "CooldownTime": 60,
+        "ValueDuringCooldown": 999,
+        "DefaultValue": 5
+      },
+      "Resistances":{
+        "DamageMultiplier": 13.67
+      },
+      "Direct": {
+        "Float:CooldownDuration": 2,
+        "Float:ReinforcementDelay": 5
+      },
+      "Movement": {
+        "MaxPawnSpeed": 0.01
+      }
+    },
+    "ED_PatrolBot": {
+      "Base": "ED_PatrolBot",
+      "MaxSpawnCount": 2,
+      "MinSpawnCount": 0,
+      "Temperature": {
+        "FreezeTemperature": -50,
+        "BurnTemperature": 40,
+        "DieIfFrozen": true
+      },
+      "Direct": {
+        "Float:DelayAfterLockOn": 1.5,
+        "Float:SpawnRocketsChance": 0.1,
+        "Float:SpawnRocketsTime": 5,
+        "Float:LaunchPower": 150,
+        "Float:HackChance": {
+          "Mutate": "ByMissionType",
+          "Default": 0,
+          "Sabotage": 5
+        }
+      },
+      "Resistances": {
+        "KineticDamageMultiplier": 5,
+        "ExplosionDamageMultiplier": 6,
+        "ColdDamageMultiplier": 5,
+        "ElectricDamageMultiplier": 6,
+        "RadiationDamageMultiplier": 10,
+        "PoisonDamageMultiplier": 10,
+        "CorrosiveDamageMultiplier": 10,
+        "PhysicalDamageMultiplier": 10
+      }
+    },
+    "ED_FacilityTurret_Burst_SN": {
+      "Base": "ED_FacilityTurret_Burst",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedinEncounters": false,
+      "DifficultyRating": 60,
+      "MaxSpawnCount": 5,
+      "Resistances": {
+        "KineticDamageMultiplier": 3,
+        "FireDamageMultiplier": 3,
+        "ColdDamageMultiplier": 10,
+        "CorrosiveDamageMultiplier": 10,
+        "ExplosionDamageMultiplier": 6,
+        "ElectricDamageMultiplier": 6,
+        "RadiationDamageMultiplier": 6,
+        "PiercingDamageMultiplier": 10,
+        "PhysicalDamageMultiplier": 10,
+        "DamageMultiplier":1.5
+      },
+      "Temperature": {
+        "FreezeTemperature": -50,
+        "FozenDamageBonusScale": 3
+      }
+    },
+    "ED_HydraWeed": {
+      "DisplayName": "王草",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedinEncounters": false,
+      "DifficultyRating": {
+        "Mutate": "EnemyCooldown",
+        "ED":"ED_HydraWeed",
+        "CooldownTime": 60,
+        "ValueDuringCooldown": 500,
+        "DefaultValue": 200
+      },
+      "IdealSpawnSize": 1,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 0,
+      "Resistances":{
+        "DamageMultiplier": 9.1
+      },
+      "Rarity": 20,
+      "Direct": {
+        "int:NumShootersKilledToOpen": 2,
+        "Float:StayOpenWhenBellowThisHealthPercentage": 1,
+        "Float:SpawnRadius": 600,
+        "Float:ShooterActiveRange": 1500,
+        "Float:ShooterDormantRange": 500,
+        "Float:StopFightingDistance": 2000,
+        "Float:ResumeFightingDistance": 500
+      },
+      "DropResource": {
+        "Enable": true,
+        "Resource": "Nitra",
+        "Amount": {
+          "Mutate": "Random",
+          "Min": 20,
+          "Max": 25
+        }
+      }
+    },
+    "ED_TerMinator":{
+      "Base": "ED_Spider_Grunt",
+      "DifficultyRating": 1
+    },
+    "ED_PitJaw": {
+      "Base": "ED_Spider_Grunt",
+      "DifficultyRating": 1
+    },
+    "ED_infectedMule": {
+      "Base": "ED_Spider_Grunt",
+      "DifficultyRating": 1
+    },
+    "ED_Spider_ExploderTank": {
+      "Resistances": {
+        "DamageMultiplier": 4
+      }
+    },
+    "ED_Spider_ExploderTank_King": {
+      "Base": "ED_Spider_Grunt",
+      "DifficultyRating": 1
+    },
+    "ED_WalkingPlagueheart":{
+      "Base": "ED_Spider_Grunt",
+      "DifficultyRating": 1
+    },
+    "ED_HealCore": {
+      "Base": "ED_Spider_Drone",
+      "DisplayName": "治愈核心",
+      "ShowHealthBar": true,
+      "Isbossfight": true,
+      "HealthRaw": 1000,
+      "DifficultyRating": 100,
+      "Heal": {
+        "initialRate": 0,
+        "SwitchAfter": 45,
+        "FinalRate": -10000
+      }
+    },
+    "ED_OilDropper": {
+      "Base": "ED_Spider_Grunt_Guard",
+      "DisplayName": "油",
+      "DifficultyRating": 100,
+      "Scale": 1.5,
+      "DropResource": {
+        "Enable": true,
+        "Resource": "OilShale",
+        "Amount": {
+          "Mutate": "Random",
+          "Max": 80,
+          "Min": 60
+        }
+      },
+      "Resistances":{
+        "DamageMultiplier": 4
+      },
+      "Materials":[
+        "M_Spider_Grunt_Armor_GuardFrontLegs_Ice",
+        "M_CaveGeneric_OilShale_solid",
+        "M_Spider_Grunt_Armor_GuardFrontLegs_Radioactive"
+      ]
+    },
+    "ED_Useless":{
+      "Base":"ED_Spider_Drone",
+      "DisplayName":"Wavespawner占位符",
+      "DifficultyRating": 100,
+      "Heal": -100
+    },
+    "ED_Escort_Choices":{
+      "Base":"ED_Spider_Drone",
+      "DifficultyRating": 100,
+      "SpawnSpread": 500,
+      "CustomVeterans":{
+        "Mutate":"RandomChoice",
+        "Choices":["ED_Escort_Low","ED_Escort_Medium","ED_Escort_Stark","ED_Useless"],
+        "Weights":[
+          {
+          "Mutate": "IfFloat",
+          "Value": {
+            "Mutate": "EnemiesRecentlySpawned",
+            "ED": "ED_Escort_Low",
+            "Seconds": 120
+          },
+          ">": 0,
+          "Then": 0,
+          "Else": 99
+          },
+          {
+          "Mutate": "IfFloat",
+          "Value": {
+            "Mutate": "EnemiesRecentlySpawned",
+            "ED": "ED_Escort_Medium",
+            "Seconds": 120
+          },
+          ">": 0,
+          "Then": 0,
+          "Else": 99
+          },
+          {
+          "Mutate": "IfFloat",
+          "Value": {
+            "Mutate": "EnemiesRecentlySpawned",
+            "ED": "ED_Escort_Stark",
+            "Seconds": 120
+          },
+          ">": 0,
+          "Then": 0,
+          "Else": 99
+          },
+          1
+        ]
+      }
+    },
+    "ED_Escort_Stark":{
+      "Base":"ED_FlyingSmartRock",
+      "DisplayName":"困难",
+      "Timedilation":0.5,
+      "Isbossfight": true,
+      "Heal":{
+        "initialRate": 0,
+        "FinalRate": -1000,
+        "SwitchAfter": 8
+      },
+      "HealthRaw": 150,
+      "Materials":["","M_Uplink_Light_Red_Blink_Off"]
+    },
+    "ED_Escort_Medium":{
+      "Base":"ED_FlyingSmartRock",
+      "DisplayName":"普通",
+      "Timedilation":0.5,
+      "Isbossfight": true,
+      "Heal":{
+        "initialRate": 0,
+        "FinalRate": -1000,
+        "SwitchAfter": 5
+      },
+      "HealthRaw": 150,
+      "Materials":["","M_BeachParty_Ball_Blue"]
+    },
+    "ED_Escort_Low":{
+      "Base":"ED_FlyingSmartRock",
+      "Isbossfight": true,
+      "Timedilation":0.5,
+      "DisplayName":"简单",
+      "Heal":{
+        "initialRate": 0,
+        "FinalRate": -1000,
+        "SwitchAfter": 8
+      },
+      "HealthRaw": 150,
+      "Materials":["","M_Uplink_Light_Green_Blink_Off"]
+    },
+    "ED_Phase·1":{
+      "Base":"ED_Spider_Drone",
+      "Isbossfight": true,
+      "DisplayName":"目前阶段【乘胜追击】",
+      "DifficultyRating": 100,
+      "HealthRaw": 1000,
+      "Heal": {
+        "Mutate":"BymissionType",
+        "Default": -2.5,
+        "Salvage": -3.33333
+      },
+      "Resistances":{
+        "FireDamageMultiplier": 0,
+        "CorrosiveDamageMultiplier": 0,
+        "ElectricDamageMultiplier": 0,
+        "ColdDamageMultiplier": 0,
+        "KineticDamageMultiplier": 0,
+        "PhysicalDamageMultiplier": 0,
+        "ExplosionDamageMultiplier": 0,
+        "internalDamageMultiplier": 0,
+        "RadiationDamageMultiplier": 0,
+        "PoisonDamageMultiplier": 0,
+        "PiercingDamageMultiplier": 0
+      }
+    },
+    "ED_Phase·2":{
+      "Base":"ED_Spider_Drone",
+      "Isbossfight": true,
+      "DisplayName":"目前阶段【养虎为患】",
+      "DifficultyRating": 100,
+      "HealthRaw": 1000,
+      "Heal": {
+        "Mutate":"BymissionType",
+        "Default": -2.5,
+        "Salvage": -3.33333
+      },
+      "Resistances":{
+        "FireDamageMultiplier": 0,
+        "CorrosiveDamageMultiplier": 0,
+        "ElectricDamageMultiplier": 0,
+        "ColdDamageMultiplier": 0,
+        "KineticDamageMultiplier": 0,
+        "PhysicalDamageMultiplier": 0,
+        "ExplosionDamageMultiplier": 0,
+        "internalDamageMultiplier": 0,
+        "RadiationDamageMultiplier": 0,
+        "PoisonDamageMultiplier": 0,
+        "PiercingDamageMultiplier": 0
+      }
+    },
+    "ED_Phase·3":{
+      "Base":"ED_Spider_Drone",
+      "Isbossfight": true,
+      "DisplayName":"目前阶段【鱼龙混杂】",
+      "DifficultyRating": 100,
+      "HealthRaw": 1000,
+      "Heal": {
+        "Mutate":"BymissionType",
+        "Default": -2.5,
+        "Salvage": -3.33333
+      },
+      "Resistances":{
+        "FireDamageMultiplier": 0,
+        "CorrosiveDamageMultiplier": 0,
+        "ElectricDamageMultiplier": 0,
+        "ColdDamageMultiplier": 0,
+        "KineticDamageMultiplier": 0,
+        "PhysicalDamageMultiplier": 0,
+        "ExplosionDamageMultiplier": 0,
+        "internalDamageMultiplier": 0,
+        "RadiationDamageMultiplier": 0,
+        "PoisonDamageMultiplier": 0,
+        "PiercingDamageMultiplier": 0
+      }
+    },
+    "ED_Phase·4":{
+      "Base":"ED_Spider_Drone",
+      "Isbossfight": true,
+      "DisplayName":"目前阶段【以战养战】",
+      "DifficultyRating": 100,
+      "HealthRaw": 1000,
+      "Heal": {
+        "Mutate":"BymissionType",
+        "Default": -2.5,
+        "Salvage": -3.33333
+      },
+      "Resistances":{
+        "FireDamageMultiplier": 0,
+        "CorrosiveDamageMultiplier": 0,
+        "ElectricDamageMultiplier": 0,
+        "ColdDamageMultiplier": 0,
+        "KineticDamageMultiplier": 0,
+        "PhysicalDamageMultiplier": 0,
+        "ExplosionDamageMultiplier": 0,
+        "internalDamageMultiplier": 0,
+        "RadiationDamageMultiplier": 0,
+        "PoisonDamageMultiplier": 0,
+        "PiercingDamageMultiplier": 0
+      }
+    },
+    "ED_Phase·5":{
+      "Base":"ED_Spider_Drone",
+      "Isbossfight": true,
+      "DisplayName":"目前阶段【最后通牒】",
+      "DifficultyRating": 100,
+      "HealthRaw": 1000,
+      "Heal": {
+        "Mutate":"BymissionType",
+        "Default": -2.5,
+        "Salvage": -3.33333
+      },
+      "Resistances":{
+        "FireDamageMultiplier": 0,
+        "CorrosiveDamageMultiplier": 0,
+        "ElectricDamageMultiplier": 0,
+        "ColdDamageMultiplier": 0,
+        "KineticDamageMultiplier": 0,
+        "PhysicalDamageMultiplier": 0,
+        "ExplosionDamageMultiplier": 0,
+        "internalDamageMultiplier": 0,
+        "RadiationDamageMultiplier": 0,
+        "PoisonDamageMultiplier": 0,
+        "PiercingDamageMultiplier": 0
+      }
+    },
+    "ED_Glyphid_Protoform":{
+      "Base":"ED_Spider_Tank",
+      "DisplayName":"无畏胚体",
+      "CustomVeterans":{"ED_Glyphid_Protoform": 1},
+      "Materials":["M_Vanity_Headwear_SWAT_Balaclava_S01","M_RedVineFlower_01"],
+      "Resistances":{
+        "DamageMultiplier": 2
+      },
+      "Alert": false,
+      "DifficultyRating": 100,
+      "MaxSpawnCount": 3,
+      "MinSpawnCount": 2,
+      "Scale":{
+        "Mutate":"Accumulate",
+        "initial": 0.8,
+        "Value":{
+          "Mutate":"IfFloat",
+          "Value":{
+            "Mutate":"EnemyCount",
+            "ED":"ED_Glyphid_Protoform"
+          },
+          ">": 0,
+          "Then": 0.01,
+          "Else": -1
+        },
+        "Max": 1.2,
+        "Min": 0.8
+      },
+      "Heal":{
+        "initialRate": 0,
+        "SwitchAfter": 45,
+        "FinalRate": -10000
+      },
+      "Spawner":{
+        "ED":"ED_Glyphid_Omegaform",
+        "OnDeathCount": {
+          "Mutate":"IfFloat",
+          "Value":{
+            "Mutate":"Accumulate",
+            "initial": 0,
+            "Value": {
+              "Mutate":"IfFloat",
+              "Value":{
+                "Mutate":"EnemyCount",
+                "ED":"ED_Glyphid_Protoform"
+              },
+              ">": 0,
+              "Then": 1,
+              "Else": -100
+            },
+            "Max":40,
+            "Min": 0
+          },
+          "==": 40,
+          "Then": 1,
+          "Else": 0
+        },
+        "OnlySpawnOnAlert": false
+      },
+      "Temperature":{
+        "FreezeTemperature": -100,
+        "UnfreezeTemperature": -66.6
+      }
+    },
+    "ED_Glyphid_Omegaform":{
+      "Base":"ED_Spider_tank_Boss",
+      "DisplayName":"终胚无畏",
+      "Alert": false,
+      "Materials":["M_Vanity_Headwear_SWAT_Balaclava_S01","M_RedVineFlower_01"],
+      "Isbossfight":false,
+      "Courage": 0.5,
+      "StaggerImmunityWindow": 3,
+      "StaggerDurationMultiplier": 1,
+      "Resistances":{
+        "DamageMultiplier": 30
+      },
+      "Direct": {
+        "Float:DestructibleSubHealth.MaxHealth": 600,
+        "Float:HealthDamageTracker.TiggerOnPercentage": 1
+      },
+      "Temperature":{
+        "FreezeTemperature": -200,
+        "UnfreezeTemperature": -150
+      }
+    },
+    "ED_Glyphid_Nitra_ExploderKing":{
+      "Base":"ED_Spider_ExploderTank_King",
+      "DisplayName":"硝石自爆王虫",
+      "Isbossfight": false,
+      "Alert": false,
+      "DifficultyRating": 100,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Resistances":{
+        "DamageMultiplier": 15
+      },
+      "AttackDamageMultiplier": 0.2,
+      "DropResource":{
+        "Enable": true,
+        "Resource": "Nitra",
+        "Amount": {
+          "Mutate": "Random",
+          "Max": 40,
+          "Min": 30
+        }
+      },
+      "Direct":{
+          "Float:CarveDiameter": 0,
+          "int:NumClusterBombs": 0,
+          "Float:DamageDeathExplosion.RadialDamage": 0
+      },
+      "Materials":["M_CaveGeneric_Nitra_Glowing","M_Custom_Nitra"]
+    },
+    "ED_Medic_RapidShooter":{
+      "DisplayName":"馈血速射异虫",
+      "Base":"ED_Spider_RapidShooter",
+      "DifficultyRating": 100,
+      "MaxSpawnCount": 1,
+      "MinSpawnCount": 1,
+      "Materials":[
+        "M_Crystal_GreenGlow",
+        "M_HairColor_Green02",
+        "M_Spider_Grunt_Armor_Slasher_Radioactive",
+        "M_Spider_Grunt_Armor_Slasher_Radioactive"
+      ],
+      "Resistances":{
+        "DamageMultiplier": 1.8
+      }
+    },
+    "ED_Destroyer":{
+      "Base":"ED_Spider_ExploderTank",
+      "DifficultyRating": 100,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 1,
+      "Heal": -9999,
+      "Direct":{
+        "Int:NumClusterBombs": 0,
+        "Float:CarveDiameter": 0,
+        "Float:Damage.DamageRadius": 8888888,
+        "Float:Damage.MaxDamageRadius": 8888888,
+        "Float:DamageDeathExplosion.RadialDamage": 8888888,
+        "Float:DamageDeathExplosion.MinDamagePct": 1,
+        "Float:DamageDeathExplosion.DamageRadius": 8888888,
+        "Float:DamageDeathExplosion.MaxDamageRadius": 8888888
+      }
+    }
+  },
+  "WaveSpawners": [
+    {
+      "Name":"精选单位",
+      "Enabled":{
+        "Mutate":"TriggerSustain",
+        "N": 150,
+        "in":{
+          "Mutate":"TriggerOnChange",
+          "RiseOnly": true,
+          "in":{"Var":"轮转阶段周期"}
+        }
+      },
+      "Enemies":{
+        "Mutate":"SelectFromArray",
+        "Select":{"Var":"生态圈抽取"},
+        "Array":[
+          "ED_Medic_RapidShooter",
+          "ED_Glyphid_Nitra_ExploderKing",
+          "ED_Glyphid_Protoform"
+        ]
+      },
+      "Difficulty":{
+        "Mutate":"SelectFromArray",
+        "Select":{"Var":"生态圈抽取"},
+        "Array":[66,33,200]
+      },
+      "Locations": 1,
+      "Distance": 8000,
+      "Alert": true,
+      "interval": 150
+    },
+    {
+      "Name":"阶段信息显示 + 切换阶段计时",
+      "Enabled":{
+        "Mutate":"Or",
+        "A":{
+          "Mutate":"TriggerOnce",
+          "in":{
+            "Mutate":"DuringMission",
+            "StartingAt": 5,
+            "StoppingAfter": 10
+          }
+        },
+        "B":{
+          "Mutate":"TriggerDelay",
+          "N": 5,
+          "in":{
+            "Mutate":"TriggerOnChange",
+            "RiseOnly": true,
+            "in":{"Var":"轮转阶段周期"}
+          }
+        }
+      },
+      "Enemies":{
+        "Mutate":"SelectFromArray",
+        "Select":{"Var":"最终生效怪池"},
+        "Array":["ED_Phase·1","ED_Phase·2","ED_Phase·3","ED_Phase·4","ED_Phase·5"]
+      },
+      "Difficulty": 33,
+      "interval": 0,
+      "Distance": 6000,
+      "Locations": 1
+    },
+    {
+      "Name":"推车最终阶段难度选择",
+      "Enabled":{
+        "Mutate":"And",
+        "A":{
+          "Mutate":"And",
+          "A":{
+            "Mutate":"BymissionType",
+            "Default": false,
+            "Escort": true
+          },
+          "B":{
+            "Mutate":"ByEscortPhase",
+            "Default": false,
+            "FinalEventA": true
+          }
+        },
+        "B":{
+          "Mutate":"DuringMission",
+          "StartingAt": 480
+        }
+      },
+      "Enemies":["ED_Escort_Choices"],
+      "Difficulty": 133,
+      "Locations": 1,
+      "Distance": 1500,
+      "interval": 0
+    },
+    {
+      "Name": "掠夺虫刷新机制",
+      "Enemies": ["ED_Seasonal_PumpkinLootBug"],
+      "Enabled": {
+        "Mutate":"Sequence",
+        "Sequence":[false,true,false,true,false,true,false,true],
+        "Repeat": false,
+        "Reset":{
+          "Mutate":"SelectFromArray",
+          "Select":{"Var":"玩家阶段表现锁定"},
+          "Array":[false,false,false,false,false,true,true]
+        },
+        "Next":{
+          "MUtate":"triggerTimer",
+          "N": 15,
+          "Enable":{
+            "Mutate":"DuringMission",
+            "StartingAt": 90
+          }
+        }
+      },
+      "Difficulty": 3,
+      "Distance": 2000,
+      "interval": 9999,
+      "SpawnOnEnable": true,
+      "Locations": 1
+    },
+    {
+      "Name": "这不是MC:王草碎片+数据核心=治愈核心",
+      "Enabled": {
+        "Mutate":"And",
+        "A":{
+          "Mutate":"TriggerFixedDuration",
+          "N": 15,
+          "in":{
+            "Mutate":"TriggerOnChange",
+            "RiseOnly": true,
+            "in":{
+              "Mutate":"DepositedResource",
+              "Resource":"Tyrant Shard"
+            }
+          }
+        },
+        "B":{
+          "Mutate":"TriggerFixedDuration",
+          "N": 15,
+          "in":{
+            "Mutate":"TriggerOnChange",
+            "RiseOnly": true,
+            "in":{
+              "Mutate":"DepositedResource",
+              "Resource":"Data Cell"
+            }
+          }
+        }
+      },
+      "Enemies": [
+      {
+        "Mutate": "RandomChoice",
+        "Choices": [
+          "ED_HealCore",
+          "ED_Useless"
+        ],
+        "Weights": [
+          {
+          "Mutate": "IfFloat",
+          "Value": {
+            "Mutate": "EnemiesRecentlySpawned",
+            "ED": "ED_HealCore",
+            "Seconds": 120
+          },
+          ">": 0,
+          "Then": 0.5,
+          "Else": 1
+          },
+          {
+          "Mutate": "IfFloat",
+          "Value": {
+            "Mutate": "EnemiesRecentlySpawned",
+            "ED": "ED_HealCore",
+            "Seconds": 9999
+          },
+          ">": 0,
+          "Then": 0.5,
+          "Else": 0
+          }
+        ]
+      }
+      ],
+      "Distance": 4000,
+      "interval": 0,
+      "Difficulty": 33,
+      "Locations": 1
+    },
+    {
+      "Name": "推车任务加速",
+      "Enabled": {
+        "Mutate": "ByEscortPhase",
+        "Default": false,
+        "WaitingForFuel": true
+      },
+      "Enemies": [
+        "ED_OilDropper"
+      ],
+      "Locations": 1,
+      "Difficulty": 100,
+      "Distance": 1500,
+      "interval": 25
+    },
+    {
+      "Name":"清场机制",
+      "Enabled":{
+        "Mutate":"TriggerDelay",
+        "N": 5,
+        "In":{
+          "Mutate":"TriggerFixedDuration",
+          "N": 1.5,
+          "in":{"Var":"昏迷黑啤·危机庇护激活"}
+        }
+      },
+      "Enemies":["ED_Destroyer"],
+      "Difficulty": 33,
+      "interval": 1,
+      "Distance": 6000,
+      "Locations": 1
+    }
+  ],
+  "Vars": {
+    "昏迷黑啤·危机庇护次数":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Sequence",
+        "Sequence":[0,1],
+        "Repeat": false,
+        "Next":{
+          "Mutate":"TriggerFixedDuration",
+          "N": 1,
+          "In":{
+            "Mutate":"Iffloat",
+            "Value":{"Var":"玩家阶段表现锁定"},
+            "==": 6,
+            "Then": true,
+            "Else": false
+          }
+        },
+        "Previous":{
+          "Mutate":"TriggerDelay",
+          "N": 21,
+          "In":{
+            "Mutate":"TriggerFixedDuration",
+            "N": 0.5,
+            "In":{
+              "Mutate":"Iffloat",
+              "Value":{"Var":"团队状态评估"},
+              "<=": 0.45,
+              "Then": true,
+              "Else": false
+            }
+          }
+        }
+      }
+    },
+    "昏迷黑啤·危机庇护激活":{
+      "Type":"Boolean",
+      "Value":{
+        "Mutate":"And",
+        "A":{
+          "Mutate":"Iffloat",
+          "Value":{"Var":"团队状态评估"},
+          "<=": 0.45,
+          "Then": true,
+          "Else": false
+        },
+        "B":{
+          "Mutate":"Iffloat",
+          "Value":{"Var":"昏迷黑啤·危机庇护次数"},
+          ">": 0,
+          "Then": true,
+          "Else": false
+        }
+      }
+    },
+    "红岩爆破手·补给增幅次数":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Sequence",
+        "Sequence":[0,1,2,3,4],
+        "Repeat": false,
+        "Next":{
+          "Mutate":"TriggerTimer",
+          "N": 15,
+          "Enable":{
+            "Mutate":"TriggerOnce",
+            "Reset":{"Var":"轮转阶段周期Boolean"},
+            "In":{
+              "Mutate":"TriggerFixedDuration",
+              "N": 61,
+              "In":{
+                "Mutate":"And",
+                "A":{
+                  "Mutate":"Iffloat",
+                  "Value":{"Var":"玩家阶段表现锁定"},
+                  "==": 5,
+                  "Then": true,
+                  "Else": false
+                },
+                "B":{
+                  "Mutate":"TriggerOnce",
+                  "Reset":{"Var":"轮转阶段周期Boolean"},
+                  "In":{
+                    "Mutate":"TriggerOnchange",
+                    "RiseOnly": true,
+                    "In":{"Mutate":"ResuppliesCalled"}
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Previous":{
+          "Mutate":"TriggerDelay",
+          "N": 20,
+          "In":{"Var":"双评估技能激活"}
+        }
+      }
+    },
+    "红岩爆破手·技能激活":{
+      "Type":"Boolean",
+      "Value":{
+        "Mutate":"Iffloat",
+        "Value":{"Var":"红岩爆破手·补给增幅次数"},
+        ">": 0,
+        "Then":{
+          "Mutate":"If",
+          "Condition":{"Var":"双评估技能激活"},
+          "Then": true,
+          "Else": false
+        },
+        "Else":false
+      }
+    },
+    "杀手黑啤·回血次数":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Sequence",
+        "Sequence":[0,1,2,3],
+        "Next":{
+          "Mutate":"TriggerTimer",
+          "N": 5,
+          "Enable":{"Var":"杀手黑啤·次数充能"}
+        },
+        "Previous":{
+          "Mutate":"TriggerDelay",
+          "N": 5,
+          "In":{
+            "Mutate":"TriggerFixedDuration",
+            "N": 1,
+            "In":{"Var":"杀手黑啤·效果触发"}
+          }
+        },
+        "Repeat": false
+      }
+    },
+    "杀手黑啤·效果触发":{
+      "Type":"Boolean",
+      "Value":{
+        "Mutate":"TriggerCooldown",
+        "N": 20,
+        "IN":{
+          "Mutate":"And",
+          "A":{
+            "Mutate":"IfFloat",
+            "Value":{"Var":"团队状态评估"},
+            "<=": 0.75,
+            "Then": true,
+            "Else": false
+          },
+          "B":{
+            "Mutate":"TriggerOnChange",
+            "RiseOnly": true,
+            "In":{
+              "Mutate":"Floor",
+              "Value":{
+                "Mutate":"Divide",
+                "A":{"Mutate":"EnemiesKilled"},
+                "B": 50
+              }
+            }
+          }
+        }
+      }
+    },
+    "杀手黑啤·次数充能":{
+      "Type":"Boolean",
+      "Value":{
+        "Mutate":"TriggerFixedDuration",
+        "N": 16,
+        "In":{
+          "Mutate":"Iffloat",
+          "Value":{"Var":"玩家阶段表现锁定"},
+          "==": 4,
+          "Then": true,
+          "Else": false
+        }
+      }
+    },
+    "补给消耗次数":{
+      "Type":"Boolean",
+      "Value":{
+        "Mutate":"TriggerCooldown",
+        "N": 50,
+        "In":{
+          "Mutate":"TriggerOnchange",
+          "RiseOnly": true,
+          "In":{"Mutate":"ResupplyUsesConsumed"}
+        }
+      }
+    },
+    "双评估技能激活":{
+      "Type":"Boolean",
+      "Value":{
+        "Mutate":"And",
+        "A":{
+          "Mutate":"Iffloat",
+          "Value":{"Var":"团队状态评估"},
+          "<=": 0.75,
+          "Then": true,
+          "Else": false
+        },
+        "B":{"Var":"补给消耗次数"}
+      }
+    },
+    "任务阶段时间":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"BymissionType",
+        "Default": 240,
+        "Salvage": 180
+      }
+    },
+    "小猪·以战养战":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"SelectFromArray",
+        "Select":{"Var":"玩家阶段表现锁定"},
+        "Array":[1.15,1.1,1.05,1]
+      }
+    },
+    "小猪·乘胜追击":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"SelectFromArray",
+        "Select":{"Var":"玩家阶段表现锁定"},
+        "Array":[1.1,1.05,1.03,1]
+      }
+    },
+    "玩家阶段表现锁定":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"LockFloat",
+        "Value":{"Var":"玩家阶段表现等级评估"},
+        "Update":{"Var":"轮转阶段周期Boolean"}
+      }
+    },
+    "玩家阶段表现等级评估":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Sequence",
+        "Sequence":[0,1,2,3,4,5,6],
+        "InitialOffset": 3,
+        "Reset":{
+          "Mutate":"TriggerDelay",
+          "N": 3,
+          "In":{"Var":"轮转阶段周期Boolean"}
+        },
+        "Repeat": false,
+        "Next":{
+          "Mutate":"Or",
+          "A":{
+            "Mutate":"TriggerOnce",
+            "Reset":{"Var":"轮转阶段周期Boolean"},
+            "In":{
+              "Mutate":"TriggerFixedDuration",
+              "N": 1,
+              "In":{
+                "Mutate":"Iffloat",
+                "Value":{"Var":"每分钟击杀量"},
+                ">=": 180,
+                "Then": true,
+                "Else": false
+              }
+            }
+          },
+          "B":{
+            "Mutate":"TriggerOnce",
+            "Reset":{"Var":"轮转阶段周期Boolean"},
+            "In":{
+              "Mutate":"TriggerFixedDuration",
+              "N": 1,
+              "In":{"Var":"硝石采集效率判定"}
+            }
+          },
+          "C":{
+            "Mutate":"TriggerOnce",
+            "Reset":{"Var":"轮转阶段周期Boolean"},
+            "In":{
+              "Mutate":"TriggerFixedDuration",
+              "N": 1,
+              "In":{
+                "Mutate":"And",
+                "A":{
+                  "Mutate":"Iffloat",
+                  "Value":{"Var":"1分钟内倒人数量"},
+                  "<=": 3,
+                  "Then": true,
+                  "Else": false
+                },
+                "B":{
+                  "Mutate":"Iffloat",
+                  "Value":{
+                    "Mutate":"StopWatch",
+                    "Enable":true,
+                    "Reset":{"Mutate":"TriggerTimer","N":60}
+                  },
+                  ">=": 58,
+                  "Then": true,
+                  "Else": false
+                }
+              }
+            }
+          }
+        },
+        "Previous":{
+          "Mutate":"Or",
+          "A":{
+            "Mutate":"TriggerOnce",
+            "Reset":{"Var":"轮转阶段周期Boolean"},
+            "In":{
+              "Mutate":"TriggerFixedDuration",
+              "N": 1,
+              "In":{
+                "Mutate":"And",
+                "A":{
+                  "Mutate":"Iffloat",
+                  "Value":{"Var":"每分钟击杀量"},
+                  "<": 90,
+                  "Then": true,
+                  "Else": false
+                },
+                "B":{
+                  "Mutate":"Iffloat",
+                  "Value":{
+                    "Mutate":"StopWatch",
+                    "Enable":true,
+                    "Reset":{"Mutate":"TriggerTimer","N":65}
+                  },
+                  ">": 60,
+                  "Then": true,
+                  "Else": false
+                }
+              }
+            }
+          },
+          "B":{
+            "Mutate":"TriggerOnce",
+            "Reset":{"Var":"轮转阶段周期Boolean"},
+            "In":{
+              "Mutate":"TriggerFixedDuration",
+              "N": 1,
+              "In":{
+                "Mutate":"Iffloat",
+                "Value":{"Var":"救援队友速度"},
+                ">=": 20,
+                "Then": true,
+                "Else": false
+              }
+            }
+          },
+          "C":{
+            "Mutate":"TriggerOnce",
+            "Reset":{"Var":"轮转阶段周期Boolean"},
+            "In":{
+              "Mutate":"TriggerFixedDuration",
+              "N": 1,
+              "In":{
+                "Mutate":"Iffloat",
+                "Value":{"Var":"1分钟内倒人数量"},
+                ">=": 6,
+                "Then": true,
+                "Else": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "每分钟击杀量":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Subtract",
+        "A":{"Mutate":"EnemiesKilled"},
+        "B":{
+          "Mutate":"LockFloat",
+          "Update":{
+            "Mutate":"Iffloat",
+            "Value":{
+              "Mutate":"StopWatch",
+              "Enable":true,
+              "Reset":{"Mutate":"TriggerTimer","N": 62}
+            },
+            ">=": 60,
+            "Then": true,
+            "Else": false
+          },
+          "Value":{"Mutate":"EnemiesKilled"}
+        }
+      }
+    },
+    "救援队友速度":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Accumulate",
+        "Initial": 0,
+        "Value":{
+          "Mutate":"Iffloat",
+          "Value":{"Mutate":"DwarvesDown"},
+          ">": 0,
+          "Then": 0.5,
+          "Else": -10
+        },
+        "Min": 0,
+        "Max": 30
+      }
+    },
+    "硝石采集效率判定":{
+      "Type":"Boolean",
+      "Value":{
+        "Mutate":"IfFloat",
+        "Value":{"Var":"60s内硝石采集量"},
+        ">=": 90,
+        "Then": true,
+        "Else": false
+      }
+    },
+    "60s内硝石采集量":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Subtract",
+        "A":{"Var":"硝石采集量"},
+        "B":{
+          "Mutate":"LockFloat",
+          "Value":{"Var":"硝石采集量"},
+          "Update":{
+            "Mutate":"TriggerTimer",
+            "N": 60
+          }
+        }
+      }
+    },
+    "硝石采集量":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Accumulate",
+        "Initial": 0,
+        "Value":{
+          "Mutate":"Max",
+          "Values":[
+            0,
+            {
+              "Mutate":"Delta",
+              "Value":{
+                "Mutate":"DepositedResource",
+                "Resource":"Nitra"
+              }
+            }
+          ]
+        },
+        "Min": 0,
+        "Max": 9999
+      }
+    },
+    "1分钟内倒人数量":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Subtract",
+        "A":{"Mutate":"DwarvesDowns"},
+        "B":{
+          "Mutate":"LockFloat",
+          "Value":{"Mutate":"DwarvesDowns"},
+          "Update":{
+            "Mutate":"TriggerTimer",
+            "N": 60
+          }
+        }
+      }
+    },
+    "半价补给次数":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Sequence",
+        "Sequence":[0,1,2],
+        "Next":{
+          "Mutate":"Or",
+          "A":{
+            "Mutate":"TriggerOnchange",
+            "Riseonly": true,
+            "In":{"Mutate":"ResuppliesCalled"}
+          },
+          "B":{
+            "Mutate":"TriggerDelay",
+            "N": 5,
+            "In":{
+              "Mutate":"TriggerFixedDuration",
+              "N": 0.5,
+              "In":{
+                "Mutate":"Iffloat",
+                "Value":{"Var":"玩家阶段表现锁定"},
+                "==": 5,
+                "Then": true,
+                "Else": false
+              }
+            }
+          }
+        },
+        "Repeat": false,
+        "Reset":{
+          "Mutate":"TriggerDelay",
+          "N": 3,
+          "In":{
+            "Mutate":"TriggerFixedDuration",
+            "N": 0.5,
+            "In":{
+              "Mutate":"Iffloat",
+              "Value":{"Var":"玩家阶段表现锁定"},
+              "==": 5,
+              "Then": true,
+              "Else": false
+            }
+          }
+        }
+      }
+    },
+    "免费补给次数":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Sequence",
+        "Sequence":[0,1,2,3],
+        "Next":{
+          "Mutate":"Or",
+          "A":{
+            "Mutate":"TriggerOnce",
+            "In":{
+              "Mutate":"TriggerFixedDuration",
+              "N": 1,
+              "In":{
+                "Mutate":"DuringMission",
+                "StartingAt": 15,
+                "StoppingAfter": 18
+              }
+            }
+          },
+          "B":{
+            "Mutate":"TriggerFixedDuration",
+            "N": 1,
+            "In":{"Mutate":"SecondaryFinished"}
+          },
+          "C":{
+            "Mutate":"TriggerOnChange",
+            "Riseonly": true,
+            "In":{
+              "Mutate":"Floor",
+              "Value":{
+                "Mutate":"Divide",
+                "A":{
+                  "Mutate":"Add",
+                  "A": {
+                    "Mutate": "DepositedResource",
+                    "Resource": "Gold"
+                  },  
+                  "B": {  
+                    "Mutate": "DepositedResource",
+                    "Resource": "Compressed Gold"
+                  }
+                },
+                "B": 120
+              }
+            }
+          },
+          "D":{
+            "Mutate":"TriggerOnce",
+            "Reset":{"Var":"轮转阶段周期Boolean"},
+            "In":{
+              "Mutate":"TriggerFixedDuration",
+              "N": 1,
+              "In":{
+                "Mutate":"Iffloat",
+                "Value":{"Var":"玩家阶段表现锁定"},
+                "==": 6,
+                "Then": true,
+                "Else": false
+              }
+            }
+          }
+        },
+        "Previous":{
+          "Mutate":"TriggerOnchange",
+          "Riseonly": true,
+          "In":{"Mutate":"ResuppliesCalled"}
+        },
+        "Repeat": false
+      }
+    },
+    "轮转阶段周期Boolean":{
+      "Type":"Boolean",
+      "Value":{
+        "Mutate":"TriggerOnchange",
+        "RiseOnly": true,
+        "In":{"Var":"轮转阶段周期"}
+      }
+    },
+    "生态圈抽取":{
+      "Type":"float",
+      "Value":{
+        "Mutate":"LockFloat",
+        "Update":{
+          "Mutate":"TriggerOnChange",
+          "RiseOnly": true,
+          "in":{"Var":"轮转阶段周期"}
+        },
+        "Value":{
+          "Mutate":"RandomChoice",
+          "Choices":[0,1,2],
+          "Weights":[1,1,1]
+        }
+      }
+    },
+    "轮转阶段周期":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Floor",
+        "Value":{
+          "Mutate":"Divide",
+          "A":{
+            "Mutate": "ByTime",
+            "initialValue": 0,
+            "RateOfChange": 1,
+            "StartDelay": 0
+          },
+          "B":{
+            "Mutate": "ByMissionType",
+            "Default": 240,
+            "Salvage": 180,
+            "Mining": {
+              "Mutate": "ByPlayerCount",
+              "Values": [
+                300,
+                270,
+                240,
+                210
+              ]
+            }
+          }
+        }
+      }
+    },
+    "本阶段击杀数":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Subtract",
+        "A":{"Mutate": "EnemiesKilled"},
+        "B":{
+          "Mutate": "LockFloat",
+          "Update": {
+            "Mutate": "TriggerOnChange",
+            "in": {"Var": "轮转阶段周期"},
+            "RiseOnly": true
+          },
+          "Value": {"Mutate": "EnemiesKilled"}
+        }
+      }
+    },
+    "击杀数KPM(Kills Per Minute)":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Divide",
+        "A":{"Var":"本阶段击杀数"},
+        "B":{
+          "Mutate": "ByMissionType",
+          "Default": 4,
+          "Salvage": 3,
+          "Mining": {
+            "Mutate": "ByPlayerCount",
+            "Values": [
+              5,
+              4.5,
+              4,
+              3.5
+            ]
+          }
+        }
+      }
+    },
+    "阶段内危险局面触发检测":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Accumulate",
+        "initial": 0,
+        "Value":{
+          "Mutate":"Sequence",
+          "Sequence":[0,1],
+          "Repeat": false,
+          "Next":{
+            "Mutate":"IfFloat",
+            "Value":{"Var":"团队状态评估"},
+            "<": 0.4,
+            "Then": true,
+            "Else": false
+          },
+          "Reset":{"Var":"轮转阶段周期Boolean"}
+        }
+      }
+    },
+    "本阶段补给调用次数":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Subtract",
+        "A":{"Mutate":"ResuppliesCalled"},
+        "B":{
+          "Mutate": "LockFloat",
+          "Update": {
+            "Mutate": "TriggerOnChange",
+            "in": {"Var": "轮转阶段周期"},
+            "RiseOnly": true
+          },
+          "Value": {"Mutate": "ResuppliesCalled"}
+        }
+      }
+    },
+    "弹药效率因子":{
+      "Type":"float",
+      "Value":{
+        "Mutate":"IfFloat",
+        "Value":{"Var":"阶段内危险局面触发检测"},
+        "==": 1,
+        "Then":{
+          "Mutate":"Clamp",
+          "Value":{
+            "Mutate":"Add",
+            "A": 1.15,
+            "B":{
+              "Mutate":"Multiply",
+              "A":{"Var":"本阶段补给调用次数"},
+              "B": -0.0334
+            }
+          },
+          "Min": 1.05
+        },
+        "Else":{
+          "Mutate":"Clamp",
+          "Value":{
+            "Mutate":"Add",
+            "A": 1,
+            "B":{
+              "Mutate":"Multiply",
+              "A":{"Var":"本阶段补给调用次数"},
+              "B": -0.025
+            }
+          },
+          "Min": 0.95
+        }
+      }
+    },
+    "高有效KPM判定":{
+      "Type":"Boolean",
+      "Value":{
+        "Mutate": "IfFloat",
+        "Value": {
+          "Mutate":"Multiply",
+          "A":{"Var": "击杀数KPM(Kills Per Minute)"},
+          "B":{"Var":"弹药效率因子"}
+        },
+        ">=": 200,
+        "Then": true,
+        "Else": false
+      }
+    },
+    "战斗有效死亡加权计算":{
+      "Type":"float",
+      "Value":{
+        "Mutate":"Clamp",
+        "Value":{
+          "Mutate":"Accumulate",
+          "Initial": 0,
+          "Value":{
+            "Mutate":"Add",
+            "A":{
+              "Mutate":"Multiply",
+              "A":{
+                "Mutate":"Delta",
+                "Value":{"Mutate":"DwarvesDowns"}
+              },
+              "B":{
+                "Mutate":"SelectFromArray",
+                "Select":{"Mutate": "IWsLeft"},
+                "Array":[0.20, 0.16, 0.13, 0.10, 0.08]
+              }
+            },
+            "B":{
+              "Mutate":"Multiply",
+              "A":{
+                "Mutate":"Delta",
+                "Value":{"Mutate":"IWsLeft"}
+              },
+              "B":{
+                "Mutate":"SelectFromArray",
+                "Select":{"Mutate": "IWsLeft"},
+                "Array":[0.35,0.3,0.25,0.2,0]
+              },
+              "C": -1
+            }
+          }
+        }
+      }
+    },
+    "本阶段死亡率":{
+      "Type":"float",
+      "Value":{
+        "Mutate":"Subtract",
+        "A":{"Var":"战斗有效死亡加权计算"},
+        "B":{
+          "Mutate": "LockFloat",
+          "Update": {
+            "Mutate": "TriggerOnChange",
+            "in": {"Var": "轮转阶段周期"},
+            "RiseOnly": true
+          },
+          "Value": {"Var":"战斗有效死亡加权计算"}
+        }
+      }
+    },
+    "高死亡率判定":{
+      "Type":"Boolean",
+      "Value":{
+        "Mutate": "IfFloat",
+        "Value": {"Var": "本阶段死亡率"},
+        ">=": 0.6,
+        "Then": true,
+        "Else": false
+      }
+    },
+    "资源采集量": {
+      "Type": "Float",
+      "Value": {
+        "Mutate": "Accumulate",
+        "initial": 0,
+        "Value": {
+          "Mutate": "Add",
+          "A": {
+            "Mutate": "Multiply",
+            "A": {
+              "Mutate": "Divide",
+              "A": {
+                "Mutate": "Max",
+                "Values":[
+                  0,
+                  {
+                    "Mutate": "Delta",
+                    "Value": {
+                      "Mutate": "DepositedResource",
+                      "Resource": "Nitra"
+                    }
+                  }
+                ]
+              },
+              "B": 120
+            },
+            "B": {
+              "Mutate": "Sequence",
+              "Sequence": [1, 0.95, 0.9],
+              "Next": {
+                "Mutate": "TriggerOnChange",
+                "RiseOnly": true,
+                "in": {
+                  "Mutate": "Floor",
+                  "Value": {
+                    "Mutate": "Divide",
+                    "A": {
+                      "Mutate": "EnemiesKilled",
+                      "ED": "ED_Seasonal_PumpkinLootBug"
+                    },
+                    "B": 6
+                  }
+                }
+              },
+              "Previous": {
+                "Mutate": "TriggerTimer",
+                "N": 40
+              },
+              "Repeat": false
+            }
+          },
+          "B": {
+            "Mutate": "Multiply",
+            "A": {
+              "Mutate": "Delta",
+              "Value": {
+                "Mutate": "DepositedResource",
+                "Resource": "Gold"
+              }
+            },
+            "B": 0.1
+          }
+        }
+      }
+    },
+    "本阶段资源采集量":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Subtract",
+        "A":{"Var":"资源采集量"},
+        "B":{
+          "Mutate": "LockFloat",
+          "Update": {
+            "Mutate": "TriggerOnChange",
+            "in": {"Var": "轮转阶段周期"},
+            "RiseOnly": true
+          },
+          "Value":{"Var":"资源采集量"}
+        }
+      }
+    },
+    "高资源采集量判定":{
+      "Type":"Boolean",
+      "Value":{
+        "Mutate": "IfFloat",
+        "Value": {"Var": "本阶段资源采集量"},
+        ">=": 1,
+        "Then": true,
+        "Else": false
+      }
+    },
+    "阶段一·怪池":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"RandomChoicePerMission",
+        "Choices":[0,1,2,3],
+        "Weights":[1,1,1,1]
+      }
+    },
+    "阶段奇偶判定":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Modulo",
+        "A":{"Var":"轮转阶段周期"},
+        "B": 2
+      }
+    },
+    "选择逻辑:物竞天择":{
+      "Type": "Float",
+      "Value":{
+        "Mutate":"If",
+        "Condition":{"Var":"高有效KPM判定"},
+        "Then":{
+          "Mutate":"If",
+          "Condition":{"Var":"高死亡率判定"},
+          "Then": 2,
+          "Else": {
+            "Mutate":"If",
+            "Condition":{"Var":"高资源采集量判定"},
+            "Then": 4,
+            "Else": 3
+          }
+        },
+        "Else":{
+          "Mutate":"If",
+          "Condition":{"Var":"高死亡率判定"},
+          "Then": 0,
+          "Else": 1
+        }
+      }
+    },
+    "偶数阶段锁存": {
+      "Type": "Float",
+      "Value": {
+        "Mutate": "LockFloat",
+        "Update": {
+          "Mutate": "IfFloat",
+          "Value": {"Var": "阶段奇偶判定"},
+          "==": 0,
+          "Then": true,
+          "Else": false
+        },
+        "Value": {"Var": "选择逻辑:物竞天择"}
+      }
+    },
+    "奇数阶段锁存": {
+      "Type": "Float",
+      "Value": {
+        "Mutate": "LockFloat",
+        "Update": {
+          "Mutate": "IfFloat",
+          "Value": {"Var": "阶段奇偶判定"},
+          "==": 1,
+          "Then": true,
+          "Else": false
+        },
+        "Value": {"Var": "选择逻辑:物竞天择"}
+      }
+    },
+    "上一阶段表现": {
+      "Type": "Float",
+      "Value": {
+        "Mutate": "IfFloat",
+        "Value": {"Var": "阶段奇偶判定"},
+        "==": 0,
+        "Then": {"Var": "奇数阶段锁存"},
+        "Else": {"Var": "偶数阶段锁存"}
+      }
+    },
+    "当前生效怪池": {
+      "Type": "Float",
+      "Value": {
+        "Mutate": "IfFloat",
+        "Value": {"Var": "轮转阶段周期"},
+        "==": 0,
+        "Then": {"Var": "阶段一·怪池"},
+        "Else": {"Var": "上一阶段表现"}
+      }
+    },
+    "上期实际怪池": {
+      "Type": "Float",
+      "Value": {
+        "Mutate": "LockFloat",
+        "Update": {
+            "Mutate": "TriggerOnChange",
+            "in": {"Var": "轮转阶段周期"},
+            "RiseOnly": true
+        },
+        "Value": {"Var": "当前生效怪池"}
+      }
+    },
+    "连续同怪池计数": {
+      "Type": "Float",
+      "Value": {
+        "Mutate": "IfFloat",
+        "Value": {"Var": "轮转阶段周期"},
+        "<": 1,
+        "Then": 0,
+        "Else": {
+          "Mutate": "Accumulate",
+          "initial": 0,
+          "Value": {
+              "Mutate": "IfFloat",
+              "Value": {"Var": "上一阶段表现"},
+              "==": {"Var": "上期实际怪池"},
+              "Then": 1,
+              "Else": -999
+          },
+          "Min": 0
+        }
+      }
+    },
+    "疲劳转换怪池": {
+      "Type": "Float",
+      "Value": {
+        "Mutate": "SelectFromArray",
+        "Select": {"Var": "上一阶段表现"},
+        "Array": [2, 0, 3, 1,4]
+      }
+    },
+    "最终生效怪池": {
+      "Type": "Float",
+      "Value": {
+        "Mutate": "If",
+        "Condition": {
+            "Mutate": "And",
+            "A": {
+                "Mutate": "IfFloat",
+                "Value": {"Var": "连续同怪池计数"},
+                ">=": 2,
+                "Then": true,
+                "Else": false
+            },
+            "B": {
+                "Mutate": "IfFloat",
+                "Value": {"Var": "上一阶段表现"},
+                "<": 4,
+                "Then": true,
+                "Else": false
+            }
+        },
+        "Then": {"Var": "疲劳转换怪池"},
+        "Else": {"Var": "当前生效怪池"}
+      }
+    },
+    "团队状态评估":{
+      "Type":"Float",
+      "Value":{
+        "Mutate": "Min",
+        "Values":[
+          {
+          "Mutate": "Add",
+          "A": {"Var":"钢铁与倒地权重"},
+          "B": {
+            "Mutate": "Add",
+            "A": {"Var":"血量与护盾权重"},
+            "B": {
+              "Mutate": "Multiply",
+              "A": {"Mutate": "DwarvesAmmo"},
+              "B": 0.2
+            }
+          }
+        },
+        {
+          "Mutate": "IfFloat",
+          "Value": {
+            "Mutate": "Subtract",
+            "A": {"Mutate": "DwarvesDown"},
+            "B": {
+              "Mutate": "Min",
+              "Values": [
+                {"Mutate": "IWsLeft"},
+                2
+              ]
+            }
+          },
+          ">=": 3,
+          "Then": 0.20,
+          "Else": 1.0
+        } 
+        ]
+      }
+    },
+    "钢铁与倒地权重":{
+      "Type":"Float",
+      "Value":{
+        "Mutate": "SelectFromArray",
+        "Select": {
+          "Mutate": "Clamp",
+          "Value": {
+            "Mutate": "Subtract",
+            "A": { "Mutate": "DwarvesDown" },
+            "B": {
+              "Mutate": "Min",
+              "Values": [
+                {"Mutate":"IWsLeft"},
+                2
+              ]
+            }
+          },
+          "Min": 0,
+          "Max": 4
+        },
+        "Array": [0.45, 0.2, 0.05, 0, 0]
+      }
+    },
+    "血量与护盾权重":{
+      "Type":"Float",
+      "Value":{
+        "Mutate": "Multiply",
+        "A": {
+          "Mutate": "IfFloat",
+          "Value": {"Mutate": "DwarvesDown"},
+          ">": 0,
+          "Then": {"Mutate": "DwarvesHealth"},
+          "Else": {
+            "Mutate": "IfFloat",
+            "Value": {"Mutate": "DwarvesShield"},
+            ">=": 0.4,
+            "Then": {
+              "Mutate":"IfFloat",
+              "Value":{"Mutate":"DwarvesHealth"},
+              ">": 0.6,
+              "Then": 0.6,
+              "Else": {"Mutate":"DwarvesHealth"}
+            },
+            "Else": {
+              "Mutate": "IfFloat",
+              "Value": {"Mutate": "DwarvesShield"},
+              ">=": 0.2,
+              "Then": {
+                "Mutate":"IfFloat",
+                "Value":{"Mutate":"DwarvesHealth"},
+                ">": 0.3,
+                "Then": 0.3,
+                "Else": {"Mutate":"DwarvesHealth"}
+              },
+              "Else": {"Mutate": "DwarvesHealth"}
+            }
+          }
+        },
+        "B": 0.35
+      }
+    },
+    "最多活动小单位":{
+      "Type":"Float",
+      "Value":{
+        "Mutate": "Ceil",
+        "Value": {
+          "Mutate": "Multiply",
+          "A": {
+            "Mutate": "ByMissionType",
+            "Default": 240,
+            "Refinery": 120,
+            "PE": 120
+          },
+          "B": 1
+        }
+      }
+    },
+    "最多活动大单位":{
+      "Type":"Float",
+      "Value":{
+        "Mutate": "Ceil",
+        "Value": {
+          "Mutate": "Multiply",
+          "A": {
+            "Mutate": "ByMissionType",
+            "Default": 560,
+            "Salvage":{
+              "Mutate":"If",
+              "Condition":{
+                "Mutate":"DuringMission",
+                "StartingAt": 0,
+                "StoppingAfter": 240
+              },
+              "Then": 480,
+              "Else": {
+                "Mutate":"If",
+                "Condition":{
+                  "Mutate":"Or",
+                  "A":{"Mutate":"DuringDefend"},
+                  "B":{"Mutate":"DuringExtraction"}
+                },
+                "Then": 240,
+                "Else": 560
+              }
+            },
+            "Egg":{
+              "Mutate": "ByDNA",
+              "Default": 560,
+              "Egg,3,x": {
+                "Mutate":"Accumulate",
+                "initial": 240,
+                "Value": 1,
+                "Max": 560
+              }
+            },
+            "Refinery": 240,
+            "PE": 240
+          },
+          "B": 1
+        }
+      }
+    },
+    "Boss单位抗性":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Multiply",
+        "A": 2.6,
+        "B":{"Var":"以战养战"},
+        "C":{"Var":"小猪·以战养战"}
+      }
+    },
+    "精英敌人抗性":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Multiply",
+        "A": 2.6,
+        "B":{"Var":"以战养战"},
+        "C":{"Var":"小猪·以战养战"}
+      }
+    },
+    "普通敌人抗性":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Multiply",
+        "A": 2.3,
+        "B":{"Var":"以战养战"},
+        "C":{"Var":"小猪·以战养战"}
+      }
+    },  
+    "敌人伤害":{
+      "Type":"Float",
+      "Value":{
+        "Mutate": "Multiply",
+        "A": {
+          "Mutate":"Clamp",
+          "Value":{
+            "Mutate":"Add",
+            "A": 6.1,
+            "B":{
+              "Mutate":"Accumulate",
+              "Initial": 0,
+              "Min": 0,
+              "Max": 1.9,
+              "Value":{
+                "Mutate":"Add",
+                "A":{
+                  "Mutate":"SelectFromArray",
+                  "Select":{"Var":"最终生效怪池"},
+                  "Array":[-1,0.0079166,-1,-1,0.0079166]
+                },
+                "B":{
+                  "Mutate":"SelectFromArray",
+                  "Select":{"Var":"玩家阶段表现锁定"},
+                  "Array":[0.0039584,0.002638955,0.0015834,0]
+                }
+              }
+            }
+          },
+          "Min": 6.1,
+          "Max": 8
+        },
+        "B":{"Var":"乘胜追击"},
+        "C":{
+          "Mutate":"If",
+          "Condition":{
+            "Mutate":"TriggerFixedDuration",
+            "N": 20,
+            "In":{"Var":"昏迷黑啤·危机庇护激活"}
+          },
+          "Then": 0,
+          "Else": 1
+        },
+        "E":{
+            "Mutate":"If",
+            "Condition":{
+              "Mutate":"TriggerFixedDuration",
+              "N": 20,
+              "In":{"Var":"红岩爆破手·技能激活"}
+            },
+            "Then": 0.7,
+            "Else": 1
+        }
+      }
+    },
+    "环境伤害":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Multiply",
+        "A": 1.75,
+        "B":{
+          "Mutate":"If",
+          "Condition":{
+            "Mutate":"TriggerFixedDuration",
+            "N": 20,
+            "In":{"Var":"昏迷黑啤·危机庇护激活"}
+          },
+          "Then": 0,
+          "Else": 1
+        }
+      }
+    },
+    "友军伤害":{
+      "Type":"Float",
+      "Value":{
+        "Mutate": "Clamp",
+        "Value": {
+          "Mutate": "Subtract",
+          "A": {
+            "Mutate":"Multiply",
+            "A": 1,
+            "B":{
+              "Mutate":"If",
+              "Condition":{
+                "Mutate":"TriggerFixedDuration",
+                "N": 20,
+                "In":{"Var":"昏迷黑啤·危机庇护激活"}
+              },
+              "Then": 0,
+              "Else": 1
+            }
+          },
+          "B": {
+            "Mutate": "Clamp",
+            "Value": {
+              "Mutate": "Multiply",
+              "A": 0.1,
+              "B": {
+                "Mutate": "DepositedResource",
+                "Resource": "Data Cell"
+              }
+            },
+            "Max": 0.5
+          }
+        },
+        "Min": 0
+      }
+    },
+    "敌人移速":{
+      "Type":"Float",
+      "Value":{
+        "Mutate": "Multiply",
+        "A": {
+          "Mutate": "ByMissionType",
+          "Default": 1.57,
+          "Refinery": 1.3,
+          "PE": {
+            "Mutate": "IfFloat",
+            "Value": {
+              "Mutate": "ByPlayerCount"
+            },
+            "==": 1,
+            "Then": 3.14,
+            "Else": 1.57
+          }
+        },
+        "B":{"Var":"乘胜追击"},
+        "C":{"Var":"以战养战"},
+        "D":{"Var":"小体系虫子通用移速倍率"}
+      }
+    },
+    "敌人攻速":{
+      "Type":"Float",
+      "Value":{
+        "Mutate": "Multiply",
+        "A": 2.55,
+        "B": {"Var":"乘胜追击"},
+        "C":{"Var":"以战养战"}
+      }
+    },
+    "残血后最大回血比例":{
+      "Type":"Float",
+      "Value":{
+        "Mutate": "Clamp",
+        "Value": {
+          "Mutate": "Add",
+          "A": 0.25,
+          "B": {
+            "Mutate": "IfFloat",
+            "Value": {
+              "Mutate": "EnemiesRecentlySpawned",
+              "Seconds": 45,
+              "ED": "ED_HealCore"
+            },
+            ">": 0,
+            "Then": 0.75,
+            "Else": 0
+          },
+          "C":{
+            "Mutate": "If",
+            "Condition": {
+              "Mutate":"TriggerSustain",
+              "N": 5,
+              "in":{
+                "Mutate":"TriggerOnChange",
+                "in":{
+                  "Mutate": "EnemiesKilled",
+                  "ED": "ED_Medic_RapidShooter"
+                }
+              }
+            },
+            "Then": 0.75,
+            "Else": 0
+          },
+          "D":{
+            "Mutate":"If",
+            "Condition":{
+              "Mutate":"TriggerFixedDuration",
+              "N": 20,
+              "In":{"Var":"红岩爆破手·技能激活"}
+            },
+            "Then": 0.75,
+            "Else": 0
+          },
+          "E":{
+            "Mutate":"Iffloat",
+            "Value":{"Var":"杀手黑啤·回血次数"},
+            ">": 0,
+            "Then":{
+              "Mutate":"If",
+              "Condition":{
+                "Mutate":"TriggerFixedDuration",
+                "N": 5,
+                "In":{"Var":"杀手黑啤·效果触发"}
+              },
+              "Then": 0.75,
+              "Else": 0
+            },
+            "Else": 0
+          }
+        },
+        "Max": 1
+      }
+    },
+    "复活后回血比例":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"IfFloat",
+        "Value":{"Var":"满血复活次数"},
+        ">": 0,
+        "Then": 1,
+        "Else": 0.25
+      }
+    },
+    "满血复活次数":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Sequence",
+        "Sequence":[0,1,2,3],
+        "Repeat": false,
+        "Next":{
+          "Mutate":"TriggerOnChange",
+          "RiseOnly": true,
+          "in":{"Var":"满血复活币"}
+        },
+        "Previous":{
+          "Mutate":"If",
+          "Condition":{
+            "Mutate":"LockBoolean",
+            "Value":{
+              "Mutate":"TriggerOnChange",
+              "FallOnly": true,
+              "in":{"Mutate":"IWsLeft"}
+            },
+            "Lock":{
+              "Mutate":"TriggerFixedDuration",
+              "N": 12,
+              "in":{
+                "Mutate":"TriggerOnChange",
+                "FallOnly": true,
+                "in":{"Mutate":"IWsLeft"}
+              }
+            }
+          },
+          "Then": false,
+          "Else":{
+            "Mutate":"TriggerOnChange",
+            "RiseOnly": true,
+            "in":{"Mutate":"DwarvesRevives"}
+          }
+        }
+      }
+    },
+    "满血复活币":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Add",
+        "A":{
+          "Mutate":"Floor",
+          "Value":{
+            "Mutate":"Divide",
+            "A":{"Mutate":"EnemiesKilled"},
+            "B": 600
+          }
+        },
+        "B":{
+          "Mutate":"DepositedResource",
+          "Resource":"Tyrant Shard"
+        }
+      }
+    },
+    "每秒恢复生命值":{
+      "Type":"Float",
+      "Value":{
+        "Mutate": "Clamp",
+        "Value": {
+          "Mutate": "Multiply",
+          "A": 5,
+          "B": {
+            "Mutate": "IfFloat",
+            "Value": {
+              "Mutate": "EnemiesRecentlySpawned",
+              "Seconds": 45,
+              "ED": "ED_HealCore"
+            },
+            ">": 0,
+            "Then": 5,
+            "Else": 1
+          },
+          "C":{
+            "Mutate": "If",
+            "Condition": {
+              "Mutate":"TriggerSustain",
+              "N": 5,
+              "in":{
+                "Mutate":"TriggerOnChange",
+                "in":{
+                  "Mutate": "EnemiesKilled",
+                  "ED": "ED_Medic_RapidShooter"
+                }
+              }
+            },
+            "Then": 5,
+            "Else": 1
+          },
+          "D":{
+            "Mutate":"If",
+            "Condition":{
+              "Mutate":"TriggerFixedDuration",
+              "N": 20,
+              "In":{"Var":"红岩爆破手·技能激活"}
+            },
+            "Then": 6,
+            "Else": 1
+          },
+          "E":{
+            "Mutate":"Iffloat",
+            "Value":{"Var":"杀手黑啤·回血次数"},
+            ">": 0,
+            "Then":{
+              "Mutate":"If",
+              "Condition":{
+                "Mutate":"TriggerFixedDuration",
+                "N": 5,
+                "In":{"Var":"杀手黑啤·效果触发"}
+              },
+              "Then": 5,
+              "Else": 1
+            },
+            "Else": 1
+          }
+        },
+        "Min": 0,
+        "Max": 100
+      }
+    },
+    "受伤恢复延迟":{
+      "Type":"Float",
+      "Value":{
+        "Mutate": "Clamp",
+        "Value": {
+          "Mutate": "Subtract",
+          "A": 10,
+          "B": {
+            "Mutate":"Add",
+            "A":{
+              "Mutate": "IfFloat",
+              "Value": {
+                "Mutate": "EnemiesRecentlySpawned",
+                "ED": "ED_HealCore",
+                "Seconds": 45
+              },
+              ">=": 1,
+              "Then": 9,
+              "Else": 0
+            },
+            "B":{
+              "Mutate": "If",
+              "Condition": {
+                "Mutate":"TriggerSustain",
+                "N": 5,
+                "in":{
+                  "Mutate":"TriggerOnChange",
+                  "in":{
+                    "Mutate": "EnemiesKilled",
+                    "ED": "ED_Medic_RapidShooter"
+                  }
+                }
+              },
+              "Then": 10,
+              "Else": 0
+            },
+            "C":{
+              "Mutate":"If",
+              "Condition":{
+                "Mutate":"TriggerFixedDuration",
+                "N": 20,
+                "In":{"Var":"红岩爆破手·技能激活"}
+              },
+              "Then": 10,
+              "Else": 0
+            },
+            "D":{
+              "Mutate":"Iffloat",
+              "Value":{"Var":"杀手黑啤·回血次数"},
+              ">": 0,
+              "Then":{
+                "Mutate":"If",
+                "Condition":{
+                  "Mutate":"TriggerFixedDuration",
+                  "N": 5,
+                  "In":{"Var":"杀手黑啤·效果触发"}
+                },
+                "Then": 10,
+                "Else": 0
+              },
+              "Else": 0
+            }
+          }
+        },
+        "Min": 0,
+        "Max": 10
+      }
+    },
+    "摔落伤害":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Multiply",
+        "A": 0.175,
+        "B":{
+          "Mutate":"If",
+          "Condition":{
+            "Mutate":"TriggerFixedDuration",
+            "N": 20,
+            "In":{"Var":"昏迷黑啤·危机庇护激活"}
+          },
+          "Then": 0,
+          "Else": 1
+        }
+      }
+    },
+    "大运车抗":{
+      "Type":"Float",
+      "Value":{
+        "Mutate": "ByEscortPhase",
+        "Default": 0.97,
+        "WaitingForFuel": 0.94,
+        "FinalEventA": {
+          "Mutate":"Multiply",
+          "A": 0.96,
+          "B":{"Var":"推车最终阶段难度选择·车抗"}
+        },
+        "FinalEventB": {
+          "Mutate":"Multiply",
+          "A": 0.97,
+          "B":{"Var":"推车最终阶段难度选择·车抗"}
+        },
+        "FinalEventC": {
+          "Mutate":"Multiply",
+          "A": 0.96,
+          "B":{"Var":"推车最终阶段难度选择·车抗"}
+        },
+        "FinalEventD": {
+          "Mutate":"Multiply",
+          "A": 0.97,
+          "B":{"Var":"推车最终阶段难度选择·车抗"}
+        }
+      }
+    },
+    "乘胜追击":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"SelectFromArray",
+        "Select":{"Var":"最终生效怪池"},
+        "Array":[
+          {
+            "Mutate":"Multiply",
+            "A":{
+              "Mutate":"Sequence",
+              "Sequence":[1,1.0555,1.1111],
+              "Repeat": false,
+              "Next":{
+                "Mutate":"TriggerOnChange",
+                "RiseOnly": true,
+                "in":{"Mutate":"DwarvesDowns"}
+              },
+              "Previous":{
+                "Mutate":"TriggerTimer",
+                "N": 15,
+                "Reset":{
+                  "Mutate":"TriggerOnChange",
+                  "RiseOnly": true,
+                  "in":{"Mutate":"DwarvesDowns"}
+                }
+              }
+            },
+            "B":{"Var":"小猪·乘胜追击"}
+          },
+          1,1,1,
+          {
+            "Mutate":"Multiply",
+            "A":{
+              "Mutate":"Sequence",
+              "Sequence":[1,1.0555,1.1111],
+              "Repeat": false,
+              "Next":{
+                "Mutate":"TriggerOnChange",
+                "RiseOnly": true,
+                "in":{"Mutate":"DwarvesDowns"}
+              },
+              "Previous":{
+                "Mutate":"TriggerTimer",
+                "N": 15,
+                "Reset":{
+                  "Mutate":"TriggerOnChange",
+                  "RiseOnly": true,
+                  "in":{"Mutate":"DwarvesDowns"}
+                }
+              }
+            },
+            "B":{"Var":"小猪·乘胜追击"}
+          }
+        ]
+      }
+    },
+    "以战养战":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"SelectFromArray",
+        "Select":{"Var":"最终生效怪池"},
+        "Array":[
+          1,1,1,
+          {
+            "Mutate":"Sequence",
+            "Sequence":[1,1.02,1.05,1.09,1.14,1.17],
+            "Repeat": false,
+            "Reset":{"Var":"轮转阶段周期Boolean"},
+            "Next":{
+              "Mutate":"TriggerOnChange",
+              "RiseOnly": true,
+              "In":{
+                "Mutate":"Floor",
+                "Value":{
+                  "Mutate":"Divide",
+                  "A":{"Mutate":"EnemiesKilled"},
+                  "B": 30
+                }
+              }
+            }
+          },
+          {
+            "Mutate":"Sequence",
+            "Sequence":[1,1.02,1.05,1.09,1.14,1.17],
+            "Repeat": false,
+            "Reset":{"Var":"轮转阶段周期Boolean"},
+            "Next":{
+              "Mutate":"TriggerOnChange",
+              "RiseOnly": true,
+              "In":{
+                "Mutate":"Floor",
+                "Value":{
+                  "Mutate":"Divide",
+                  "A":{"Mutate":"EnemiesKilled"},
+                  "B": 30
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "推车最终阶段难度选择·虫量":{
+      "Type":"float",
+      "Value":{
+        "Mutate":"LockFloat",
+        "Lock":{
+          "Mutate":"IfFloat",
+          "Value":{
+            "Mutate":"EnemiesKilled",
+            "EDs":["ED_Escort_Low","ED_Escort_Medium","ED_Escort_Stark"]
+          },
+          ">": 0,
+          "Then": true,
+          "Else": false
+        },
+        "Value":{
+          "Mutate":"Select",
+          "Select":{
+            "Mutate":"IfFloat",
+            "Value":{"Mutate":"EnemiesKilled","ED":"ED_Escort_Low"},
+            ">": 0,
+            "Then":"Easy",
+            "Else":{
+              "Mutate":"IfFloat",
+              "Value":{"Mutate":"EnemiesKilled","ED":"ED_Escort_Medium"},
+              ">": 0,
+              "Then":"Normal",
+              "Else":"Hard"
+            }
+          },
+          "Default": 1,
+          "Hard":1.05,
+          "Normal":1,
+          "Easy":0.9
+        }
+      }
+    },
+    "推车最终阶段难度选择·车抗":{
+      "Type":"float",
+      "Value":{
+        "Mutate":"LockFloat",
+        "Lock":{
+          "Mutate":"IfFloat",
+          "Value":{
+            "Mutate":"EnemiesKilled",
+            "EDs":["ED_Escort_Low","ED_Escort_Medium","ED_Escort_Stark"]
+          },
+          ">": 0,
+          "Then": true,
+          "Else": false
+        },
+        "Value":{
+          "Mutate":"Select",
+          "Select":{
+            "Mutate":"IfFloat",
+            "Value":{"Mutate":"EnemiesKilled","ED":"ED_Escort_Low"},
+            ">": 0,
+            "Then":"Easy",
+            "Else":{
+              "Mutate":"IfFloat",
+              "Value":{"Mutate":"EnemiesKilled","ED":"ED_Escort_Medium"},
+              ">": 0,
+              "Then":"Normal",
+              "Else":"Hard"
+            }
+          },
+          "Default":1,
+          "Hard": 1,
+          "Normal": 1,
+          "Easy": 1.03
+        }
+      }
+    },
+    "怪池选择": {
+      "Type": "Strings",
+      "Value": {
+        "Mutate":"SelectFromArray",
+        "Select":{"Var":"最终生效怪池"},
+        "Array":[
+          [
+          "ED_Spider_Grunt",
+          "ED_Spider_Swarmer",
+          "ED_Spider_Grunt_Attacker_Elite",
+          "ED_Spider_Grunt_Guard_Elite",
+          "ED_Spider_Tank",
+          "ED_Spider_Tank_Elite",
+          "ED_Spider_ShieldTank",
+          "ED_Spider_Spitter",
+          "ED_Spider_Buffer",
+          "ED_Spider_Lobber",
+          {
+            "Mutate":"ByMissionType",
+            "Default":["ED_Shark","ED_Spring_JellyBreeder"],
+            "Escort":"",
+            "Salvage":""
+          },
+          "ED_Spider_ExploderTank_Elite",
+          "ED_Spring_HydraWeed",
+          "ED_Spider_Tank_Boss_WeaK",
+          "ED_Spider_Boss_Heavy_Weak",
+          "ED_Seasonal_Boss_TwinB_Weak",
+          "ED_Woodlouse"
+          ],
+          [
+          "ED_Spider_Grunt",
+          "ED_Spider_Swarmer",
+          "ED_Spider_Grunt_Attacker_Elite",
+          "ED_Spider_Grunt_Guard_Elite",
+          "ED_Spider_Tank",
+          "ED_Spider_Tank_Elite",
+          "ED_Spider_Exploder",
+          "ED_Mactera_Shooter_Normal",
+          "ED_Mactera_TripleShooter_Elite",
+          "ED_Spider_Shooter_Elite",
+          "ED_Spider_Stalker",
+          "ED_Spider_RapidShooter_Elite",
+          "ED_Bomber_Explosive",
+          "ED_Spider_ShooterQueen",
+          "ED_Spider_Boss_TwinA_Weak",
+          "ED_Seasonal_Boss_TwinB_Weak",
+          "ED_Summer_JellyBreeder",
+          "ED_Summer_TerMinator"
+          ],
+          [
+          "ED_Spider_Grunt",
+          "ED_Spider_Swarmer",
+          "ED_Spider_Grunt_Attacker_Elite",
+          "ED_Spider_Grunt_Guard_Elite",
+          "ED_Spider_Tank",
+          "ED_Spider_Tank_Elite",
+          "ED_Spider_ShieldTank",
+          "ED_Spider_Stalker",
+          "ED_Spider_RapidShooter_Elite",
+          "ED_Grabber",
+          "ED_Spider_Buffer",
+          "ED_Spider_Stinger",
+          "ED_Bomber_Explosive",
+          "ED_Woodlouse",
+          "ED_Spider_Exploder",
+          "ED_Spider_Lobber",
+          "ED_Spider_Spitter",
+          "ED_Mactera_Shooter_Normal",
+          "ED_Mactera_TripleShooter_Elite",
+          "ED_Crawler",
+          "ED_Spider_Shooter_Elite",
+          "ED_Spider_Tank_Boss_WeaK",
+          "ED_Spider_Boss_Heavy_Weak",
+          "ED_Spider_Boss_TwinA_Weak",
+          "ED_Seasonal_Boss_TwinB_Weak",
+          "ED_Spider_ShooterQueen"
+          ],
+          [
+          "ED_Spider_Grunt",
+          "ED_Spider_Swarmer",
+          "ED_Spider_Grunt_Attacker_Elite",
+          "ED_Spider_Grunt_Guard_Elite",
+          "ED_Spider_Tank",
+          "ED_Spider_Tank_Elite",
+          "ED_Spider_ShieldTank",
+          "ED_Spider_Buffer",
+          "ED_Winter_JellyBreeder",
+          "ED_Crawler",
+          "ED_Bomber_Explosive",
+          "ED_Spider_Tank_Boss_WeaK",
+          "ED_Spider_Boss_Heavy_Weak",
+          "ED_Seasonal_Boss_TwinB_Weak"
+          ],
+          [
+          "ED_Spider_Grunt",
+          "ED_Spider_Swarmer",
+          "ED_Spider_Grunt_Attacker_Elite",
+          "ED_Spider_Grunt_Guard_Elite",
+          "ED_Spider_Tank",
+          "ED_Spider_Tank_Elite",
+          "ED_Spider_ShieldTank",
+          "ED_Spider_Stalker",
+          "ED_Spider_RapidShooter_Elite",
+          "ED_Grabber",
+          "ED_Spider_Buffer",
+          "ED_Spider_Stinger",
+          "ED_Bomber_Explosive",
+          "ED_Woodlouse",
+          "ED_Spider_Exploder",
+          "ED_Spider_Lobber",
+          "ED_Spider_Spitter",
+          "ED_Mactera_Shooter_Normal",
+          "ED_Mactera_TripleShooter_Elite",
+          "ED_Spider_Shooter_Elite",
+          "ED_Spider_Tank_Boss_WeaK",
+          "ED_Spider_Boss_Heavy_Weak",
+          "ED_Spider_Boss_TwinA_Weak",
+          "ED_Seasonal_Boss_TwinB_Weak",
+          "ED_Spider_ShooterQueen"
+          ]
+        ]
+      }
+    },
+    "固定怪池": {
+      "Type": "Strings",
+      "Value": {
+        "Mutate": "ByMissionType",
+        "Default": [
+          "ED_ShootingPlant",
+          "ED_Barrageinfector",
+          "ED_Barrageinfector_lobber",
+          "ED_CaveLeech",
+          "ED_TentaclePlant",
+          "ED_SpiderSpawner",
+          "ED_JellyBreeder",
+          "ED_JellyBreeder_RockpoxPlague",
+          "ED_FacilityTurret_Burst_SN",
+          "ED_Prospector"
+        ],
+        "Escort":[
+          "ED_ShootingPlant",
+          "ED_Barrageinfector",
+          "ED_Barrageinfector_lobber",
+          "ED_CaveLeech",
+          "ED_SpiderSpawner",
+          "ED_JellyBreeder",
+          "ED_JellyBreeder_RockpoxPlague",
+          "ED_FacilityTurret_Burst_SN",
+          "ED_Prospector"
+        ],
+        "Salvage": [
+          "ED_ShootingPlant",
+          "ED_Barrageinfector",
+          "ED_Barrageinfector_lobber",
+          "ED_CaveLeech",
+          "ED_SpiderSpawner",
+          "ED_JellyBreeder",
+          "ED_JellyBreeder_RockpoxPlague",
+          "ED_FacilityTurret_Burst_SN",
+          "ED_Prospector",
+          "ED_HydraWeed"
+        ]
+      }
+    },
+    "敌人倍数": {
+      "Type": "Float",
+      "Value": {
+        "Mutate":"LockFloat",
+        "Lock":{
+          "Mutate":"TriggerFixedDuration",
+          "N": 30,
+          "in":{
+            "Mutate":"TriggerOnChange",
+            "RiseOnly": true,
+            "in":{
+              "Mutate":"EnemiesRecentlySpawned",
+              "Seconds": 9999,
+              "EDs":["ED_Seasonal_Boss_Heavy","ED_Spider_Boss_Heavy"]
+            }
+          }
+        },
+        "Value":{
+          "Mutate":"Multiply",
+          "A":{
+            "Mutate": "ByMissionType",
+            "Default": 3.4,
+            "Escort": {
+              "Mutate": "ByEscortPhase",
+              "Default": 3.4,
+              "Moving": 3.91,
+              "WaitingForFuel": 2.72,
+              "FinalEventA":{
+                "Mutate":"Multiply",
+                "A": 3.74,
+                "B":{"Var":"推车最终阶段难度选择·虫量"}
+              },
+              "FinalEventB":{
+                "Mutate":"Multiply",
+                "A": 3.06,
+                "B":{"Var":"推车最终阶段难度选择·虫量"}
+              },
+              "FinalEventC":{
+                "Mutate":"Multiply",
+                "A": 3.74,
+                "B":{"Var":"推车最终阶段难度选择·虫量"}
+              },
+              "FinalEventD": {
+                "Mutate":"Multiply",
+                "A": 3.06,
+                "B":{"Var":"推车最终阶段难度选择·虫量"}
+              }
+            },
+            "Salvage": {
+              "Mutate": "Add",
+              "A": 3.4,
+              "B": {
+                "Mutate": "If",
+                "Condition": {
+                  "Mutate": "DuringDefend"
+                },
+                "Then": 0.51,
+                "Else": 0
+              }
+            },
+            "Egg": {
+              "Mutate": "Add",
+              "A": 3.4,
+              "B": {
+                "Mutate": "If",
+                "Condition": {
+                  "Mutate": "DuringEggAmbush",
+                  "StartingAt": 5,
+                  "StoppingAfter": 10
+                },
+                "Then": 0.51,
+                "Else": 0
+              }
+            }
+          },
+          "B": 1
+        }
+      }
+    },
+    "播报潮Min": {
+      "Type": "float",
+      "Value": {
+        "Mutate": "ByMissionType",
+        "Default": 150
+      }
+    },
+    "播报潮Max": {
+      "Type": "float",
+      "Value": {
+        "Mutate": "ByMissionType",
+        "Default": 180
+      }
+    },
+    "自然潮Min": {
+      "Type": "float",
+      "Value": {
+        "Mutate": "ByMissionType",
+        "Default": 180
+      }
+    },
+    "自然潮Max": {
+      "Type": "float",
+      "Value": {
+        "Mutate": "ByMissionType",
+        "Default": 210
+      }
+    },
+    "自然潮点数Min": {
+      "Type": "float",
+      "Value": {
+        "Mutate": "ByMissionType",
+        "Default":{            
+          "Mutate":"SelectFromArray",
+          "Select":{"Var":"最终生效怪池"},
+          "Array":[3000,3500,4300,3200,4300]
+        },
+        "Egg": {
+          "Mutate": "Accumulate",
+          "initial": 1000,
+          "Value": {
+            "Mutate": "ByDNA",
+            "Default": 1.5,
+            "Egg,1,x": 3.75,
+            "Egg,2,x": 2.8125,
+            "Egg,3,x": 2.25
+          },
+          "Min": 1000,
+          "Max": 3700
+        }
+      }
+    },
+    "自然潮点数Max": {
+      "Type": "float",
+      "Value": {
+        "Mutate": "ByMissionType",
+        "Default": {            
+          "Mutate":"SelectFromArray",
+          "Select":{"Var":"最终生效怪池"},
+          "Array":[3200,3700,4600,3400,4600]
+        },
+        "Egg": {
+          "Mutate": "Accumulate",
+          "initial": 1200,
+          "Value": {
+            "Mutate": "ByDNA",
+            "Default": 1.5,
+            "Egg,1,x": 3.75,
+            "Egg,2,x": 2.8125,
+            "Egg,3,x": 2.25
+          },
+          "Min": 1200,
+          "Max": 3900
+        }
+      }
+    },
+    "小体系虫子通用移速倍率":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"SelectFromArray",
+        "Select":{"Var":"最终生效怪池"},
+        "Array":[
+        {
+          "Mutate":"Multiply",
+          "A": {
+            "Mutate":"IfFloat",
+            "Value":{
+              "Mutate": "SquareWave",
+              "Period": 4,
+              "High": 1,
+              "Low": 0
+            },
+            ">": 0.25,
+            "Then": 1.1465,
+            "Else": 1
+          },
+          "B":{
+            "Mutate":"Sequence",
+            "Sequence":[1.01,1.03,1.05,1.06,1.07],
+            "interval": 15,
+            "Repeat": true
+          }
+        },
+        1,
+        1,
+        1,
+        {
+          "Mutate":"Multiply",
+          "A": {
+            "Mutate":"IfFloat",
+            "Value":{
+              "Mutate": "SquareWave",
+              "Period": 4,
+              "High": 1,
+              "Low": 0
+            },
+            ">": 0.25,
+            "Then": 1.1465,
+            "Else": 1
+          },
+          "B":{
+            "Mutate":"Sequence",
+            "Sequence":[1.01,1.03,1.05,1.06,1.07],
+            "interval": 15,
+            "Repeat": true
+          }
+        }
+        ]
+      }
+    },
+    "小体系虫子体型":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Accumulate",
+        "initial": 1,
+        "Value":{
+          "Mutate":"add",
+          "A":{
+            "Mutate":"SelectFromArray",
+            "Select":{"Var":"最终生效怪池"},
+            "Array":[-1,0.00125,-1,-1,0.00125]
+          },
+          "B":{
+            "Mutate":"SelectFromArray",
+            "Select":{"Var":"玩家阶段表现锁定"},
+            "Array":[0.000625,0.000416666,0.00025,0]
+          }
+        },
+        "Min": 1,
+        "Max": 1.3
+      }
+    },
+    "小体系虫子进化":{
+      "Type":"float",
+      "Value":{
+        "Mutate":"If",
+        "Condition":{
+          "Mutate":"Or",
+          "A":{
+            "Mutate":"IfFloat",
+            "Value":{"Var":"最终生效怪池"},
+            "==": 1,
+            "Then":{
+              "Mutate":"IfFloat",
+              "Value":{"Var":"小体系虫子体型"},
+              "==": 1.3,
+              "Then": true,
+              "Else": false
+            },
+            "Else":false
+          },
+          "B":{
+            "Mutate":"IfFloat",
+            "Value":{"Var":"最终生效怪池"},
+            "==": 4,
+            "Then":{
+              "Mutate":"IfFloat",
+              "Value":{"Var":"小体系虫子体型"},
+              "==": 1.3,
+              "Then": true,
+              "Else": false
+            },
+            "Else":false
+          }
+        },
+        "Then": 1,
+        "Else": 0
+      }
+    },
+    "Boss单位体型":{
+      "Type":"Float",
+      "Value":{
+        "Mutate":"Accumulate",
+        "initial": 1,
+        "Value":{
+          "Mutate":"Add",
+          "A":{
+            "Mutate":"SelectFromArray",
+            "Select":{"Var":"最终生效怪池"},
+            "Array":[-1,0.00083333,-1,-1,0.00083333]
+          },
+          "B":{
+            "Mutate":"SelectFromArray",
+            "Select":{"Var":"玩家阶段表现锁定"},
+            "Array":[0.0004167,0.000277811,0.0001666,0]
+          }
+        },
+        "Min": 1,
+        "Max": 1.2
+      }
+    }
+  },
+  "Messages": [
+    {
+      "Message": {
+        "Mutate":"Join",
+        "Values":[
+          "● 免费补给数量:",
+          {
+            "Mutate":"SelectFromArray",
+            "Select": {"Var": "免费补给次数"},
+            "Array": ["0/3","1/3","2/3", "3/3"]
+          },
+          " | 半价补给数量:",
+          {
+            "Mutate":"SelectFromArray",
+            "Select":{"Var":"半价补给次数"},
+            "Array":[" 1/1"," 1/1","0/1"]
+          },
+          " | 满血复活次数",
+          {
+            "Mutate":"SelectFromArray",
+            "Select": {"Var": "满血复活次数"},
+            "Array": ["0/3","1/3","2/3","3/3"]
+          },
+          "●"
+        ]
+      },
+      "Type": "Delux",
+      "Sender": "【资源面板】:",
+      "SendOnchange": true
+    },
+    {
+      "Message":{
+        "Mutate":"Join",
+        "Values":[
+          " ● 危机庇护次数:",
+          {
+            "Mutate":"SelectFromArray",
+            "Select":{"Var":"昏迷黑啤·危机庇护次数"},
+            "Array":["0/1","1/1"]
+          },
+          " | 连杀回血次数:",
+          {
+            "Mutate":"SelectFromArray",
+            "Select":{"Var":"杀手黑啤·回血次数"},
+            "Array":["0/3","1/3","2/3","3/3"]
+          },
+          " | 补给增幅次数:",
+          {
+            "Mutate":"SelectFromArray",
+            "Select":{"Var":"红岩爆破手·补给增幅次数"},
+            "Array":["0/4","1/4","2/4","3/4","4/4"]
+          },
+          " ●"
+        ]
+      },
+      "Sender":"【啤酒增益】:",
+      "SendOnChange": true,
+      "Type":"Developer"
+    },
+    {
+      "Message":{
+        "Mutate":"Join",
+        "Values":[
+          "回血时间剩余:",
+          {
+            "Mutate":"int2String",
+            "Value":{
+              "Mutate":"Countdown",
+              "Start": 5,
+              "Enable":{
+                "Mutate":"Iffloat",
+                "Value":{"Var":"杀手黑啤·回血次数"},
+                ">": 0,
+                "Then":{
+                  "Mutate":"If",
+                  "Condition":{
+                    "Mutate":"TriggerDelay",
+                    "N": 0.5,
+                    "In":{
+                      "Mutate":"TriggerFixedDuration",
+                      "N": 5,
+                      "In":{"Var":"杀手黑啤·效果触发"}
+                    }
+                  },
+                  "Then": true,
+                  "Else": false
+                },
+                "Else":false
+              }
+            }
+          },
+          "s"
+        ]
+      },
+      "Sender":"【杀手黑啤·连杀回血】",
+      "SendOnChange": true,
+      "Type":"Developer"
+    },
+    {
+      "Message":{
+        "Mutate":"Join",
+        "Values":[
+          "团队回复 + 减伤剩余时间:",
+          {
+            "Mutate":"Sequence",
+            "Sequence":["20","15","10","5"],
+            "Repeat": false,
+            "Reset":{
+              "Mutate":"TriggerDelay",
+              "N": 30,
+              "In":{
+                "Mutate":"TriggerFixedDuration",
+                "N": 0.5,
+                "In":{"Var":"红岩爆破手·技能激活"}
+              }
+            },
+            "Next":{
+              "Mutate":"TriggerTimer",
+              "N": 4.5,
+              "Enable":{
+                "Mutate":"TriggerFixedDuration",
+                "N": 20,
+                "In":{"Var":"红岩爆破手·技能激活"}
+              }
+            }
+          },
+          "s"
+        ]
+      },
+      "Sender":"【红岩爆破手·补给增幅】",
+      "Send": {
+        "Mutate": "Or",
+        "A": {
+          "Mutate": "TriggerOnce",
+          "Reset": {
+            "Mutate":"TriggerDelay",
+            "N": 50,
+            "In":{
+              "Mutate":"TriggerFixedDuration",
+              "N": 0.5,
+              "In":{"Var":"红岩爆破手·技能激活"}
+            }
+          },
+          "In": {"Var":"红岩爆破手·技能激活"}
+        },
+        "B": {
+          "Mutate": "TriggerTimer",
+          "N": 5,
+          "Enable": {
+            "Mutate": "TriggerFixedDuration",
+            "N": 16,
+            "In": {"Var":"红岩爆破手·技能激活"}
+          }
+        }
+      },
+      "Type":"Developer"
+    },
+    {
+      "Message":{
+        "Mutate":"Join",
+        "Values":[
+          "无敌时间剩余:",
+          {
+            "Mutate":"Sequence",
+            "Sequence":["20","15","10","5"],
+            "Repeat": false,
+            "Next":{
+              "Mutate":"TriggerTimer",
+              "N": 4.5,
+              "Enable":{
+                "Mutate":"TriggerFixedDuration",
+                "N": 15,
+                "IN":{"Var":"昏迷黑啤·危机庇护激活"}
+              }
+            },
+            "Reset":{
+              "Mutate":"TriggerDelay",
+              "N": 20,
+              "In":{
+                "Mutate":"TriggerFixedDuration",
+                "N": 0.5,
+                "IN":{"Var":"昏迷黑啤·危机庇护激活"}
+              }
+            }
+          },
+          "s"
+        ]
+      },
+      "Sender":"【昏迷黑啤·危机庇护】",
+      "Send": {
+        "Mutate":"Or",
+        "A":{
+          "Mutate":"TriggerOnce",
+          "Reset":{
+            "Mutate":"TriggerDelay",
+            "N": 20,
+            "In":{
+              "Mutate":"TriggerFixedDuration",
+              "N": 0.5,
+              "IN":{"Var":"昏迷黑啤·危机庇护激活"}
+            }
+          },
+          "In":{
+            "Mutate":"TriggerFixedDuration",
+            "N": 0.5,
+            "IN":{"Var":"昏迷黑啤·危机庇护激活"}
+          }
+        },
+        "B":{
+          "Mutate":"TriggerTimer",
+          "N": 5,
+          "Enable":{
+            "Mutate":"TriggerFixedDuration",
+            "N": 15,
+            "IN":{"Var":"昏迷黑啤·危机庇护激活"}
+          }
+        }
+      },
+      "Type":"Streamer"
+    },
+    {
+      "Message":{
+        "Mutate":"SelectFromArray",
+        "Select":{"Var":"玩家阶段表现锁定"},
+        "Array":[
+          "[叶子情人特调]: 补给涨价20n | 敌人大幅强化",
+          "[亚肯黑啤]: 补给涨价15n | 敌人中幅强化",
+          "[黑锁啤酒]: 补给涨价10n | 敌人小幅强化",
+          "[油头精酿]: 无效果",
+          "[杀手黑啤]: 连杀回血5s(3次)",
+          "[红岩爆破手]:吃补回血+减伤20s(4次)",
+          "[昏迷黑啤]: 无敌20s + 清场(1次)"
+        ]
+      },
+      "Sender":">> 玩家阶段表现评估 <<",
+      "Send":{
+        "Mutate":"TriggerDelay",
+        "N": 2,
+        "In":{"Var":"轮转阶段周期Boolean"}
+      },
+      "Type":"Streamer"
+    },
+    {
+      "Message": {
+        "Mutate": "Join",
+        "Values": [
+          "当前阶段将在",
+          {
+            "Mutate": "int2String",
+            "Value": {
+              "Mutate": "Countdown",
+              "Start": 5,
+              "Enable": {
+                "Mutate": "TriggerFixedDuration",
+                "N": 5,
+                "In": {
+                  "Mutate": "Or",
+                  "A": {
+                    "Mutate": "DuringMission",
+                    "StartingAt": {
+                      "Mutate": "ByMissionType",
+                      "Default": 235,
+                      "Salvage": 175
+                    },
+                    "StoppingAfter": {"Var":"任务阶段时间"}
+                  },
+                  "B": {
+                    "Mutate": "TriggerDelay",
+                    "N": {
+                      "Mutate": "ByMissionType",
+                      "Default": 235,
+                      "Salvage": 175
+                    },
+                    "In": {"Var":"轮转阶段周期Boolean"}
+                  }
+                }
+              }
+            }
+          },
+          "s后更迭"
+        ]
+      },
+      "Sender": ">> 物竞天择 <<",
+      "Type": "Developer",
+      "SendOnChange": true
+    },
+    {
+      "Message": {
+        "Mutate": "Join",
+        "Values": [
+          "当前阶段为: ",
+          {
+            "Mutate": "SelectFromArray",
+            "Select": {"Var": "最终生效怪池"},
+            "Array": [
+              "[乘胜追击]", 
+              "[养虎为患]",
+              "[鱼龙混杂]", 
+              "[以战养战]",
+              "※[最后通牒]※"
+            ]
+          }
+        ]
+      },
+      "Type": "Streamer",
+      "Sender": ">> 物竞天择 <<",
+      "Send": {
+        "Mutate": "Or",
+        "A": {
+          "Mutate": "TriggerOnce",
+          "in": {"Mutate": "DuringMission", "StartingAt": 15, "StoppingAfter": 18}
+        },
+        "B": {
+          "Mutate": "And",
+          "A": {"Mutate": "IfFloat", "Value": {"Var": "最终生效怪池"}, "==": 4,"Then":false,"Else":true},
+          "B": {
+            "Mutate": "TriggerDelay",
+            "N": 3,
+            "in": {"Var":"轮转阶段周期Boolean"}
+          }
+        }
+      }
+    },
+    {
+      "Message": {
+        "Mutate": "join",
+        "Values": [{
+          "Mutate": "Sequence",
+          "Sequence": [
+            "敌人族群暂时沉寂",
+            "族群狂暴 Lv.Ⅰ | 移速、攻速、伤害+5.5%",
+            "族群狂暴 Lv.Ⅱ | 移速、攻速、伤害+11.1%"
+          ],
+          "Repeat": false,
+          "Next": {
+            "Mutate": "And",
+            "A": {
+              "Mutate": "SelectFromArray",
+              "Select": {"Var": "最终生效怪池"},
+              "Array": [true, false, false, false, true]
+            },
+            "B": {
+              "Mutate": "TriggerOnChange",
+              "RiseOnly": true,
+              "In": {"Mutate": "DwarvesDowns"}
+            }
+          },
+          "Previous": {
+            "Mutate":"TriggerFixedDuration",
+            "N": 0.5,
+            "In":{
+              "Mutate": "TriggerTimer",
+              "N": 15,
+              "Reset": {
+                "Mutate": "TriggerOnChange",
+                "RiseOnly": true,
+                "In": {"Mutate": "DwarvesDowns"}
+              }
+            }
+          }
+        }]
+      },
+      "Sender": "【乘胜追击】",
+      "Type": "Delux",
+      "SendOnChange": true
+    },
+    {
+      "Message": "敌人发育至临界(伤害 ≈ 5++) | 75s后完全体降临",
+      "Sender": "【养虎为患】",
+      "Type": "Delux",
+      "Send": {
+        "Mutate": "And",
+        "A": {
+          "Mutate": "Iffloat",
+          "Value":{"Var":"敌人伤害"},
+          ">=": 6.8,
+          "Then": true,
+          "Else": false
+        },
+        "B": {
+          "Mutate": "IfOnSpaceRig",
+          "Then": false,
+          "Else": true
+        },
+        "C":{
+          "Mutate":"SelectFromArray",
+          "Select":{"Var":"最终生效怪池"},
+          "Array":[false,true,false,false,true]
+        },
+        "D":{
+          "Mutate":"DuringMission",
+          "StartingAt": 44
+        }
+      }
+    },
+    {
+      "Message": "敌人已发育完全 | 部分单位可进化",
+      "Sender": "【养虎为患】",
+      "Type": "Delux",
+      "Send": {
+        "Mutate": "And",
+        "A": {
+          "Mutate": "Iffloat",
+          "Value":{"Var":"敌人伤害"},
+          "==": 8,
+          "Then": true,
+          "Else": false
+        },
+        "B": {
+          "Mutate": "IfOnSpaceRig",
+          "Then": false,
+          "Else": true
+        },
+        "C":{
+          "Mutate":"SelectFromArray",
+          "Select":{"Var":"最终生效怪池"},
+          "Array":[false,true,false,false,true]
+        },
+        "D":{
+          "Mutate":"DuringMission",
+          "StartingAt": 120
+        }
+      }
+    },
+    {
+      "Message":{
+        "Mutate":"Join",
+        "Values":[
+          ">> 扫描发现: #[",
+          {
+            "Mutate":"SelectFromArray",
+            "Select":{"Var":"生态圈抽取"},
+            "Array":[
+              "馈血速射[击杀后为全队回血]",
+              "硝石自爆王[掉落硝石]",
+              "无畏胚体 [会成长为无畏]"
+            ]
+          },
+          "]# << 的痕迹"
+        ]
+      },
+      "Send": {
+        "Mutate":"TriggerDelay",
+        "N": 135,
+        "in":{
+          "Mutate":"TriggerOnChange",
+          "RiseOnly": true,
+          "in":{"Var":"轮转阶段周期"}
+        }
+      },
+      "Type":"Streamer",
+      "Sender":"【生态扫描】"
+    },
+    {
+      "Message":{
+        "Mutate":"Join",
+        "Values":[
+          {
+            "Mutate":"Sequence",
+            "Sequence":[
+              "","","","","","","","","","","","","",
+              "当前难度: Hazard 9-物竞天择-Tiny-v0.13",
+              "核心:阶段随表现切换(3~5分钟)",
+              "核心:评估玩家阶段表现并给予奖励",
+              "祝游玩愉快!"
+            ],
+            "Repeat": false,
+            "Next":{
+              "Mutate":"And",
+              "A":{
+                "Mutate":"IfOnSpaceRig",
+                "Then": false,
+                "Else": true
+              },
+              "B":{
+                "Mutate":"triggerTimer",
+                "N": 5
+              }
+            }
+          }
+        ]
+      },
+      "Sender":"※【难度简述】※ :",
+      "Type":"Developer",
+      "SendOnChange": true
+    },
+    {
+      "Message":"◆ 最终阶段难度选择 ◆ | 打碎心石决定难度",
+      "Type":"Delux",
+      "Send":{
+        "Mutate":"IfFloat",
+        "Value":{
+          "Mutate":"EnemyCount",
+          "EDs":["ED_Escort_Low","ED_Escort_Medium","ED_Escort_Stark"]
+        },
+        ">": 0,
+        "Then": true,
+        "Else": false
+      },
+      "Sender":"【任务控制中心】:"
+    },
+    {
+      "Message":{
+        "Mutate":"Join",
+        "Values":[
+          "已选择难度",
+          {
+            "Mutate":"Select",
+            "Select":{
+              "Mutate":"IfFloat",
+              "Value":{"Mutate":"EnemiesKilled","ED":"ED_Escort_Low"},
+              ">": 0,
+              "Then":"Easy",
+              "Else":{
+                "Mutate":"IfFloat",
+                "Value":{"Mutate":"EnemiesKilled","ED":"ED_Escort_Medium"},
+                ">": 0,
+                "Then":"Normal",
+                "Else":"Hard"
+              }
+            },
+            "Default":"",
+            "Hard":"困难 | 虫量↑",
+            "Normal":"普通 | 不变",
+            "Easy":"简单 | 虫量↓ 车抗↑"
+          }
+        ]
+      },
+      "Sender":"【任务控制中心】",
+      "Type":"Delux",
+      "Send":{
+        "Mutate":"TriggerOnce",
+        "in":{
+          "Mutate":"TriggerOnChange",
+          "RiseOnly": true,
+          "in":{
+            "Mutate":"EnemiesKilled",
+            "EDs":["ED_Escort_Low","ED_Escort_Medium","ED_Escort_Stark"]
+          }
+        }
+      }
+    },
+    {
+      "Message": {
+        "Mutate": "Join",
+        "Values": [
+          "◆ 目前已有“",
+          {
+            "Mutate": "int2String",
+            "Value": {
+              "Mutate": "Floor",
+              "Value": {
+                "Mutate": "Divide",
+                "A": {
+                  "Mutate": "DepositedResource",
+                  "Resource": "Nitra"
+                },
+                "B": 60
+              }
+            }
+          },
+          "”份补给(60硝石/份) ◆"
+        ]
+      },
+      "Type": "Delux",
+      "Sender": "【资源管理】:",
+      "SendOnChange": true
+    },
+    {
+      "Message": "◆ 治愈核心已生成 (45s) | 治疗+75% 延迟-90%",
+      "Type": "Developer",
+      "Sender": "【医疗系统】:",
+      "Send": {
+        "Mutate": "IfFloat",
+        "Value": {
+          "Mutate": "EnemiesRecentlySpawned",
+          "ED": "ED_HealCore",
+          "Seconds": 45
+        },
+        ">": 0,
+        "Then": true,
+        "Else": false
+      }
+    },
+    {
+      "Message": {
+        "Mutate": "Join",
+        "Values": [
+          "已存入数据核心,获得强化:友伤系数减少",
+          {
+            "Mutate":"Sequence",
+            "Sequence":["0","10%","20%","30%","40%","50%"],
+            "Repeat": false,
+            "Next":{
+              "Mutate":"TriggerOnChange",
+              "RiseOnly": true,
+              "In":{
+                "Mutate": "DepositedResource",
+                "Resource": "Data Cell"
+              }
+            }
+          }
+        ]
+      },
+      "Type": "Developer",
+      "Sender": "【护甲升级】:",
+      "SendOnChange": true
+    }
+  ]
+}
